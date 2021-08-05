@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  padding-top: 40px;
+  z-index: 100;
+
+  &__works {
+    display: flex;
+    margin-right: 60px;
+  }
+
+  &__works-number {
+    margin-left: 40px;
+  }
+}

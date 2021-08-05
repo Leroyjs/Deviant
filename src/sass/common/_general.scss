@@ -1,0 +1,98 @@
+body {
+  font-family: $fontMain;
+}
+
+.half {
+  width: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+.link {
+  cursor: pointer;
+  position: relative;
+  pointer-events: all;
+  height: 1em;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &::before {
+    content: '';
+    bottom: -2px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    height: 1px;
+    transition: width 0.3s;
+    background-color: $black;
+  }
+
+  &:hover:before {
+    transition: width 0.3s, height 0s 0.25s;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &_color {
+    &_white {
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.main-padding {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+
+  &_color {
+    &_black {
+      color: $black;
+    }
+
+    &_white {
+      color: $white;
+    }
+
+    &_gray {
+      color: $gray;
+    }
+  }
+
+  &_type {
+    &_h1 {
+      font-size: 108px;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+
+    &_h2 {
+      font-size: 32px;
+      line-height: 130%;
+      text-transform: uppercase;
+    }
+
+    &_common {
+      font-size: 18px;
+      line-height: 110%;
+      text-transform: uppercase;
+    }
+
+    &_desc {
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+}

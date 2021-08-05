@@ -1,0 +1,40 @@
+.work-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+
+  &_type {
+    &_large {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      max-height: 56vw;
+    }
+
+    &_common {
+      width: 50%;
+      height: 50vw;
+      max-height: 50vw;
+      padding: 40px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+  }
+}
+
+//test
+.work-item:nth-child(1) {
+  background-image: url('~/media/works/matrix.jpg');
+}
+
+.work-item:nth-child(2) {
+  background-image: url('~/media/works/mamma-mia.jpg');
+}
+
+.work-item:nth-child(3) {
+  background-image: url('~/media/works/radiant.jpg');
+}

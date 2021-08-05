@@ -1,0 +1,27 @@
+.link-about {
+  width: 50%;
+  height: 50vw;
+  max-height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &__seal {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+  }
+
+  &_type {
+    &_about {
+      background-color: $bg;
+    }
+
+    &_works {
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+}

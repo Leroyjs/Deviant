@@ -1,1 +1,14 @@
 @import './common';
+@import './particles/header';
+@import './particles/first-section';
+@import './particles/work-item';
+@import './particles/link-about';
+@import './particles/advantages';
+@import './particles/footer';
+@import './particles/deviant-circle';
+
+.works,
+.links-about {
+  display: flex;
+  flex-wrap: wrap;
+}
