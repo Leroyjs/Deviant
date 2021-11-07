@@ -1,0 +1,12 @@
+.link-wrapper {
+  height: 1.2em;
+  display: inline-block;
+  overflow: hidden;
+  &_active {
+    .text {
+      display: inline-block;
+      transform: translateY(-100%);
+      transition: 0.3s;
+    }
+  }
+}

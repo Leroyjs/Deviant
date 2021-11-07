@@ -1,11 +1,14 @@
 @import './common';
 @import './particles/header';
-@import './particles/first-section';
+@import './particles/works-first-slide';
 @import './particles/work-item';
 @import './particles/link-about';
 @import './particles/advantages';
 @import './particles/footer';
 @import './particles/deviant-circle';
-@import './particles/ticker';
 @import './particles/link-wrapper';
-@import './particles/preloader';
+
+//test
+.work-item:nth-child(1) {
+  background-image: url('~/media/works/mamma-mia.jpg');
+}

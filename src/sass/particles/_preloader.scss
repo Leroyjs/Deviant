@@ -1,0 +1,114 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  .header__overflow-inner {
+    width: auto;
+  }
+  &-wrapper {
+    transform: translateY(-10%);
+    display: inline-flex;
+    overflow: hidden;
+
+    &-inner {
+      line-height: 100%;
+      display: inline-block;
+      transform: translateY(110%);
+    }
+  }
+  &-opacity {
+    opacity: 0;
+  }
+  &-appearance-step {
+    &-0 {
+      &-0 {
+        transition: opacity 0.5s 0.5s, transform 0.3s 0.5s;
+      }
+      &-1 {
+        transition: opacity 0.5s 0.5s, transform 0.3s 0.5s;
+      }
+      &-2 {
+        transition: opacity 0.5s 0.5s, transform 0.3s 0.5s;
+      }
+      &-3 {
+        transition: opacity 0.5s 0.5s, transform 0.3s 0.5s;
+      }
+    }
+    &-1 {
+      &-0 {
+        transition: opacity 0.5s 0.8s, transform 0.5s 0.8s;
+      }
+      &-1 {
+        transition: opacity 0.5s 1.1s, transform 0.5s 1.1s;
+      }
+      &-2 {
+        transition: opacity 0.5s 1.4s, transform 0.5s 1.4s;
+      }
+    }
+    &-2 {
+      &-0 {
+        transition: opacity 0.5s 1.6s;
+      }
+      &-1 {
+        transition: opacity 0.5s 1.6s;
+      }
+      &-2 {
+        transition: opacity 0.5s 1.6s;
+      }
+      &-3 {
+        transition: opacity 0.5s 1.6s;
+      }
+    }
+  }
+  &__bar {
+    position: absolute;
+    background-color: $red;
+    height: 100%;
+    width: 0px;
+    overflow: hidden;
+  }
+}
+.header {
+  &__logo-devian-wrapper {
+    overflow: hidden;
+    width: 0;
+    transition: width 0.7s 0.5s;
+  }
+}
+.preloader-section {
+  opacity: 0;
+}
+
+.loaded {
+  .preloader-section {
+    opacity: 1;
+  }
+  .preloader {
+    transition: transform 1s;
+    transform: translateX(100%);
+    &-opacity {
+      opacity: 1;
+    }
+    &-wrapper {
+      &-inner {
+        transform: translateY(10%);
+      }
+    }
+    .header__overflow-inner {
+      width: 100%;
+      transition: transform 1s;
+      transform: translateX(-100%);
+    }
+  }
+  .header {
+    &__logo-devian-wrapper {
+      width: 205px;
+    }
+  }
+}
+.preloader-stroke {
+  stroke-dasharray: 0 99999;
+}

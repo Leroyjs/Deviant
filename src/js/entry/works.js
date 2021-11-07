@@ -1,20 +1,20 @@
-import '~/sass/main';
+import '~/sass/works';
 import Scrollbar from 'smooth-scrollbar';
 import { worksHeight } from '@/particles/worksHeight';
 import { deviantCircle } from '@/particles/deviantCircle';
 import { header } from '@/particles/header';
-import { linkWrapper } from '@/particles/linkWrapper';
-import { preloader } from '@/particles/preloader';
-preloader();
+import { worksFilter } from '../particles/worksFilter';
+import { linkWrapper } from '../particles/linkWrapper';
 
 window.addEventListener('DOMContentLoaded', () => {
   linkWrapper();
-  const changeColorOfHeader = header();
   const _scrollWrapperBlock = document.querySelector('.main');
   const mainScrollbar = Scrollbar.init(_scrollWrapperBlock, {
     alwaysShowTracks: true
   });
+  const changeColorOfHeader = header();
   const setHeightOfWorksBlock = worksHeight();
+  worksFilter(setHeightOfWorksBlock);
 
   const setRotateX = deviantCircle();
   mainScrollbar.addListener(() => {

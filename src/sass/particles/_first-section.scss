@@ -7,6 +7,13 @@
   align-items: flex-end;
   padding-bottom: 40px;
 
+  &__ticker {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   &__title-wrapper {
     width: 100%;
     top: 50%;
@@ -19,5 +26,101 @@
 
   &__title {
     text-align: center;
+    position: relative;
+    pointer-events: none;
+  }
+  &__title-wrapper-inner {
+    position: relative;
+  }
+  &__text-button-text {
+    position: relative;
+  }
+  &__text-button {
+    cursor: pointer;
+    pointer-events: all;
+  }
+  &__text-wrapper {
+    position: absolute;
+    z-index: -2;
+
+    &_1 {
+      left: -40px;
+      top: 80px;
+    }
+    &_2 {
+      right: -40px;
+      bottom: -24px;
+    }
+  }
+  &__play-button {
+    position: absolute;
+    right: 78px;
+    top: -108px;
+  }
+}
+.play-button {
+  width: 159px;
+  height: 158px;
+  border: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    left: calc(100% + 20px);
+    top: 0;
+  }
+}
+.ready {
+  .play-button {
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+      .play-button {
+        &__border {
+          path {
+            stroke: $red;
+          }
+        }
+        &__inner {
+          path {
+            fill: $white;
+          }
+        }
+      }
+
+      .text {
+        color: $red;
+      }
+    }
+  }
+  .first-section {
+    &__text-button {
+      &:hover {
+        .first-section {
+          &__text-button-text {
+            color: $white;
+          }
+          &__text-wrapper {
+            z-index: -1;
+            path {
+              fill: $red;
+              stroke: $red;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,11 +1,9 @@
 export const worksHeight = () => {
-  const _worksWrapper = document.querySelector('.works');
-  const _responsiveHeightBlocks =
-    document.querySelectorAll('.responsive-height');
-  const windowHeight = document.documentElement.clientHeight;
+  const _responsiveHeightBlocks = getResponsiveHeightBlocks();
+  let windowHeight = document.documentElement.clientHeight;
 
   window.addEventListener('resize', () => {
-    initWorksWrapperHeight(_worksWrapper);
+    windowHeight = document.documentElement.clientHeight;
   });
 
   return () => {
@@ -16,12 +14,30 @@ export const worksHeight = () => {
 };
 
 function setHeightOfBlock(block, windowHeight) {
-  const posY = block.getBoundingClientRect().top - windowHeight;
-  block.style.height = -posY * 1 + 'px';
-}
+  const posY = block.mainBlock.getBoundingClientRect().top - windowHeight;
+  if (block.innerText) {
+    const percent = 100 + (posY / windowHeight) * 100;
 
-function initWorksWrapperHeight(_worksWrapper) {
-  _worksWrapper.style = '';
-  const worksWrapperHeight = _worksWrapper.getBoundingClientRect().height;
-  _worksWrapper.style.height = worksWrapperHeight + 'px';
+    if (percent < 50) {
+      block.mainBlock.classList.add('responsive-height_active');
+    } else {
+      block.mainBlock.classList.remove('responsive-height_active');
+    }
+  }
+  block.mainBlock.style.height = -posY * 1 + 2 + 'px';
+}
+function getResponsiveHeightBlocks() {
+  const _responsiveHeightBlocks =
+    document.querySelectorAll('.responsive-height');
+  const _responsiveHeightObjs = [];
+
+  _responsiveHeightBlocks.forEach(item => {
+    _responsiveHeightObjs.push({
+      mainBlock: item,
+      innerText:
+        item.querySelector('.work-item__text-inner') ||
+        item.querySelector('.work-item__text-opacity')
+    });
+  });
+  return _responsiveHeightObjs;
 }

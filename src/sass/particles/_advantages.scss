@@ -1,7 +1,6 @@
 .advantages {
   width: 100%;
   justify-content: space-between;
-  border-bottom: 1px solid $black;
   display: flex;
 
   &__item {
@@ -13,9 +12,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &:not(:last-of-type) {
-      border-right: 1px solid $black;
+  }
+  &__line {
+    height: 100%;
+  }
+  &_links {
+    border-bottom: 1px solid $black;
+    border-top: 1px solid $black;
+    .advantages__item {
+      &:not(:last-of-type) {
+        border-right: 1px solid $black;
+      }
     }
   }
 }

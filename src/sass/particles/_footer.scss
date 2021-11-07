@@ -1,17 +1,6 @@
 .footer {
   padding-bottom: 40px;
 
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 120px;
-  }
-
-  &__cop {
-    text-align: right;
-  }
-
   &__contacts {
     display: flex;
     flex-direction: column;
@@ -19,30 +8,72 @@
 
   &__buttons-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 40px;
   }
 
-  &__buttons {
+  &__button {
+    margin-top: 8px;
+  }
+  &__sub-info {
+    padding-top: 80px;
+    border-top: 1px solid #242424;
+    margin-top: 40px;
     display: flex;
   }
-
-  &__button {
-    border: 1px solid #202024;
-    border-radius: 80px;
-    padding: 24px 34px;
-    margin-top: 8px;
-    margin-right: 8px;
-
-    &:last-of-type {
-      margin-right: 0;
+  &__right-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__sub-links {
+    text-align: right;
+  }
+  &__cop {
+    margin-top: 40px;
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    &-icon {
+      &_margin-right {
+        margin-right: 4px;
+      }
+    }
+    &-text {
+      margin-left: 20px;
     }
   }
-
-  &__buttons-title {
-    padding: 24px 34px;
-    background: #FF333F;
-    border-radius: 80px;
+  &_red {
+    background-color: $red;
+    .text {
+      color: $white;
+      &_color {
+        &_gray {
+          color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+    .advantages {
+      &_links {
+        border-color: $white;
+      }
+      &__item {
+        &:not(:last-of-type) {
+          border-color: $white;
+        }
+      }
+    }
+    .footer {
+      &__sub-info {
+        border-color: $white;
+      }
+      &__button {
+        border-color: $white;
+      }
+    }
+    path {
+      stroke: $white;
+    }
   }
 }

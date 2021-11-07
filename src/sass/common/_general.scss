@@ -1,11 +1,19 @@
 body {
   font-family: $fontMain;
+  position: relative;
+  overflow-x: hidden;
+}
+textarea {
+  font-family: $fontMain;
 }
 
 .half {
   width: 50%;
 }
-
+.T {
+  display: inline-block;
+  transform: rotate(180deg) translateY(3%);
+}
 .row {
   display: flex;
 }
@@ -14,7 +22,8 @@ body {
   cursor: pointer;
   position: relative;
   pointer-events: all;
-  height: 1em;
+  height: 1.2em;
+  display: inline-flex;
 
   &__wrapper {
     position: relative;
@@ -22,7 +31,7 @@ body {
 
   &::before {
     content: '';
-    bottom: -2px;
+    bottom: 0;
     position: absolute;
     width: 100%;
     right: 0;
@@ -45,6 +54,11 @@ body {
         background-color: $white;
       }
     }
+    &_gray {
+      &::before {
+        background-color: $gray;
+      }
+    }
   }
 }
 
@@ -56,6 +70,12 @@ body {
 .text {
   font-style: normal;
   font-weight: normal;
+
+  &_transform {
+    &_uppercase {
+      text-transform: uppercase;
+    }
+  }
 
   &_color {
     &_black {
@@ -69,30 +89,80 @@ body {
     &_gray {
       color: $gray;
     }
+    &_red {
+      color: $red;
+    }
   }
 
   &_type {
+    &_wow {
+      font-size: 300px;
+      line-height: 100%;
+    }
     &_h1 {
       font-size: 108px;
       line-height: 100%;
-      text-transform: uppercase;
     }
 
     &_h2 {
       font-size: 32px;
       line-height: 130%;
-      text-transform: uppercase;
+    }
+    &_h3 {
+      font-size: 24px;
+      line-height: 130%;
     }
 
     &_common {
       font-size: 18px;
       line-height: 110%;
-      text-transform: uppercase;
     }
 
     &_desc {
       font-size: 18px;
       line-height: 140%;
+    }
+  }
+}
+.button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  &_type {
+    &_main {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 80px;
+      padding: 24px 34px;
+    }
+    &_sub {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 40px;
+      padding: 12px 16px;
+    }
+  }
+  &_color {
+    &_main {
+      border-color: #242424;
+      &:hover {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+      }
+    }
+    &_white {
+      border-color: rgba(255, 255, 255, 0.4);
+      &.button_active {
+        background-color: $white;
+        border-color: $white;
+        color: $red;
+      }
+      &:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $red;
+      }
     }
   }
 }
