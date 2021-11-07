@@ -12,42 +12,48 @@
     margin-top: 40px;
   }
 
-  &__button {
-    margin-top: 8px;
-  }
   &__sub-info {
     padding-top: 80px;
     border-top: 1px solid #242424;
     margin-top: 40px;
     display: flex;
   }
+
   &__right-column {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   &__sub-links {
     text-align: right;
   }
+
   &__cop {
     margin-top: 40px;
   }
+
   &__time {
     display: flex;
     align-items: center;
+
     &-icon {
       &_margin-right {
         margin-right: 4px;
       }
     }
+
     &-text {
       margin-left: 20px;
     }
   }
+
   &_red {
     background-color: $red;
+
     .text {
       color: $white;
+
       &_color {
         &_gray {
           color: rgba(255, 255, 255, 0.4);
@@ -58,6 +64,7 @@
       &_links {
         border-color: $white;
       }
+
       &__item {
         &:not(:last-of-type) {
           border-color: $white;
@@ -68,10 +75,12 @@
       &__sub-info {
         border-color: $white;
       }
+
       &__button {
         border-color: $white;
       }
     }
+
     path {
       stroke: $white;
     }

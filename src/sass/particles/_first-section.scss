@@ -67,6 +67,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s;
+
+  path {
+    transition: fill 0.3s, stroke 0.3s;
+  }
 
   &__border {
     position: absolute;
@@ -106,7 +111,15 @@
     }
   }
   .first-section {
+    &__text-button-text {
+      transition: color 0.3s;
+    }
     &__text-button {
+      path {
+        fill: rgba(0, 0, 0, 0);
+        transition: fill 0.3s, stroke 0.3s;
+      }
+
       &:hover {
         .first-section {
           &__text-button-text {
@@ -114,6 +127,7 @@
           }
           &__text-wrapper {
             z-index: -1;
+
             path {
               fill: $red;
               stroke: $red;

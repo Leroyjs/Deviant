@@ -8,9 +8,9 @@ export const themeController = separator => {
   let stepLength = (top - height) / _photo.length;
 
   _photoWrapper.style.transform = `translateY(calc(-${top - height}px - 70%))`;
+
   return () => {
     const top = separator.getBoundingClientRect().top;
-    console.log(top - height);
 
     if (top - height <= 0) {
       document.body.classList = 'theme-red';

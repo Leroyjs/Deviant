@@ -47,7 +47,8 @@
           &__button {
             visibility: visible;
             opacity: 1;
-            transition: visibility 0s, opacity 0.3s;
+            transition: visibility 0s, opacity 0.3s, color 0.3s,
+              background-color 0.3s;
           }
           &__colors {
             visibility: visible;
@@ -121,7 +122,8 @@
     transform: translate(-50%, -50%);
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0.3s 0.3s, opacity 0.3s;
+    transition: visibility 0.3s 0.3s, opacity 0.3s, color 0.3s,
+      background-color 0.3s;
     &:hover {
       color: $black;
     }

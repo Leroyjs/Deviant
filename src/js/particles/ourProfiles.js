@@ -2,14 +2,12 @@ function ourProfiles() {
   const _ourProfilesMainWrapper = document.querySelectorAll(
     '.our-profiles__item'
   );
-  // const _ourProfilesImgWrapper = document.querySelector(
-  //   '.our-profiles__photo-wrapper'
-  // );
 
   _ourProfilesMainWrapper.forEach(item => {
     const _ourProfilesImgWrapper = item.querySelector(
       '.our-profiles__photo-wrapper'
     );
+
     item.addEventListener('mousemove', e => {
       console.log(e);
       _ourProfilesImgWrapper.style.transform = `translate(calc(${
@@ -19,6 +17,7 @@ function ourProfiles() {
         'our-profiles__photo-wrapper_active'
       );
     });
+
     item.addEventListener('mouseout', () => {
       _ourProfilesImgWrapper.classList.remove(
         'our-profiles__photo-wrapper_active'
@@ -26,4 +25,5 @@ function ourProfiles() {
     });
   });
 }
+
 export { ourProfiles };

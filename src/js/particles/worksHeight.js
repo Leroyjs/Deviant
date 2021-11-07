@@ -15,6 +15,7 @@ export const worksHeight = () => {
 
 function setHeightOfBlock(block, windowHeight) {
   const posY = block.mainBlock.getBoundingClientRect().top - windowHeight;
+
   if (block.innerText) {
     const percent = 100 + (posY / windowHeight) * 100;
 
@@ -24,11 +25,14 @@ function setHeightOfBlock(block, windowHeight) {
       block.mainBlock.classList.remove('responsive-height_active');
     }
   }
+
   block.mainBlock.style.height = -posY * 1 + 2 + 'px';
 }
+
 function getResponsiveHeightBlocks() {
   const _responsiveHeightBlocks =
     document.querySelectorAll('.responsive-height');
+
   const _responsiveHeightObjs = [];
 
   _responsiveHeightBlocks.forEach(item => {
@@ -39,5 +43,6 @@ function getResponsiveHeightBlocks() {
         item.querySelector('.work-item__text-opacity')
     });
   });
+
   return _responsiveHeightObjs;
 }

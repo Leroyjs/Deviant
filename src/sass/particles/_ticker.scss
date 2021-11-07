@@ -6,14 +6,15 @@
     display: inline-block;
     margin-left: 0.5em;
   }
+
   &__inner {
     display: flex;
     color: $bg;
-    display: none;
     text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
     opacity: 0.2;
     white-space: nowrap;
   }
+
   &__inner-inner {
     display: flex;
     transform: translateX(-0%);
@@ -28,6 +29,7 @@
   from {
     transform: translateX(-0%);
   }
+
   to {
     transform: translateX(-50%);
   }

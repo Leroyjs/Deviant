@@ -16,8 +16,10 @@ export const header = () => {
     let currentBlock = false;
     let nextBlock = false;
     let i = 0;
+
     while (i < _changeColorBlocks.length) {
       const itemRect = _changeColorBlocks[i].getBoundingClientRect();
+
       if (itemRect.bottom > 0 && itemRect.top < 0) {
         currentBlock = {
           top: itemRect.top,
@@ -25,6 +27,7 @@ export const header = () => {
           color: _changeColorBlocks[i].dataset.headerColor
         };
       }
+
       if (itemRect.top > 0) {
         nextBlock = {
           top: itemRect.top,
@@ -32,9 +35,11 @@ export const header = () => {
           color: _changeColorBlocks[i].dataset.headerColor
         };
       }
+
       if (currentBlock && nextBlock) {
         break;
       }
+
       i++;
     }
 
@@ -54,7 +59,22 @@ export const header = () => {
         _overflowWrapperWhite,
         headerHeight
       );
-    } else if (currentBlock === undefined) {
+    } else if (currentBlock.color === 'white' && nextBlock.color === 'white') {
+      switchToBlack(
+        headerHeight,
+        _header,
+        _overflowWrapperBlack,
+        _overflowWrapperWhite,
+        headerHeight
+      );
+    } else if (currentBlock.color === 'black' && nextBlock.color === 'black') {
+      switchToWhite(
+        headerHeight,
+        _header,
+        _overflowWrapperBlack,
+        _overflowWrapperWhite,
+        headerHeight
+      );
     }
   }
 
@@ -64,6 +84,7 @@ export const header = () => {
 function setHeaderHeight(_header) {
   const _overflowInner = _header.querySelector('.header__overflow-inner');
   const headerHeight = _overflowInner.getBoundingClientRect().height;
+
   _header.style.height = headerHeight + 'px';
 
   return headerHeight;

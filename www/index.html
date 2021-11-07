@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="preloader">
+      <div class="preloader__cursor"></div>
       <div class="preloader__bar">
         <div class="header__overflow-inner main-padding">
           <svg
@@ -398,14 +399,6 @@
         class="first-section main-padding preloader-section"
         data-header-color="black"
       >
-        <div class="ticker first-section__ticker">
-          <div class="ticker__inner text text_type_wow">
-            <div class="ticker__inner-inner">
-              <span class="ticker__text">56°51’27" 60°36’44"</span>
-              <span class="ticker__text">56°51’27" 60°36’44"</span>
-            </div>
-          </div>
-        </div>
         <div class="first-section__title-wrapper">
           <div class="first-section__title-wrapper-inner">
             <button class="first-section__play-button play-button">
@@ -419,7 +412,8 @@
               >
                 <path
                   class="preloader-stroke"
-                  data-timeout="1000"
+                  data-timeout="2000"
+                  data-duration="800"
                   d="M158.5 79C158.5 122.351 123.133 157.5 79.5 157.5C35.8665 157.5 0.5 122.351 0.5 79C0.5 35.6486 35.8665 0.5 79.5 0.5C123.133 0.5 158.5 35.6486 158.5 79Z"
                   stroke="#242424"
                 />
@@ -478,7 +472,8 @@
                     d="M1 80C1 36.3695 36.3695 1 80 1H380C423.63 1 459 36.3695 459 80V80C459 123.63 423.63 159 380 159H80C36.3695 159 1 123.63 1 80V80Z"
                     stroke="#242424"
                     class="preloader-stroke"
-                    data-timeout="1000"
+                    data-timeout="1800"
+                    data-duration="1400"
                   />
                 </svg>
                 <a
@@ -519,7 +514,8 @@
                     d="M1082 80.0925C1082 36.4109 1046.59 1 1002.91 1L380 1C335.817 1 300 36.8172 300 81V101.815C300 106.233 296.418 109.815 292 109.815H80.0925C36.4109 109.815 1 145.226 1 188.908V188.908C1 232.589 36.4109 268 80.0925 268H769C813.183 268 849 232.183 849 188V167.185C849 162.767 852.582 159.185 857 159.185H1002.91C1046.59 159.185 1082 123.774 1082 80.0925V80.0925Z"
                     stroke="#242424"
                     class="preloader-stroke"
-                    data-timeout="1000"
+                    data-timeout="1800"
+                    data-duration="1400"
                   />
                 </svg>
                 <a
@@ -575,7 +571,7 @@
               d="M1 100L1 3.99351e-06"
               stroke="#242424"
               class="preloader-stroke"
-              data-timeout="1000"
+              data-timeout="2000"
             />
           </svg>
           <div
@@ -600,7 +596,7 @@
               d="M1 100L1 3.99351e-06"
               stroke="#242424"
               class="preloader-stroke"
-              data-timeout="1200"
+              data-timeout="2000"
             />
           </svg>
           <div
@@ -625,7 +621,7 @@
               d="M1 100L1 3.99351e-06"
               stroke="#242424"
               class="preloader-stroke"
-              data-timeout="1400"
+              data-timeout="2000"
             />
           </svg>
           <div
@@ -806,6 +802,7 @@
               text text_color_black text_type_h1
               button button_type_main button_color_main
               text_transform_uppercase
+              hover_transition_xs
             "
           >
             Пишите нам
@@ -854,22 +851,39 @@
           </div>
           <div class="half footer__right-column">
             <div class="footer__contacts half text_transform_uppercase">
-              <a href="" class="text text_color_black text_type_h3">
+              <a
+                href=""
+                class="
+                  text text_color_black text_type_h3
+                  hover_color_red hover_transition_xs
+                "
+              >
                 hello@deviant.ru
               </a>
-              <a href="" class="text text_color_black text_type_h3">
+              <a
+                href=""
+                class="
+                  text text_color_black text_type_h3
+                  hover_color_red hover_transition_xs
+                "
+              >
                 8 800 ——— 00 ——— 00
               </a>
             </div>
-            <!-- custom link -->
-            <div class="footer__sub-links half text_transform_uppercase">
-              <a href="" class="text text_color_black text_type_h3">
-                Политика
-              </a>
-              <a href="" class="text text_color_black text_type_h3">
+            <a
+              href=""
+              class="
+                footer__sub-links
+                half
+                text_transform_uppercase
+                hover_color_red hover_transition_xs
+              "
+            >
+              <span class="text text_color_black text_type_h3">Политика</span>
+              <span class="text text_color_black text_type_h3">
                 конфиденциальности
-              </a>
-            </div>
+              </span>
+            </a>
             <div class="footer__cop text text_color_gray text_type_desc">
               ©2020 Deviant. <br />
               Комплексные digital—решения

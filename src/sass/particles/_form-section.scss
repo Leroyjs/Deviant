@@ -1,25 +1,46 @@
 .form-section {
   padding-top: 260px;
+
   &__ticker {
     left: 0;
     position: absolute;
     top: 50vh;
     transform: translateY(-50%);
   }
+
   &__title-row {
     display: flex;
   }
+
   &__google-forms {
     margin-top: 40px;
   }
+
+  &__google {
+    &_blue {
+      color: #4285f4;
+    }
+    &_red {
+      color: #ea4335;
+    }
+    &_yellow {
+      color: #fbbc05;
+    }
+    &_green {
+      color: #34a853;
+    }
+  }
+
   &__google-item {
     margin-right: 20px;
   }
+
   &__main {
     margin-top: 80px;
     width: 100%;
     position: relative;
   }
+
   &__input {
     border: 0;
     width: 100%;
@@ -27,16 +48,19 @@
     min-height: 80px;
     background-color: transparent;
   }
+
   &__line {
     height: 1px;
     width: 100%;
     background-color: rgba(36, 36, 36, 0.4);
   }
+
   &__buttons-row {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
   }
+
   &__plus {
     cursor: pointer;
     width: 158px;
@@ -47,17 +71,21 @@
     justify-content: center;
     border: 1px solid $black;
     position: relative;
+
     &:hover {
       border-color: $red;
       background-color: $red;
+
       .text {
         color: $red;
       }
+
       path {
         stroke: $white;
       }
     }
   }
+
   &__plus-text {
     position: absolute;
     top: 0;

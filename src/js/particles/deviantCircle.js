@@ -19,7 +19,6 @@ export const deviantCircle = () => {
   window.addEventListener('resize', () => {
     windowWidth = document.documentElement.clientWidth;
     windowHeight = document.documentElement.clientHeight;
-    console.log(windowWidth, windowHeight);
   });
 
   return () => {

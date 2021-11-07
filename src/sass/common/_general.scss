@@ -2,7 +2,9 @@ body {
   font-family: $fontMain;
   position: relative;
   overflow-x: hidden;
+  background-color: $bg;
 }
+
 textarea {
   font-family: $fontMain;
 }
@@ -10,10 +12,12 @@ textarea {
 .half {
   width: 50%;
 }
+
 .T {
   display: inline-block;
   transform: rotate(180deg) translateY(3%);
 }
+
 .row {
   display: flex;
 }
@@ -124,10 +128,12 @@ textarea {
     }
   }
 }
+
 .button {
   border: 0;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+
   &_type {
     &_main {
       border-style: solid;
@@ -135,6 +141,7 @@ textarea {
       border-radius: 80px;
       padding: 24px 34px;
     }
+
     &_sub {
       border-style: solid;
       border-width: 1px;
@@ -142,9 +149,11 @@ textarea {
       padding: 12px 16px;
     }
   }
+
   &_color {
     &_main {
       border-color: #242424;
+
       &:hover {
         background-color: $red;
         border-color: $red;
@@ -153,15 +162,56 @@ textarea {
     }
     &_white {
       border-color: rgba(255, 255, 255, 0.4);
+
       &.button_active {
         background-color: $white;
         border-color: $white;
         color: $red;
       }
+
       &:hover {
         background-color: $white;
         border-color: $white;
         color: $red;
+      }
+    }
+  }
+}
+
+.hover {
+  &_color {
+    &_red {
+      &:hover {
+        color: $red;
+
+        a,
+        span,
+        p {
+          color: $red;
+        }
+      }
+    }
+    &_white {
+      &:hover {
+        color: $white;
+
+        a,
+        span,
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &_transition {
+    &_xs {
+      transition: color 0.3s, background-color 0.3s;
+
+      a,
+      span,
+      p {
+        transition: color 0.3s, background-color 0.3s;
       }
     }
   }
