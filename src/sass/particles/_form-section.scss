@@ -71,6 +71,15 @@
     justify-content: center;
     border: 1px solid $black;
     position: relative;
+    transition: border-color 0.3s, background-color 0.3s;
+
+    input {
+      display: none;
+    }
+
+    path {
+      transition: stroke 0.3s;
+    }
 
     &:hover {
       border-color: $red;

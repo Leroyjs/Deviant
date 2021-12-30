@@ -678,21 +678,35 @@
                   text text_type_h3 text_transform_uppercase
                 "
                 >Екатеринбург
-                <span class="text_color_gray">23:22:27</span></span
-              >
+                <span class="text_color_gray clock">
+                  <span class="clock__hour">23</span>
+                  <span class="clock__colon">:</span>
+                  <span class="clock__minute">23</span>
+                  <span class="clock__colon">:</span>
+                  <span class="clock__second">23</span>
+                </span>
+              </span>
             </div>
           </div>
           <div class="half footer__right-column">
             <div class="footer__contacts half text_transform_uppercase">
               <a
                 href=""
-                class="text text_color_black text_type_h3 hover_transition_xs"
+                class="
+                  text text_color_black text_type_h3
+                  hover_opacity_m hover_transition_xs
+                  ignore-theme
+                "
               >
                 hello@deviant.ru
               </a>
               <a
                 href=""
-                class="text text_color_black text_type_h3 hover_transition_xs"
+                class="
+                  text text_color_black text_type_h3
+                  hover_opacity_m hover_transition_xs
+                  ignore-theme
+                "
               >
                 8 800 ——— 00 ——— 00
               </a>
@@ -703,7 +717,7 @@
                 footer__sub-links
                 half
                 text_transform_uppercase
-                hover_color_white hover_transition_xs
+                hover_opacity_m hover_transition_xs
               "
             >
               <span class="text text_color_black text_type_h3">Политика</span>

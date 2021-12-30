@@ -302,11 +302,13 @@
           </div>
           <div class="form-section__line"></div>
           <div class="form-section__buttons-row">
-            <div class="form-section__plus">
+            <label class="form-section__plus">
+              <input type="file" />
               <div
                 class="
                   form-section__plus-text
                   text text_type_desc text_color_gray
+                  hover_transition_xs
                 "
               >
                 Прикрепить <br />
@@ -321,12 +323,13 @@
               >
                 <path d="M0 30H60M30 60L30 0" stroke="#242424" />
               </svg>
-            </div>
+            </label>
             <button
               class="
                 text text_color_black text_type_h1
                 button button_type_main button_color_main
                 text_transform_uppercase
+                hover_transition_xs
               "
             >
               отправить
@@ -372,28 +375,51 @@
                   text text_type_h3 text_transform_uppercase
                 "
                 >Екатеринбург
-                <span class="text_color_gray">23:22:27</span></span
-              >
+                <span class="text_color_gray clock">
+                  <span class="clock__hour">23</span>
+                  <span class="clock__colon">:</span>
+                  <span class="clock__minute">23</span>
+                  <span class="clock__colon">:</span>
+                  <span class="clock__second">23</span>
+                </span>
+              </span>
             </div>
           </div>
           <div class="half footer__right-column">
             <div class="footer__contacts half text_transform_uppercase">
-              <a href="" class="text text_color_black text_type_h3">
+              <a
+                href=""
+                class="
+                  text text_color_black text_type_h3
+                  hover_color_red hover_transition_xs
+                "
+              >
                 hello@deviant.ru
               </a>
-              <a href="" class="text text_color_black text_type_h3">
+              <a
+                href=""
+                class="
+                  text text_color_black text_type_h3
+                  hover_color_red hover_transition_xs
+                "
+              >
                 8 800 ——— 00 ——— 00
               </a>
             </div>
-            <!-- custom link -->
-            <div class="footer__sub-links half text_transform_uppercase">
-              <a href="" class="text text_color_black text_type_h3">
-                Политика
-              </a>
-              <a href="" class="text text_color_black text_type_h3">
+            <a
+              href=""
+              class="
+                footer__sub-links
+                half
+                text_transform_uppercase
+                hover_color_red hover_transition_xs
+              "
+            >
+              <span class="text text_color_black text_type_h3">Политика</span>
+              <span class="text text_color_black text_type_h3">
                 конфиденциальности
-              </a>
-            </div>
+              </span>
+            </a>
             <div class="footer__cop text text_color_gray text_type_desc">
               ©2020 Deviant. <br />
               Комплексные digital—решения

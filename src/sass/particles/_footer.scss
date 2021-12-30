@@ -86,3 +86,26 @@
     }
   }
 }
+
+.clock {
+  display: inline-flex;
+
+  &__colon {
+    animation: colon 2s infinite;
+  }
+}
+
+@keyframes colon {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}

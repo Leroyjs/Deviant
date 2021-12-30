@@ -179,6 +179,14 @@ textarea {
 }
 
 .hover {
+  &_opacity {
+    &_m {
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+
   &_color {
     &_red {
       &:hover {
@@ -206,12 +214,12 @@ textarea {
 
   &_transition {
     &_xs {
-      transition: color 0.3s, background-color 0.3s;
+      transition: color 0.3s, background-color 0.3s, opacity 0.3s;
 
       a,
       span,
       p {
-        transition: color 0.3s, background-color 0.3s;
+        transition: color 0.3s, background-color 0.3s, opacity 0.3s;
       }
     }
   }
