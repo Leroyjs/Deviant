@@ -1,9 +1,11 @@
 .our-profiles {
   margin-top: 180px;
-  padding-bottom: 40px;
+  padding-bottom: $offsetLg;
+
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: $offsetLg;
   }
+
   &__main {
     width: 100%;
     position: relative;
@@ -15,6 +17,7 @@
     align-items: center;
     padding: 24px 0;
     position: relative;
+
     &:hover {
       .our-profiles {
         &__item {
@@ -27,6 +30,7 @@
         }
       }
     }
+
     &-overlay {
       position: absolute;
       left: 0;
@@ -39,21 +43,25 @@
       transition: transform 0.3s;
       pointer-events: none;
     }
+
     &-role {
       pointer-events: none;
       position: relative;
     }
   }
+
   &__line {
     height: 1px;
     width: 100%;
     background-color: $white;
   }
+
   &__photo {
     position: absolute;
     width: 100%;
     bottom: 0;
   }
+
   &__photo-wrapper {
     width: 380px;
     height: 0px;
@@ -64,6 +72,7 @@
     position: absolute;
     z-index: 1;
     pointer-events: none;
+
     &_active {
       height: 480px;
     }

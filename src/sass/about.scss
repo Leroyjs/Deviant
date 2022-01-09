@@ -9,40 +9,69 @@
 @import './particles/link-wrapper';
 @import './particles/approach-to-work';
 @import './particles/our-profiles';
+@import './particles/seal';
 
 .theme {
   &-white {
     .about__bg {
       background-color: $bg;
     }
+
+    .approach-to-work {
+      circle,
+      path {
+        stroke: $gray;
+      }
+    }
+
     .text {
       &:not(.ignore-theme) {
         color: $black;
       }
     }
+
     .text_color_red {
       &:not(.ignore-theme) {
         color: $red;
       }
     }
+
     .header {
-      .text {
-        color: $black;
-      }
-      path {
-        fill: $black;
-      }
-      .link {
-        &:before {
-          background-color: $black;
+      &:not(.ignore-theme) {
+        .text {
+          color: $black;
+        }
+
+        path {
+          fill: $black;
+        }
+
+        .link {
+          &:before {
+            background-color: $black;
+          }
+        }
+
+        .burger-btn {
+          &__line {
+            &::after {
+              background-color: $black;
+            }
+
+            &::before {
+              background-color: $black;
+            }
+          }
         }
       }
     }
   }
+
   &-red {
     .about__bg {
       background-color: $red;
     }
+
     .text {
       &:not(.ignore-theme) {
         color: $white;
@@ -50,6 +79,7 @@
     }
   }
 }
+
 .about {
   &__bg {
     position: fixed;
@@ -61,14 +91,17 @@
       background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
+
 .text:not(.ignore-theme) {
   transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
     background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .header {
   path {
     transition: fill 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
+
   .text {
     transition: 0.3s;
   }

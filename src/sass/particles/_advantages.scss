@@ -2,27 +2,41 @@
   width: 100%;
   justify-content: space-between;
   display: flex;
+  height: 100px;
 
   &__item {
     width: 25%;
+    height: 100%;
     display: flex;
-    min-height: 100px;
-    padding: 30px;
+    padding: $offsetMd;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   &__line {
     height: 100%;
   }
+
   &_links {
     border-bottom: 1px solid $black;
     border-top: 1px solid $black;
+
     .advantages__item {
       &:not(:last-of-type) {
         border-right: 1px solid $black;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopSmWidth2) {
+  .advantages {
+    height: 66px;
+
+    &__item {
+      padding: 6px;
     }
   }
 }

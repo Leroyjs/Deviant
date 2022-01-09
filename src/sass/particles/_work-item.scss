@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .responsive-height {
   &_active {
     &.work-item {
@@ -14,13 +15,16 @@
         }
       }
     }
+
     .work-item {
       &__text-opacity {
         opacity: 1;
       }
+
       &__text-inner {
         transform: translateY(0%);
       }
+
       &__desc-large {
         opacity: 1;
       }
@@ -29,6 +33,7 @@
 }
 
 .work-item {
+  overflow: hidden;
   background-size: 100%;
   transition: background-size 0.6s;
   background-position: center;
@@ -40,21 +45,25 @@
     &.responsive-height {
       &_active {
         background-size: 110%;
+
         .work-item {
           &__overlay {
             opacity: 1;
           }
+
           &__button {
             visibility: visible;
             opacity: 1;
             transition: visibility 0s, opacity 0.3s, color 0.3s,
               background-color 0.3s;
           }
+
           &__colors {
             visibility: visible;
             opacity: 1;
             transition: visibility 0s, opacity 0.3s;
           }
+
           &__desc {
             visibility: visible;
             opacity: 1;
@@ -64,39 +73,46 @@
       }
     }
   }
+
   &__desc {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: $offsetLg;
+    left: $offsetLg;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s;
   }
+
   &__colors {
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: $offsetLg;
+    top: $offsetLg;
     visibility: hidden;
     opacity: 0;
     display: flex;
     transition: visibility 0.3s, opacity 0.3s;
   }
+
   &__color {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     background-color: $red;
+
     &:not(:last-of-type) {
       margin-right: 12px;
     }
   }
+
   &__text-opacity {
     opacity: 0;
     transition: opacity 0.3s;
   }
+
   &__text-wrapper {
     overflow: hidden;
   }
+
   &__overlay {
     opacity: 0;
     position: absolute;
@@ -111,10 +127,12 @@
     );
     transition: opacity 0.5s;
   }
+
   &__text-inner {
     transform: translateY(100%);
     transition: transform 0.6s;
   }
+
   &__button {
     position: absolute;
     left: 50%;
@@ -124,10 +142,12 @@
     opacity: 0;
     transition: visibility 0.3s 0.3s, opacity 0.3s, color 0.3s,
       background-color 0.3s;
+
     &:hover {
       color: $black;
     }
   }
+
   &__title {
     position: relative;
   }
@@ -145,21 +165,52 @@
     &_common {
       width: 50%;
       height: 50vw;
-      max-height: 50vw;
-      padding: 40px;
+      max-height: 49vw;
+      padding: $offsetLg;
       display: flex;
       align-items: flex-start;
     }
   }
+
   &__large-text-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   &__desc-large {
     transition: opacity 0.5s;
     opacity: 0;
     margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: $tabletLgWidth) {
+  .work-item {
+    &__desc {
+      bottom: $offsetMd;
+      left: $offsetMd;
+    }
+
+    &__colors {
+      right: $offsetMd;
+      top: $offsetMd;
+    }
+
+    &__color {
+      width: 12px;
+      height: 12px;
+
+      &:not(:last-of-type) {
+        margin-right: 8px;
+      }
+    }
+
+    &_type {
+      &_common {
+        padding: $offsetMd;
+      }
+    }
   }
 }
 

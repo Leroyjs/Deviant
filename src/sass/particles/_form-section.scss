@@ -13,25 +13,28 @@
   }
 
   &__google-forms {
-    margin-top: 40px;
+    margin-top: $offsetLg;
   }
 
   &__google {
     &_blue {
       color: #4285f4;
     }
+
     &_red {
       color: #ea4335;
     }
+
     &_yellow {
       color: #fbbc05;
     }
+
     &_green {
       color: #34a853;
     }
   }
 
-  &__google-item {
+  &__google-item:not(:last-of-type) {
     margin-right: 20px;
   }
 
@@ -58,7 +61,7 @@
   &__buttons-row {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: $offsetLg;
   }
 
   &__plus {
@@ -99,5 +102,49 @@
     position: absolute;
     top: 0;
     left: calc(100% + 20px);
+  }
+
+  &__plus-svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: $tabletLgWidth) {
+  .form-section {
+    padding-top: 128px;
+
+    &__main {
+      margin-top: 40px;
+    }
+
+    &__buttons-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $offsetMd;
+    }
+
+    &__input {
+      padding: 18px 0;
+      min-height: 60px;
+    }
+
+    &__google-item:not(:last-of-type) {
+      margin-right: 14px;
+    }
+
+    &__plus-svg {
+      width: 40px;
+      height: 40px;
+
+      path {
+        stroke-width: 1.3333;
+      }
+    }
+
+    &__plus {
+      width: 100px;
+      height: 100px;
+    }
   }
 }

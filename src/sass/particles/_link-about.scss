@@ -10,8 +10,8 @@
 
   &__seal {
     position: absolute;
-    bottom: 40px;
-    left: 60px;
+    bottom: $offsetXLg;
+    left: $offsetXLg;
   }
 
   &_type {
@@ -22,6 +22,16 @@
     &_works {
       border-radius: 50%;
       background-color: $red;
+    }
+  }
+}
+
+@media screen and (max-width: $desktopMdWidth) {
+  .link-about {
+    &__seal {
+      position: absolute;
+      bottom: $offsetLg;
+      left: $offsetLg;
     }
   }
 }

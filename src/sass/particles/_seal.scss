@@ -1,0 +1,18 @@
+.seal {
+  height: $sealLg;
+  width: $sealLg;
+}
+
+@media screen and (max-width: $desktopSmWidth) {
+  .seal {
+    height: $sealMd;
+    width: $sealMd;
+  }
+}
+
+@media screen and (max-width: $tabletLgWidth) {
+  .seal {
+    height: $sealMd2;
+    width: $sealMd2;
+  }
+}

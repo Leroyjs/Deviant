@@ -9,6 +9,11 @@ textarea {
   font-family: $fontMain;
 }
 
+.scroll-content {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .half {
   width: 50%;
 }
@@ -67,8 +72,8 @@ textarea {
 }
 
 .main-padding {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: $offsetLg;
+  padding-right: $offsetLg;
 }
 
 .text {
@@ -103,16 +108,13 @@ textarea {
       font-size: 300px;
       line-height: 100%;
     }
+
     &_h1 {
       font-size: 108px;
       line-height: 100%;
     }
 
     &_h2 {
-      font-size: 32px;
-      line-height: 130%;
-    }
-    &_h3 {
       font-size: 24px;
       line-height: 130%;
     }
@@ -220,6 +222,95 @@ textarea {
       span,
       p {
         transition: color 0.3s, background-color 0.3s, opacity 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopMdWidth) {
+  .text {
+    &_type {
+      &_wow {
+        font-size: 246px; //
+      }
+
+      &_h1 {
+        font-size: 98px; //
+      }
+
+      &_h2 {
+        font-size: 20px; //
+      }
+
+      &_common {
+        font-size: 16px; //
+      }
+
+      &_desc {
+        font-size: 16px; //
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopSmWidth) {
+  .text {
+    &_type {
+      &_wow {
+        font-size: 222px;
+      }
+
+      &_h1 {
+        font-size: 82px;
+      }
+
+      &_common {
+        font-size: 14px;
+      }
+
+      &_desc {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopSmWidth2) {
+  .text {
+    &_type {
+      &_h1 {
+        font-size: 72px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletLgWidth) {
+  .main-padding {
+    padding-left: $offsetMd;
+    padding-right: $offsetMd;
+  }
+
+  .text {
+    &_type {
+      &_wow {
+        font-size: 176px; //
+      }
+
+      &_h1 {
+        font-size: 58px; //
+      }
+
+      &_h2 {
+        font-size: 14px; //
+      }
+
+      &_common {
+        font-size: 12px; //
+      }
+
+      &_desc {
+        font-size: 14px; //
       }
     }
   }

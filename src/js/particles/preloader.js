@@ -4,8 +4,9 @@ export const preloader = () => {
   const _cursor = document.querySelector('.preloader__cursor');
 
   let windowWidth = document.documentElement.clientWidth;
-
-  let percent = 0.01;
+  // TODO dev
+  // let percent = 0.01;
+  let percent = 100;
   let cursorX = 0;
   let cursorY = 0;
 

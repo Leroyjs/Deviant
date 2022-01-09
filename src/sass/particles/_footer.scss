@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 40px;
+  padding-bottom: $offsetLg;
 
   &__contacts {
     display: flex;
@@ -9,13 +9,13 @@
   &__buttons-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: $offsetLg;
   }
 
   &__sub-info {
-    padding-top: 80px;
+    padding-top: $offsetXLg;
     border-top: 1px solid #242424;
-    margin-top: 40px;
+    margin-top: $offsetLg;
     display: flex;
   }
 
@@ -25,12 +25,22 @@
     justify-content: space-between;
   }
 
+  &__left-column {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__sub-links {
     text-align: right;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__cop {
-    margin-top: 40px;
+    margin-top: $offsetLg;
   }
 
   &__time {
@@ -71,6 +81,7 @@
         }
       }
     }
+
     .footer {
       &__sub-info {
         border-color: $white;
@@ -107,5 +118,60 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: $desktopSmWidth2) {
+  .footer {
+    &__sub-links {
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile {
+        display: inline;
+        text-align: left;
+      }
+    }
+
+    &__contacts {
+      width: 100%;
+    }
+
+    &__right-column {
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    &__sub-links {
+      &_desktop {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletLgWidth) {
+  .footer {
+    padding-bottom: $offsetMd;
+
+    &__buttons-wrapper {
+      margin-top: $offsetMd;
+    }
+
+    &__time-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__time-text {
+      margin-left: 12px;
+    }
+
+    &__sub-info {
+      padding-top: 60px;
+      margin-top: $offsetMd;
+    }
   }
 }

@@ -10,6 +10,11 @@
     width: auto;
   }
 
+  &__logo {
+    width: $logoTWidthLg;
+    height: $logoHeightLg;
+  }
+
   &__cursor {
     position: fixed;
     left: 0;
@@ -88,6 +93,7 @@
       }
     }
   }
+
   &__bar {
     position: absolute;
     background-color: $red;
@@ -147,11 +153,45 @@
 
   .header {
     &__logo-devian-wrapper {
-      width: 205px;
+      width: $logoDevianWidthLg;
     }
   }
 }
 
 .preloader-stroke {
   stroke-dasharray: 0 99999;
+}
+
+@media screen and (max-width: $desktopSmWidth) {
+  .preloader {
+    &__logo {
+      width: $logoTWidthMd;
+      height: $logoHeightMd;
+    }
+  }
+
+  .loaded {
+    .header {
+      &__logo-devian-wrapper {
+        width: $logoDevianWidthMd;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletLgWidth) {
+  .preloader {
+    &__logo {
+      width: $logoTWidthMd2;
+      height: $logoHeightMd2;
+    }
+  }
+
+  .loaded {
+    .header {
+      &__logo-devian-wrapper {
+        width: $logoDevianWidthMd2;
+      }
+    }
+  }
 }

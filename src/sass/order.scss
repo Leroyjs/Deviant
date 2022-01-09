@@ -3,11 +3,11 @@
 @import './particles/footer';
 @import './particles/link-wrapper';
 @import './particles/form-section';
-@import './particles/ticker';
 
 .main {
   background-color: $bg;
 }
+
 .footer {
   &__sub-info {
     border-top: 0;
