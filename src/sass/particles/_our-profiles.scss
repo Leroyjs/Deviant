@@ -78,3 +78,14 @@
     }
   }
 }
+
+@media screen and (max-width: $tabletSmWidth) {
+  .our-profiles {
+    margin-top: 70px;
+    padding-bottom: $offsetMd;
+
+    &__item {
+      padding: 18px 0;
+    }
+  }
+}

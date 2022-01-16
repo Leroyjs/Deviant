@@ -39,6 +39,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "axios": "^0.18.0",
+    "is-touch-device": "^1.0.1",
     "smooth-scrollbar": "^8.6.2",
     "splitting": "^1.0.6"
   }

@@ -93,12 +93,31 @@
   }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) and (max-width: $tabletLgWidth) {
   .about-first-section {
     padding-top: 360px;
 
     &__ticker {
       top: 340px;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletSmWidth) {
+  .about-first-section {
+    padding-top: 235px;
+
+    &__photo-wrapper {
+      width: 180px;
+      height: 227px;
+    }
+
+    &__seal {
+      left: 158px;
+    }
+
+    &__ticker {
+      top: 50vh;
     }
   }
 }

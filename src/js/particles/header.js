@@ -6,11 +6,14 @@ const _overflowWrapperWhite = _header.querySelector(
   '.header__overflow-wrapper_white'
 );
 const _changeColorBlocks = document.querySelectorAll('[data-header-color]');
-const headerHeight = setHeaderHeight(_header);
+let headerHeight;
 
 export const header = () => {
-  _overflowWrapperBlack.style.maxHeight = headerHeight + 'px';
-  _overflowWrapperWhite.style.maxHeight = headerHeight + 'px';
+  function initSizesOfHeader() {
+    headerHeight = setHeaderHeight(_header);
+    _overflowWrapperBlack.style.maxHeight = headerHeight + 'px';
+    _overflowWrapperWhite.style.maxHeight = headerHeight + 'px';
+  }
 
   function changeColor() {
     let currentBlock = false;
@@ -54,6 +57,13 @@ export const header = () => {
     }
   }
 
+  initSizesOfHeader();
+
+  window.addEventListener('resize', () => {
+    initSizesOfHeader();
+    changeColor();
+  });
+
   return changeColor;
 };
 
@@ -61,12 +71,10 @@ function setHeaderHeight(_header) {
   const _overflowInner = _header.querySelector('.header__overflow-inner');
   const headerHeight = _overflowInner.getBoundingClientRect().height;
 
-  _header.style.height = headerHeight + 'px';
-
   return headerHeight;
 }
 
-export function switchToWhite(offset) {
+function switchToWhite(offset) {
   _overflowWrapperBlack.classList.add('header__overflow-wrapper_top');
   _overflowWrapperBlack.classList.remove('header__overflow-wrapper_bottom');
 
@@ -82,7 +90,7 @@ export function switchToWhite(offset) {
   }
 }
 
-export function switchToBlack(offset) {
+function switchToBlack(offset) {
   _overflowWrapperWhite.classList.add('header__overflow-wrapper_top');
   _overflowWrapperWhite.classList.remove('header__overflow-wrapper_bottom');
 

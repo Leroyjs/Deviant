@@ -24,6 +24,10 @@
     border-top: 1px solid $black;
 
     .advantages__item {
+      &:hover {
+        color: $red;
+      }
+
       &:not(:last-of-type) {
         border-right: 1px solid $black;
       }

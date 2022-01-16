@@ -21,6 +21,16 @@
         opacity: 1;
       }
 
+      &__touchable-link {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
       &__text-inner {
         transform: translateY(0%);
       }
@@ -40,39 +50,6 @@
   background-repeat: no-repeat;
   display: block;
   position: relative;
-
-  &:hover {
-    &.responsive-height {
-      &_active {
-        background-size: 110%;
-
-        .work-item {
-          &__overlay {
-            opacity: 1;
-          }
-
-          &__button {
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0s, opacity 0.3s, color 0.3s,
-              background-color 0.3s;
-          }
-
-          &__colors {
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0s, opacity 0.3s;
-          }
-
-          &__desc {
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0s, opacity 0.3s;
-          }
-        }
-      }
-    }
-  }
 
   &__desc {
     position: absolute;
@@ -182,6 +159,71 @@
     transition: opacity 0.5s;
     opacity: 0;
     margin-bottom: 12px;
+  }
+}
+
+body:not(.is-touchable) {
+  .work-item {
+    &:hover {
+      &.responsive-height {
+        &_active {
+          background-size: 110%;
+
+          .work-item {
+            &__overlay {
+              opacity: 1;
+            }
+
+            &__button {
+              visibility: visible;
+              opacity: 1;
+              transition: visibility 0s, opacity 0.3s, color 0.3s,
+                background-color 0.3s;
+            }
+
+            &__colors {
+              visibility: visible;
+              opacity: 1;
+              transition: visibility 0s, opacity 0.3s;
+            }
+
+            &__desc {
+              visibility: visible;
+              opacity: 1;
+              transition: visibility 0s, opacity 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.is-touchable {
+  .work-item {
+    &.responsive-height {
+      &_active {
+        background-size: 110%;
+
+        .work-item {
+          &__colors {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.3s;
+          }
+
+          &__touchable-link {
+            pointer-events: all;
+          }
+
+          &__desc {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.3s;
+          }
+        }
+      }
+    }
   }
 }
 

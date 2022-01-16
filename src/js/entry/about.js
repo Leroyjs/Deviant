@@ -7,8 +7,10 @@ import { linkWrapper } from '@/particles/linkWrapper';
 import { themeController } from '../particles/themeController';
 import { ourProfiles } from '../particles/ourProfiles';
 import { initBurgerMenu } from '../particles/burgerMenu';
+import { checkTouchDevice } from '../particles/adaptive';
 
 window.addEventListener('DOMContentLoaded', () => {
+  checkTouchDevice();
   linkWrapper();
   ourProfiles();
   initBurgerMenu();

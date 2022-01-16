@@ -92,7 +92,7 @@
 .burger-btn {
   display: none;
   pointer-events: all;
-  height: 40px;
+  height: $logoHeightMd2;
   width: 40px;
   align-items: center;
   justify-content: center;
@@ -101,11 +101,11 @@
     .burger-btn {
       &__line {
         &::after {
-          transform: rotate(45deg);
+          transform: rotate(45deg) translateY(-1px);
         }
 
         &::before {
-          transform: rotate(-45deg);
+          transform: rotate(-45deg) translateY(-1px);
         }
       }
     }
@@ -188,6 +188,8 @@
 
 @media screen and (max-width: $desktopSmWidth) {
   .header {
+    height: 75px;
+
     &__logo {
       &-devian-svg {
         width: $logoDevianWidthMd;
@@ -204,6 +206,8 @@
 
 @media screen and (max-width: $tabletLgWidth) {
   .header {
+    height: 43px;
+
     &__overflow-inner {
       align-items: center;
       padding-top: $offsetMd2;
@@ -229,6 +233,7 @@
       display: flex;
     }
   }
+
   .burger-menu {
     .header {
       &__lang {

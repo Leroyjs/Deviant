@@ -76,6 +76,10 @@
       }
 
       &__item {
+        &:hover {
+          color: $whietA40;
+        }
+
         &:not(:last-of-type) {
           border-color: $white;
         }

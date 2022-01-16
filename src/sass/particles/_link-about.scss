@@ -35,3 +35,13 @@
     }
   }
 }
+
+@media screen and (max-width: $tabletSmWidth) {
+  .link-about {
+    &__seal {
+      position: absolute;
+      bottom: $offsetMd;
+      left: $offsetMd;
+    }
+  }
+}

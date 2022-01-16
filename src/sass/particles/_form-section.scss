@@ -148,3 +148,12 @@
     }
   }
 }
+
+@media screen and (max-width: $tabletLgWidth) {
+  .form-section {
+    &__plus {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

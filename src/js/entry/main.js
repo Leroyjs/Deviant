@@ -6,9 +6,11 @@ import { header } from '@/particles/header';
 import { linkWrapper } from '@/particles/linkWrapper';
 import { preloader } from '@/particles/preloader';
 import { initBurgerMenu } from '../particles/burgerMenu';
+import { checkTouchDevice } from '../particles/adaptive';
 preloader();
 
 window.addEventListener('DOMContentLoaded', () => {
+  checkTouchDevice();
   linkWrapper();
   initBurgerMenu();
   const changeColorOfHeader = header();
