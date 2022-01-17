@@ -5,11 +5,13 @@ import { deviantCircle } from '@/particles/deviantCircle';
 import { header } from '@/particles/header';
 import { linkWrapper } from '@/particles/linkWrapper';
 import { preloader } from '@/particles/preloader';
-import { initBurgerMenu } from '../particles/burgerMenu';
-import { checkTouchDevice } from '../particles/adaptive';
+import { initBurgerMenu } from '@/particles/burgerMenu';
+import { checkTouchDevice } from '@/particles/adaptive';
+import { initClock } from '@/particles/clock';
 preloader();
 
 window.addEventListener('DOMContentLoaded', () => {
+  initClock();
   checkTouchDevice();
   linkWrapper();
   initBurgerMenu();

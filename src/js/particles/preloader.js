@@ -5,8 +5,7 @@ export const preloader = () => {
 
   let windowWidth = document.documentElement.clientWidth;
   // TODO dev
-  // let percent = 0.01;
-  let percent = 100;
+  let percent = 0.01;
   let cursorX = 0;
   let cursorY = 0;
 

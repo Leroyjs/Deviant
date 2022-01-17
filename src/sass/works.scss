@@ -8,7 +8,73 @@
 @import './particles/deviant-circle';
 @import './particles/link-wrapper';
 
-//test
 .work-item:nth-child(1) {
-  background-image: url('~/media/works/mamma-mia.jpg');
+  .work-item__img {
+    background-image: url('../media/works/lg/nk.svg');
+  }
 }
+
+.work-item:nth-child(2) {
+  .work-item__img {
+    background-image: url('../media/works/lg/sber-salary-project.jpg');
+  }
+}
+
+.work-item:nth-child(3) {
+  .work-item__img {
+    background-image: url('../media/works/lg/horo.svg');
+  }
+}
+
+.work-item:nth-child(4) {
+  .work-item__img {
+    background-image: url('../media/works/lg/sber-green-marathon.svg');
+  }
+}
+
+.work-item:nth-child(5) {
+  .work-item__img {
+    background-image: url('../media/works/lg/immun.svg');
+  }
+}
+
+.work-item:nth-child(6) {
+  .work-item__img {
+    background-image: url('../media/works/lg/dutt-butt.svg');
+  }
+}
+
+.work-item:nth-child(7) {
+  .work-item__img {
+    background-image: url('../media/works/lg/profsvar.jpg');
+  }
+}
+
+.work-item:nth-child(8) {
+  .work-item__img {
+    background-image: url('../media/works/lg/eco-food.jpg');
+  }
+}
+
+.work-item:nth-child(9) {
+  .work-item__img {
+    background-image: url('../media/works/lg/loft-group.jpg');
+  }
+}
+
+.work-item:nth-child(10) {
+  .work-item__img {
+    background-image: url('../media/works/lg/white.jpg');
+  }
+}
+.work-item:nth-child(11) {
+  .work-item__img {
+    background-image: url('../media/works/lg/sber-cashbox.jpg');
+  }
+}
+
+// @media screen and (max-width: 600px) {
+//   .work-item:nth-child(1) {
+//     background-image: url('../media/works/md/profsvar.jpg');
+//   }
+// }
