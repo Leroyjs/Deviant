@@ -173,7 +173,7 @@
 }
 
 body:not(.is-touchable) {
-  .work-item {
+  .work-item:not(.work-item_type_large) {
     &:hover {
       &.responsive-height {
         &_active {
@@ -181,8 +181,13 @@ body:not(.is-touchable) {
             &__img {
               transform: translate(-50%, -50%) scale(1.1);
             }
+
             &__overlay {
               opacity: 1;
+            }
+
+            &__title {
+              color: $white;
             }
 
             &__button {
