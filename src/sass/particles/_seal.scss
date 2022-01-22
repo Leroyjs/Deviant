@@ -1,6 +1,9 @@
 .seal {
   height: $sealLg;
   width: $sealLg;
+  path {
+    transition: stroke 0.3s, fill 0.3s;
+  }
 }
 
 @media screen and (max-width: $desktopSmWidth) {
@@ -14,5 +17,12 @@
   .seal {
     height: $sealMd2;
     width: $sealMd2;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .seal {
+    height: $sealSm;
+    width: $sealSm;
   }
 }

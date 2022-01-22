@@ -149,11 +149,44 @@
   }
 }
 
-@media screen and (max-width: $tabletLgWidth) {
+@media screen and (max-width: $tabletSmWidth) {
   .form-section {
     &__plus {
       width: 80px;
       height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .form-section {
+    padding-top: 80px;
+
+    &__title-row {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 36px;
+      width: 100%;
+    }
+
+    &__sub-title {
+      width: 100%;
+    }
+
+    &__main {
+      margin-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    &__buttons-row {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+
+    &__plus {
+      margin-bottom: 20px;
     }
   }
 }

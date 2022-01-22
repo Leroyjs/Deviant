@@ -4,15 +4,15 @@ export const preloader = () => {
   const _cursor = document.querySelector('.preloader__cursor');
 
   let windowWidth = document.documentElement.clientWidth;
-  // TODO dev
-  let percent = 0.01;
+  // TODO: dev
+  let percent = 0.02;
   let cursorX = 0;
   let cursorY = 0;
 
   const removeEventOfCursor = initCursor(_cursor);
 
   const interval = setInterval(() => {
-    percent *= 1.02;
+    percent *= 1.015;
     _preloaderBar.style.width = percent + '%';
     _cursor.innerText =
       (Math.round(percent) <= 100 ? Math.round(percent) : 100) + '%';

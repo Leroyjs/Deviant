@@ -24,6 +24,13 @@
       }
     }
 
+    .seal {
+      path {
+        stroke: $black;
+        fill: $black;
+      }
+    }
+
     .text {
       &:not(.ignore-theme) {
         color: $black;
@@ -68,6 +75,8 @@
   }
 
   &-red {
+    background-color: $red;
+
     .about__bg {
       background-color: $red;
     }
@@ -104,5 +113,22 @@
 
   .text {
     transition: 0.3s;
+  }
+}
+.work-item:nth-child(1) {
+  .work-item__img {
+    background-image: url('../media/works/lg/sber-green-marathon.svg');
+  }
+}
+
+.work-item:nth-child(2) {
+  .work-item__img {
+    background-image: url('../media/works/lg/loft-group.jpg');
+  }
+}
+
+.work-item:nth-child(3) {
+  .work-item__img {
+    background-image: url('../media/works/md/horo.svg');
   }
 }

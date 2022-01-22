@@ -121,3 +121,35 @@
     }
   }
 }
+
+@media screen and (max-width: $phoneWidth) {
+  .about-first-section {
+    padding-top: 84px;
+    padding-bottom: 144px;
+
+    &__photo-wrapper {
+      width: 142px;
+      height: 186px;
+      top: 52px;
+      left: $offsetSm;
+    }
+
+    &__seal {
+      left: 116px;
+      top: auto;
+      bottom: 24px;
+    }
+
+    &__sub-title {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .about-first-section {
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

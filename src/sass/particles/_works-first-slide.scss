@@ -37,3 +37,25 @@
     }
   }
 }
+
+@media screen and (max-width: $phoneWidth) {
+  .works-first-section {
+    max-height: 100vh;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .works-first-section {
+    &__buttons {
+      width: 224px;
+      flex-wrap: wrap;
+      justify-content: center;
+      bottom: $offsetSm;
+    }
+
+    &__button {
+      margin-top: 4px;
+    }
+  }
+}

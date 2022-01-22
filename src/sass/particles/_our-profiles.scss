@@ -89,3 +89,15 @@
     }
   }
 }
+
+@media screen and (max-width: $tabletSmWidth) {
+  .our-profiles {
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__item {
+      padding: 14px 0;
+    }
+  }
+}

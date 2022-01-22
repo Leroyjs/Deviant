@@ -167,7 +167,6 @@
 
   .footer__sub-info {
     border: none;
-    padding: 0;
   }
 
   &__nav {
@@ -240,6 +239,68 @@
       &__lang {
         display: inline-flex;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .header {
+    height: 36px;
+
+    &__overflow-inner {
+      align-items: center;
+      padding-top: $offsetSm2;
+    }
+
+    &__logo {
+      &-devian-svg {
+        width: $logoDevianWidthSm;
+        height: $logoHeightSm;
+      }
+
+      &-t-svg {
+        width: $logoTWidthSm;
+        height: $logoHeightSm;
+      }
+    }
+  }
+
+  .burger-btn {
+    height: $logoHeightSm;
+    width: 32px;
+
+    &__line {
+      &::after {
+        width: 32px;
+      }
+
+      &::before {
+        width: 32px;
+      }
+    }
+  }
+
+  .burger-menu {
+    .header {
+      &__lang {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $phoneWidth) and (max-width: $tabletLgWidth) and (max-height: 580px) {
+  .burger-menu {
+    .footer__sub-info {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) and (max-height: 540px) {
+  .burger-menu {
+    .footer__sub-info {
+      display: none;
     }
   }
 }

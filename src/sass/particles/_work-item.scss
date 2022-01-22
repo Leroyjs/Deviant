@@ -274,9 +274,27 @@ body.is-touchable {
 
 @media screen and (max-width: $phoneWidth) {
   .work-item {
+    &__desc {
+      bottom: $offsetSm;
+      left: $offsetSm;
+    }
+
+    &__colors {
+      right: $offsetSm;
+      top: $offsetSm;
+    }
+
+    &__img {
+      height: 100vw;
+    }
+
     &_type {
-      &_common {
+      &_common,
+      &_large {
         width: 100%;
+        height: 100vw;
+        max-height: 99vw;
+        padding: $offsetSm;
       }
     }
   }

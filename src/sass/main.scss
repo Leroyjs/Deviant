@@ -29,3 +29,11 @@
     background-image: url('../media/works/md/horo.svg');
   }
 }
+
+@media screen and (max-width: $phoneWidth) {
+  .work-item:nth-child(1) {
+    .work-item__img {
+      background-image: url('../media/works/sm/nk.svg');
+    }
+  }
+}

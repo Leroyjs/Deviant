@@ -28,6 +28,12 @@
     width: 33.33333%;
     text-align: center;
   }
+
+  &__scheme-svg {
+    &_mobile {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: $tabletLgWidth) {
@@ -44,6 +50,35 @@
 
     &__title {
       margin-bottom: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .approach-to-work {
+    margin-top: 64px;
+
+    &__scheme-svg {
+      &_mobile {
+        display: block;
+      }
+      &_desktop {
+        display: none;
+      }
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__scheme {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__step-wrapper {
+      height: 75%;
+      flex-direction: column;
     }
   }
 }

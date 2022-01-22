@@ -357,3 +357,47 @@ textarea {
     }
   }
 }
+
+@media screen and (max-width: $phoneWidth) {
+  .main-padding {
+    padding-left: $offsetSm;
+    padding-right: $offsetSm;
+  }
+
+  .text {
+    &_type {
+      &_wow {
+        font-size: 120px; //
+      }
+
+      &_h1 {
+        font-size: 32px; //
+      }
+
+      &_h2 {
+        font-size: 16px;
+      }
+
+      &_common {
+        font-size: 12px;
+      }
+
+      &_desc {
+        font-size: 14px;
+      }
+    }
+  }
+  body {
+    .scrollbar-thumb {
+      &-y {
+        width: 4px;
+      }
+    }
+
+    .scrollbar-track {
+      &-y {
+        width: 4px;
+      }
+    }
+  }
+}

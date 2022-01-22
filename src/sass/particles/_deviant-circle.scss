@@ -125,3 +125,18 @@
     }
   }
 }
+
+@media screen and (max-width: $phoneWidth) {
+  .deviant-circle {
+    height: 320px;
+
+    .char {
+      transform: rotateY(calc(var(--char-index) * 11.2deg)) translateZ(140px);
+
+      &[data-char='T'] {
+        transform: rotateY(calc(var(--char-index) * 11.2deg)) translateZ(140px)
+          rotateZ(180deg) translateY(4px);
+      }
+    }
+  }
+}

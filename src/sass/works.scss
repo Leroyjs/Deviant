@@ -7,6 +7,10 @@
 @import './particles/deviant-circle';
 @import './particles/link-wrapper';
 
+body {
+  background: $red;
+}
+
 .work-item:nth-child(1) {
   .work-item__img {
     background-image: url('../media/works/md/nk.svg');
@@ -25,37 +29,37 @@
   }
 }
 
-.work-item:nth-child(4) {
-  .work-item__img {
-    background-image: url('../media/works/md/profsvar.jpg');
-  }
-}
+// .work-item:nth-child(4) {
+//   .work-item__img {
+//     background-image: url('../media/works/md/profsvar.jpg');
+//   }
+// }
 
-.work-item:nth-child(5) {
+.work-item:nth-child(4) {
   .work-item__img {
     background-image: url('../media/works/md/loft-group.jpg');
   }
 }
 
-.work-item:nth-child(6) {
+.work-item:nth-child(5) {
   .work-item__img {
     background-image: url('../media/works/md/sber-cashbox.jpg');
   }
 }
 
-.work-item:nth-child(7) {
+.work-item:nth-child(6) {
   .work-item__img {
     background-image: url('../media/works/md/immun.svg');
   }
 }
 
-.work-item:nth-child(8) {
+.work-item:nth-child(7) {
   .work-item__img {
     background-image: url('../media/works/md/sber-green-marathon.svg');
   }
 }
 
-.work-item:nth-child(9) {
+.work-item:nth-child(8) {
   .work-item__img {
     background-image: url('../media/works/md/dutt-butt.svg');
   }
@@ -67,7 +71,7 @@
 //   }
 // }
 
-.work-item:nth-child(10) {
+.work-item:nth-child(9) {
   .work-item__img {
     background-image: url('../media/works/md/white.jpg');
   }
