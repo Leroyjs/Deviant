@@ -18,7 +18,6 @@ export const initClock = () => {
       hourBlock.innerText = getFormatedNumber(time.getHours());
       minuteBlock.innerText = getFormatedNumber(time.getMinutes());
       secondBlock.innerText = getFormatedNumber(time.getSeconds());
-      console.warn(time);
     });
 
     time.setSeconds(time.getSeconds() + 1);

@@ -1,15 +1,26 @@
+import isTouchDevice from 'is-touch-device';
+
 export const worksHeight = () => {
-  const _responsiveHeightBlocks = getResponsiveHeightBlocks();
+  const isTouchable = isTouchDevice();
+  const responsiveHeightBlocks = getResponsiveHeightBlocks();
   let windowHeight = document.documentElement.clientHeight;
+  if (isTouchable) setActiveAllBlocks();
 
   window.addEventListener('resize', () => {
     windowHeight = document.documentElement.clientHeight;
     setHeightOfBlocks();
+    if (isTouchable) setActiveAllBlocks();
   });
 
   function setHeightOfBlocks() {
-    _responsiveHeightBlocks.forEach(item => {
+    responsiveHeightBlocks.forEach(item => {
       setHeightOfBlock(item, windowHeight);
+    });
+  }
+
+  function setActiveAllBlocks() {
+    responsiveHeightBlocks.forEach(item => {
+      item.mainBlock.style.height = '100vh';
     });
   }
 
@@ -26,16 +37,16 @@ export const worksHeight = () => {
       }
     }
 
-    block.mainBlock.style.height = -posY * 1 + 2 + 'px';
+    if (!isTouchable) block.mainBlock.style.height = -posY * 1 + 2 + 'px';
   }
 
   function getResponsiveHeightBlocks() {
-    const _responsiveHeightBlocks =
+    const responsiveHeightBlocks =
       document.querySelectorAll('.responsive-height');
 
     const _responsiveHeightObjs = [];
 
-    _responsiveHeightBlocks.forEach(item => {
+    responsiveHeightBlocks.forEach(item => {
       _responsiveHeightObjs.push({
         mainBlock: item,
         innerText:

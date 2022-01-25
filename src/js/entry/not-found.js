@@ -1,15 +1,16 @@
 import '~/sass/not-found';
-import Scrollbar from 'smooth-scrollbar';
-import { linkWrapper } from '../particles/linkWrapper';
-import { initBurgerMenu } from '../particles/burgerMenu';
-import { checkTouchDevice } from '../particles/adaptive';
+
+import { linkWrapper } from '@/particles/linkWrapper';
+import { initBurgerMenu } from '@/particles/burgerMenu';
+import { checkTouchDevice } from '@/particles/adaptive';
+import { initScrollbar } from '@/particles/scrollbar';
+import { initVHSize } from '../particles/vh-size';
 
 window.addEventListener('DOMContentLoaded', () => {
   checkTouchDevice();
   initBurgerMenu();
   linkWrapper();
-  const _scrollWrapperBlock = document.querySelector('.main');
-  const mainScrollbar = Scrollbar.init(_scrollWrapperBlock, {
-    alwaysShowTracks: true
-  });
+  initVHSize();
+
+  initScrollbar();
 });

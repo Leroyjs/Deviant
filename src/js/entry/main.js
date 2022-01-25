@@ -1,5 +1,4 @@
 import '~/sass/main';
-import Scrollbar from 'smooth-scrollbar';
 import { worksHeight } from '@/particles/worksHeight';
 import { deviantCircle } from '@/particles/deviantCircle';
 import { header } from '@/particles/header';
@@ -8,25 +7,27 @@ import { preloader } from '@/particles/preloader';
 import { initBurgerMenu } from '@/particles/burgerMenu';
 import { checkTouchDevice } from '@/particles/adaptive';
 import { initClock } from '@/particles/clock';
+import { initScrollbar } from '@/particles/scrollbar';
+import { initVHSize } from '../particles/vh-size';
+
 preloader();
 
 window.addEventListener('DOMContentLoaded', () => {
+  const changeColorOfHeader = header();
+  const setHeightOfWorksBlock = worksHeight();
+  const setRotateX = deviantCircle();
+
   initClock();
   checkTouchDevice();
   linkWrapper();
   initBurgerMenu();
-  const changeColorOfHeader = header();
-  const _scrollWrapperBlock = document.querySelector('.main');
-  const mainScrollbar = Scrollbar.init(_scrollWrapperBlock, {
-    alwaysShowTracks: true
-  });
-  const setHeightOfWorksBlock = worksHeight();
+  initVHSize();
 
-  const setRotateX = deviantCircle();
-  mainScrollbar.addListener(() => {
+  function scrollEvent() {
     changeColorOfHeader();
     setHeightOfWorksBlock();
     setRotateX();
-    mainScrollbar.update();
-  });
+  }
+
+  initScrollbar(scrollEvent);
 });

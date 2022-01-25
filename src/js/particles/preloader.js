@@ -12,7 +12,7 @@ export const preloader = () => {
   const removeEventOfCursor = initCursor(_cursor);
 
   const interval = setInterval(() => {
-    percent *= 1.015;
+    percent *= 1.02;
     _preloaderBar.style.width = percent + '%';
     _cursor.innerText =
       (Math.round(percent) <= 100 ? Math.round(percent) : 100) + '%';

@@ -19,6 +19,7 @@
   }
 
   &__sub-title {
+    white-space: nowrap;
     position: relative;
     margin-bottom: 80px;
   }
@@ -125,19 +126,14 @@
 @media screen and (max-width: $phoneWidth) {
   .about-first-section {
     padding-top: 84px;
-    padding-bottom: 144px;
+    // padding-bottom: 144px;
 
     &__photo-wrapper {
-      width: 142px;
-      height: 186px;
-      top: 52px;
-      left: $offsetSm;
+      display: none;
     }
 
     &__seal {
-      left: 116px;
-      top: auto;
-      bottom: 24px;
+      display: none;
     }
 
     &__sub-title {

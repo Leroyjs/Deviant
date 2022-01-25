@@ -1,13 +1,14 @@
 import '~/sass/order';
-import Scrollbar from 'smooth-scrollbar';
+
 import { linkWrapper } from '@/particles/linkWrapper';
-import { initBurgerMenu } from '../particles/burgerMenu';
+import { initBurgerMenu } from '@/particles/burgerMenu';
+import { initScrollbar } from '@/particles/scrollbar';
+import { initVHSize } from '../particles/vh-size';
 
 window.addEventListener('DOMContentLoaded', () => {
   initBurgerMenu();
   linkWrapper();
-  const _scrollWrapperBlock = document.querySelector('.main');
-  const mainScrollbar = Scrollbar.init(_scrollWrapperBlock, {
-    alwaysShowTracks: true
-  });
+  initVHSize();
+
+  initScrollbar();
 });

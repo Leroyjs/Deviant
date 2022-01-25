@@ -11,6 +11,10 @@
 @import './particles/link-wrapper';
 @import './particles/preloader';
 
+.works {
+  min-height: 49vw * 3;
+}
+
 .work-item:nth-child(1) {
   .work-item__img {
     background-image: url('../media/works/lg/nk.svg');
