@@ -88,6 +88,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
+  display: none; //TODO: dev
 
   path {
     transition: fill 0.3s, stroke 0.3s;

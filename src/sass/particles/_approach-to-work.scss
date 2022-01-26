@@ -61,6 +61,8 @@
     &__scheme-svg {
       &_mobile {
         display: block;
+        width: 100%;
+        height: calc(201.35135135vw - 48.3243243243px);
       }
       &_desktop {
         display: none;
