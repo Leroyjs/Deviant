@@ -8,3 +8,4 @@ src/lib/*
 www/bitrix
 www/upload
 www/web.config
+www/*.css
