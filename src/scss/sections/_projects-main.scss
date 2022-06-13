@@ -249,6 +249,24 @@ body.is-touchable {
   }
 }
 
+.work-item:nth-child(1) {
+  .work-item__img {
+    background-image: url('../../images/content/works/koltashov/lg-main.svg');
+  }
+}
+
+.work-item:nth-child(2) {
+  .work-item__img {
+    background-image: url('../../images/content/works/sber-salary-project/sber-salary-project.jpg');
+  }
+}
+
+.work-item:nth-child(3) {
+  .work-item__img {
+    background-image: url('../../images/content/works/horo/horo.svg');
+  }
+}
+
 @media screen and (max-width: $tablet-lg-width) {
   .work-item {
     &__desc {
@@ -304,4 +322,13 @@ body.is-touchable {
       }
     }
   }
+
+  .work-item:nth-child(1) {
+    .work-item__img {
+      background-image: url('../../images/content/works/koltashov/md-works.svg');
+    }
+  }
 }
+
+  
+

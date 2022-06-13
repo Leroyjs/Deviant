@@ -60,6 +60,24 @@
   }
 }
 
+.work-item:nth-child(1) {
+  .work-item__img {
+    background-image: url('../../images/content/works/sber-green-marathon/lg-about-us.svg');
+  }
+}
+
+.work-item:nth-child(2) {
+  .work-item__img {
+    background-image: url('../../images/content/works/loft-group/lg-about-us.jpg');
+  }
+}
+
+.work-item:nth-child(3) {
+  .work-item__img {
+    background-image: url('../../images/content/works/horo/horo.svg');
+  }
+}
+
 @media screen and (max-width: $desktop-sm-width) {
   .about-first-section {
     &__photo-wrapper {
