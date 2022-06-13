@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const themeSeparator = document.querySelector('.about-first-section');
   const themeSetter = themeController(themeSeparator);
   const setRotateX = deviantCircle();
+  
 
   checkTouchDevice();
   linkWrapper();

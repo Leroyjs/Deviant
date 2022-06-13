@@ -60,7 +60,7 @@ module.exports = {
             path.join(__dirname, "../src/html/components"),
             path.join(__dirname, "../src/html/svg"),
           ],
-          helperDirs: [path.join(__dirname, "../src/helpers")],
+          helperDirs: [path.join(__dirname, "../i18n")],
         },
       },
       {

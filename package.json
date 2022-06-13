@@ -8,15 +8,18 @@
     "> 5%"
   ],
   "dependencies": {
-    "splitting": "^1.0.6",
+    "handlebars-i18n": "^1.4.1",
+    "intl": "^1.2.5",
     "is-touch-device": "^1.0.1",
-    "smooth-scrollbar": "^8.7.4"
+    "smooth-scrollbar": "^8.7.4",
+    "splitting": "^1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.7",
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.6",
+    "@zainulbr/i18n-webpack-plugin": "^2.0.3",
     "autoprefixer": "^10.3.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
@@ -44,6 +47,7 @@
     "handlebars-loader": "^1.7.1",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.4.0",
+    "i18next": "^21.8.9",
     "image-minimizer-webpack-plugin": "^2.2.0",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
