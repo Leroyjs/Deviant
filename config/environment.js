@@ -3,13 +3,13 @@ const path = require('path');
 module.exports = {
   paths: {
     /* Path to source files directory */
-    source: path.resolve(__dirname, '../src/'),
+    source: path.resolve(__dirname, "../src/"),
 
     /* Path to built files directory */
-    output: path.resolve(__dirname, '../dist/', process.env.LANG),
+    output: path.resolve(__dirname, "../dist/", process.env.LANG),
   },
   server: {
-    host: 'localhost',
+    host: "localhost",
     port: 8000,
   },
   limits: {

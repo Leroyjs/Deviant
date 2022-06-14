@@ -33,11 +33,11 @@
   </div>
   <div class="footer__buttons-wrapper">
     <a
-      href="/write-us.html"
+      href="/{{i18n "footer-write-us"}}.html"
       class="footer__button text text_color_{{main-color}}
              text_type_h1 button button_type_main button_color_{{button-color}}
              text_transform_uppercase hover_transition_xs"
-      >Пишите нам
+      >{{i18n "footer-write-us-text"}}
     </a>
   </div>
   <div class="footer__sub-info" style="color:{{main-color}}">
@@ -51,10 +51,12 @@
                text_transform_uppercase hover_color_{{hover-color}}
                hover_transition_xs"
       >
-        <span class="text text_color_{{main-color}} text_type_h2">Политика</span>
+        <span class="text text_color_{{main-color}} text_type_h2">
+          {{i18n "footer-privacy-policy-1"}}
+        </span>
         <br />
         <span class="text text_color_{{main-color}} text_type_h2">
-          конфиденциальности
+          {{i18n "footer-privacy-policy-2"}}
         </span>
       </a>
     </div>
@@ -83,15 +85,17 @@
                text_transform_uppercase hover_color_{{hover-color}}
                hover_transition_xs"
         >
-        <span class="text text_color_{{main-color}} text_type_h2">Политика</span>
         <span class="text text_color_{{main-color}} text_type_h2">
-          конфиденциальности
+          {{i18n "footer-privacy-policy-1"}}
+        </span>
+        <span class="text text_color_{{main-color}} text_type_h2">
+          {{i18n "footer-privacy-policy-2"}}
         </span>
       </a>
       <div class="footer__cop text text_color_gray text_type_desc {{theme-controller}}">
         ©2020 Deviant.
         <br />
-        Комплексные digital—решения
+        {{i18n "footer-solutions"}}
       </div>
     </div>
   </div>

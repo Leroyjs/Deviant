@@ -1,14 +1,25 @@
-{ 
-  "links-html":{
-    "projects-link": "all-projects-eng",
-    "about-us-link": "about-us-eng",
-    "write-us-link": "write-us-eng",
-    "agency-link": "about-us-eng",
-    "all-projects-link": "all-projects-eng",
-    "footer-write-us": "write-us-eng"
+{
+  "links-html": {
+    "main-link": "index",
+    "projects-link": "all-projects",
+    "about-us-link": "about-us",
+    "write-us-link": "write-us",
+    "agency-link": "about-us",
+    "all-projects-link": "all-projects",
+    "footer-write-us": "write-us"
   },
-  
-  "links-text":{
+
+  "links-switch-lng-html": {
+    "main-link-switch": "index-eng",
+    "projects-link-switch": "all-projects-eng",
+    "about-us-link-switch": "about-us-eng",
+    "write-us-link-switch": "write-us-eng",
+    "agency-link-switch": "about-us-eng",
+    "all-projects-link-switch": "all-projects-eng",
+    "footer-write-us-switch": "write-us-eng"
+  },
+
+  "links-text": {
     "language-switch": "EN",
     "projects-link-text": "работы",
     "about-us-link-text": "о нас",
@@ -17,8 +28,8 @@
     "all-projects-link-text": "Все работы",
     "footer-write-us-text": "Пишите нам"
   },
-  
-  "intro-main":{
+
+  "intro-main": {
     "intro-main-header-1": "Мы разрабатываем",
     "intro-main-header-2": "сайты",
     "intro-main-header-3": "и",
@@ -33,7 +44,15 @@
     "features-4": "БОЛЕЕ 12 ЯЗЫКОВ",
     "features-4.2": "ПРОГРАММИРОВАНИЯ"
   },
-  "projects":{
+
+  "intro-main-mobile": {
+    "intro-main-header-mobile-1": "Создаем",
+    "intro-main-header-mobile-2": "сайты",
+    "intro-main-header-mobile-3": "мобильные",
+    "intro-main-header-mobile-4": "приложения"
+  },
+
+  "projects": {
     "projects-about-us-title-sber": "сбер",
     "projects-main-subtitle": "СНАЧАЛА ПОСМОТРИТЕ",
     "projects-hover": "смотреть",
@@ -49,14 +68,15 @@
     "projects-duttbutt": "Dutt Butt",
     "projects-hunt-base-white": "База охоты Белое"
   },
-  
-  "footer":{
+
+  "footer": {
     "footer-city": "Екатеринбург",
     "footer-solutions": "Комплексные digital—решения",
-    "footer-privacy-policy": "политика конфиденциальности"
+    "footer-privacy-policy-1": "политика",
+    "footer-privacy-policy-2": "конфиденциальности"
   },
-  
-  "intro-all-projects":{
+
+  "intro-all-projects": {
     "intro-projects-header-str-1": "проектов",
     "intro-projects-header-str-2": "сделанных нами",
     "intro-projects-switch-all": "Все",
@@ -65,7 +85,7 @@
     "intro-projects-switch-branding": "Брендинг",
     "intro-projects-switch-advertising": "Реклама"
   },
-  "about-us":{
+  "about-us": {
     "about-us-intro-subtitle": "Кто мы такие?",
     "about-us-intro-title-str-1": "мы создаем простые и эффективные цифровые решения для бизнеса. выполняем",
     "about-us-intro-title-str-2": "работы по программированию, аналитике, дизайну и брендингу",
@@ -83,7 +103,7 @@
     "about-us-offer-str-7": "ПОДДЕРЖКА ПРОЕКТОВ"
   },
 
-  "write-us":{
+  "write-us": {
     "write-us-brief-str-1": "Расскажите коротко",
     "write-us-brief-str-2": "о вашем проекте",
     "write-us-connect-str-1": "Мы свяжемся с вами,",
@@ -97,14 +117,14 @@
     "write-us-form-send": "отправить"
   },
 
-  "links123":{
-    "some":"fewfw"
+  "links123": {
+    "some": "fewfw"
   },
-  "links321":{
-    "some":"fewfw"
+  "links321": {
+    "some": "fewfw"
   },
-  
-  "links213":{
-    "some":"fewfw"
+
+  "links213": {
+    "some": "fewfw"
   }
 }

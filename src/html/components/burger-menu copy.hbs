@@ -66,14 +66,14 @@
                       href="{{main-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                     <br />
                     <a
                       href="{{main-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                   {{/if}}
                   {{#if projects-link}}
@@ -81,14 +81,14 @@
                       href="{{projects-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                     <br />
                     <a
                       href="{{projects-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                   {{/if}}
                   {{#if about-us-link}}
@@ -96,14 +96,13 @@
                       href="{{about-us-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
-                    <br />
-                    <a
+                    <br /><a
                       href="{{about-us-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                   {{/if}}
                   {{#if write-us-link}}
@@ -111,14 +110,14 @@
                       href="{{write-us-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                     <br />
                     <a
                       href="{{write-us-link}}"
                       class="text text_color_black text_type_common text_transform_uppercase"
                     >
-                      RU
+                      {{i18n "language-switch"}}
                     </a>
                   {{/if}}
                 </div>
@@ -132,40 +131,40 @@
               >
                 <div class="header__link-wrapper link-wrapper">
                   <a
-                    href="/all-projects-eng.html"
+                    href="/{{i18n "projects-link"}}.html"
                     class="text_color_black text_transform_uppercase"
                   >
-                    <span class="text text_type_common">projects</span>
+                    <span class="text text_type_common">{{i18n "projects-link-text"}}</span>
                     <span
                       class="text header__works-number text_type_common"
-                    >11</span>
+                    >12</span>
                   </a>
                   <br />
                   <a
-                    href="/all-projects-eng.html"
+                    href="/{{i18n "projects-link"}}.html"
                     class="text_color_black text_transform_uppercase"
                   >
-                    <span class="text text_type_common">projects</span>
+                    <span class="text text_type_common">{{i18n "projects-link-text"}}</span>
                     <span
                       class="text header__works-number text_type_common"
-                    >11</span>
+                    >12</span>
                   </a>
                 </div>
               </div>
               <div class="link preloader-opacity preloader-appearance-step-0-2">
                 <div class="header__link-wrapper link-wrapper">
                   <a
-                    href="/about-us-eng.html"
+                    href="/{{i18n "about-us-link"}}.html"
                     class="text text_color_black text_type_common text_transform_uppercase"
                   >
-                    about us
+                    {{i18n "about-us-link-text"}}
                   </a>
                   <br />
                   <a
-                    href="/about-us-eng.html"
+                    href="/{{i18n "about-us-link"}}.html"
                     class="text text_color_black text_type_common text_transform_uppercase"
                   >
-                    about us
+                    {{i18n "about-us-link-text"}}
                   </a>
                 </div>
               </div>
@@ -174,14 +173,14 @@
               <div class="link preloader-opacity preloader-appearance-step-0-3">
                 <div class="header__link-wrapper link-wrapper">
                   <a
-                    href="/write-us-eng.html"
+                    href="/{{i18n "write-us-link"}}.html"
                     class="text text_color_black text_type_common text_transform_uppercase"
-                  >write us 👋</a>
+                  >{{i18n "write-us-link-text"}} 👋</a>
                   <br />
                   <a
-                    href="/write-us-eng.html"
+                    href="/{{i18n "write-us-link"}}.html"
                     class="text text_color_black text_type_common text_transform_uppercase"
-                  >write us 👋</a>
+                  >{{i18n "write-us-link-text"}} 👋</a>
                 </div>
               </div>
             </div>
@@ -196,21 +195,27 @@
       <ul class="burger-menu__ul">
         <li class="burger-menu__li">
           <a
-            href="/all-projects-eng.html"
-            class="burger-menu__link text_color_white text_type_h1 text_transform_uppercase hover_opacity_m hover_transition_xs"
-          >PROJECTS</a>
+            href="/{{i18n "projects-link"}}.html"
+            class="burger-menu__link text_color_white
+                   text_type_h1 text_transform_uppercase
+                   hover_opacity_m hover_transition_xs"
+          >{{i18n "projects-link-text"}}</a>
         </li>
         <li class="burger-menu__li">
           <a
-            href="/about-us-eng.html"
-            class="burger-menu__link text_color_white text_type_h1 text_transform_uppercase hover_opacity_m hover_transition_xs"
-          >ABOUT US</a>
+            href="/{{i18n "about-us-link"}}.html"
+            class="burger-menu__link text_color_white
+                   text_type_h1 text_transform_uppercase
+                   hover_opacity_m hover_transition_xs"
+          >{{i18n "about-us-link-text"}}</a>
         </li>
         <li class="burger-menu__li">
           <a
-            href="/write-us-eng.html"
-            class="burger-menu__link text_color_white text_type_h1 text_transform_uppercase hover_opacity_m hover_transition_xs"
-          >WRITE US</a>
+            href="/{{i18n "write-us-link"}}.html"
+            class="burger-menu__link text_color_white
+                   text_type_h1 text_transform_uppercase
+                   hover_opacity_m hover_transition_xs"
+          >{{i18n "write-us-link-text"}}</a>
         </li>
       </ul>
     </nav>
@@ -248,7 +253,7 @@
             </svg>
             <span
               class="footer__time-text text text_type_h2 text_transform_uppercase"
-            >Yekaterinburg
+            >{{i18n "footer-city"}}
               <span class="text_color_gray clock">
                 <span class="clock__hour">23</span>
                 <span class="clock__colon">:</span>
@@ -264,10 +269,10 @@
                    half text_transform_uppercase hover_opacity_m
                    hover_transition_xs"
           >
-            <span class="text text_color_black text_type_h2">Privacy</span>
+            <span class="text text_color_black text_type_h2">{{i18n "footer-privacy-policy-1"}}</span>
             <br />
             <span class="text text_color_black text_type_h2">
-              policy
+              {{i18n "footer-privacy-policy-2"}}
             </span>
           </a>
         </div>
@@ -292,15 +297,15 @@
                    half text_transform_uppercase hover_color_red
                    hover_transition_xs"
           >
-            <span class="text text_color_black text_type_h2">Privacy</span>
+            <span class="text text_color_black text_type_h2">{{i18n "footer-privacy-policy-1"}}</span>
             <span class="text text_color_black text_type_h2">
-              policy
+              {{i18n "footer-privacy-policy-2"}}
             </span>
           </a>
           <div class="footer__cop text text_color_gray text_type_desc">
             ©2020 Deviant.
             <br />
-            Complex digital—solutions
+            {{i18n "footer-solutions"}}
           </div>
         </div>
       </div>

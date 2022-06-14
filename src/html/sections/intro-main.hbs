@@ -18,8 +18,18 @@
       <h1
         class="first-section__title text text_color_black text_type_h1 text_transform_uppercase"
       >
-        {{> intro-main-mobile}}
-        {{> intro-main-desktop class-names="first-section__title-inner first-section_desktop"}}
+        {{#if (lng "ru")}}
+          {{> intro-main-mobile}}
+        {{/if}}
+        {{#if (lng "en")}}
+          {{> intro-main-mobile-eng}}
+        {{/if}}
+        {{#if (lng "ru")}}
+          {{> intro-main-desktop class-names="first-section__title-inner first-section_desktop"}}
+        {{/if}}
+        {{#if (lng "en")}}
+          {{> intro-main-desktop-eng class-names="first-section__title-inner first-section_desktop"}}
+        {{/if}}
       </h1>
     </div>
   </div>
@@ -28,29 +38,29 @@
     class-names="advantages__item text text_color_black
                  text_type_common preloader-opacity
                  preloader-appearance-step-2-0"
-    text-1="более 70 коммерческих"
-    text-2="проектов"}}
+    text-1="{{i18n "features-1"}}"
+    text-2="{{i18n "features-1.2"}}"}}
     {{> advantage-line-desktop-svg}}
     {{> advantage-item
     class-names="advantages__item text text_color_black
                  text_type_common preloader-opacity
                  preloader-appearance-step-2-1"
-    text-1="20 международных"
-    text-2="наград"}}
+    text-1="{{i18n "features-2"}}"
+    text-2="{{i18n "features-2.2"}}"}}
     {{> advantage-line-desktop-svg}}
     {{> advantage-item
     class-names="advantages__item text text_color_black
                  text_type_common preloader-opacity
                  preloader-appearance-step-2-2"
-    text-1="4 года"
-    text-2="экспертизы"}}
+    text-1="{{i18n "features-3"}}"
+    text-2="{{i18n "features-3.2"}}"}}
     {{> advantage-line-desktop-svg}}
     {{> advantage-item
     class-names="advantages__item text text_color_black
                  text_type_common preloader-opacity
                  preloader-appearance-step-2-3"
-    text-1="более 12 языков"
-    text-2="программирования"}}
+    text-1="{{i18n "features-4"}}"
+    text-2="{{i18n "features-4.2"}}"}}
     {{> advantage-line-mobile-svg 
     class-names="advantages__line advantages__line_mobile advantages__line_horizontal"
     viewBox="0 0 296 2"}}

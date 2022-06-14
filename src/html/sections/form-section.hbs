@@ -1,15 +1,15 @@
 <section class="form-section main-padding">
   <div class="form-section__title-row">
     <h1 class="half text text_type_desc text_color_gray form-section__title">
-      Расскажите коротко
+      {{i18n "write-us-brief-str-1"}}
       <br />
-      о вашем проекте
+      {{18n "write-us-brief-str-2"}}
     </h1>
     <div class="half form-section__sub-title">
       <div class="text text_type_desc">
-        Мы свяжемся с вами,
+        {{i18n "write-us-connect-str-1"}}
         <br />
-        чтобы обсудить все детали
+        {{i18n "write-us-connect-str-2"}}
       </div>
     </div>
   </div>
@@ -17,7 +17,7 @@
     <div class="form-section__input-row">
       <input
         type="text"
-        placeholder="Имя"
+        placeholder="{{i18n "write-us-form-name"}}"
         class="form-section__input text text_type_h2 text_transform_uppercase"
       />
     </div>
@@ -25,7 +25,7 @@
     <div class="form-section__input-row">
       <input
         type="text"
-        placeholder="что вас интересует"
+        placeholder="{{i18n "write-us-form-wishs"}}"
         class="form-section__input text text_type_h2 text_transform_uppercase"
       />
     </div>
@@ -33,7 +33,7 @@
     <div class="form-section__input-row">
       <input
         type="text"
-        placeholder="номер"
+        placeholder="{{i18n "write-us-form-phone-number"}}"
         class="form-section__input text text_type_h2 text_transform_uppercase"
       />
     </div>
@@ -49,7 +49,7 @@
     <div class="form-section__input-row">
       <textarea
         type="text"
-        placeholder="Коротко о проекте"
+        placeholder="{{i18n "write-us-form-description"}}"
         rows="3"
         class="form-section__input text text_type_h2 text_transform_uppercase"
       ></textarea>
@@ -61,9 +61,9 @@
         <div
           class="form-section__plus-text text text_type_desc text_color_gray hover_transition_xs"
         >
-          Прикрепить
+          {{i18n "write-us-form-attach-doc-str-1"}}
           <br />
-          документ
+          {{i18n "write-us-form-attach-doc-str-2"}}
         </div>
         <svg
           class="form-section__plus-svg"
@@ -77,7 +77,7 @@
       <button
         class="text text_color_black text_type_h1 button button_type_main button_color_main text_transform_uppercase hover_transition_xs"
       >
-        отправить
+        {{i18n "write-us-form-send"}}
       </button>
     </div>
   </form>

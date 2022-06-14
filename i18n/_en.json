@@ -1,11 +1,22 @@
 {
   "links-html": {
-    "projects-link": "all-projects",
-    "about-us-link": "about-us",
-    "write-us-link": "write-us",
-    "agency-link": "about-us",
-    "all-projects-link": "all-projects",
-    "footer-write-us": "write-us"
+    "main-link": "index-eng",
+    "projects-link": "all-projects-eng",
+    "about-us-link": "about-us-eng",
+    "write-us-link": "write-us-eng",
+    "agency-link": "about-us-eng",
+    "all-projects-link": "all-projects-eng",
+    "footer-write-us": "write-us-eng"
+  },
+
+  "links-switch-lng-html": {
+    "main-link-switch": "index",
+    "projects-link-switch": "all-projects",
+    "about-us-link-switch": "about-us",
+    "write-us-link-switch": "write-us",
+    "agency-link-switch": "about-us",
+    "all-projects-link-switch": "all-projects",
+    "footer-write-us-switch": "write-us"
   },
 
   "links-text": {
@@ -33,10 +44,18 @@
     "features-4": "more than 12 programming",
     "features-4.4": "languages"
   },
+
+  "intro-main-mobile": {
+    "intro-main-header-mobile-1": "Develop",
+    "intro-main-header-mobile-2": "websites",
+    "intro-main-header-mobile-3": "mobile",
+    "intro-main-header-mobile-4": "apps"
+  },
+
   "projects": {
     "about-us-projects-title-sber": "sber",
     "projects-intro-main-subtitle": "Firstly look at",
-    "projects-hover": "see more",
+    "projects-hover": "see&nbspmore",
     "projects-mini-subtitle-landing": "Landing",
     "projects-mini-subtitle-multipage-website": "Multipage website",
     "projects-mini-subtitle-mobile-app": "Mobile app",
@@ -50,7 +69,8 @@
   "footer": {
     "footer-city": "Yekaterinburg",
     "footer-solutions": "Complex digital—solutions",
-    "footer-privacy-policy": "privacy policy"
+    "footer-privacy-policy-1": "privacy policy",
+    "footer-privacy-policy-2": ""
   },
 
   "intro-all-projects": {
