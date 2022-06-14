@@ -11,7 +11,7 @@ i18next.init({
       translation: translationEn
     },
   },
-  lng: "en",
+  lng: process.env.LANG,
 });
 
 export default function (str) {
