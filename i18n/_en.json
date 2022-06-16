@@ -1,29 +1,29 @@
 {
   "links-html": {
-    "main-link": "index-eng",
-    "projects-link": "all-projects-eng",
-    "about-us-link": "about-us-eng",
-    "write-us-link": "write-us-eng",
-    "agency-link": "about-us-eng",
-    "all-projects-link": "all-projects-eng",
-    "footer-write-us": "write-us-eng"
+    "main-link": "/index-eng.html",
+    "projects-link": "/all-projects-eng.html",
+    "about-us-link": "/about-us-eng.html",
+    "write-us-link": "/write-us-eng.html",
+    "agency-link": "/about-us-eng.html",
+    "all-projects-link": "/all-projects-eng.html",
+    "footer-write-us": "/write-us-eng.html"
   },
 
   "links-switch-lng-html": {
-    "main-link-switch": "index",
-    "projects-link-switch": "all-projects",
-    "about-us-link-switch": "about-us",
-    "write-us-link-switch": "write-us",
-    "agency-link-switch": "about-us",
-    "all-projects-link-switch": "all-projects",
-    "footer-write-us-switch": "write-us"
+    "main-link-switch": "/index.html",
+    "projects-link-switch": "/all-projects.html",
+    "about-us-link-switch": "/about-us.html",
+    "write-us-link-switch": "/write-us.html",
+    "agency-link-switch": "/about-us.html",
+    "all-projects-link-switch": "/all-projects.html",
+    "footer-write-us-switch": "/write-us.html"
   },
 
   "links-text": {
     "language-switch-text": "RU",
     "projects-link-text": "projects",
     "about-us-link-text": "about us",
-    "write-us-link-text": "write us",
+    "write-us-link-text": "write us 👋",
     "agency-link-text": "Agency",
     "all-projects-link-text": "All projects",
     "footer-write-us-text": "write us"

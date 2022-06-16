@@ -5,11 +5,11 @@
   {{> header
       color-1="black"
       color-2="white"
-      about-us-link="/{{i18n "about-us-link-switch"}}.html"
+      about-us-link=(i18n "links-switch-lng-html.about-us-link-switch")
       height-1="height:100%"}}
   {{> burger-menu
       theme-controller="ignore-theme"
-      about-us-link="/{{i18n "about-us-link-switch"}}.html"}}
+      about-us-link=(i18n "links-switch-lng-html.about-us-link-switch")}}
   <div class="about__bg"></div>
   <main class="main">
     {{> about-us-intro}}

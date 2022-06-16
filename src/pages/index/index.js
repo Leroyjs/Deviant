@@ -14,7 +14,6 @@ import { initBurgerMenu } from '../../js/components/burger-menu';
 import { checkTouchDevice } from '../../js/utils/adaptive';
 import { initScrollbar } from '../../js/components/scrollbars';
 import { initVHSize } from '../../js/components/vh-size';
-// import { handlebars-i18n} from '../../'
 // import { initClock } from '../../js/utils/clock';
 
 preloader();
@@ -22,17 +21,13 @@ preloader();
 window.addEventListener('DOMContentLoaded', () => {
   const changeColorOfHeader = header();
   const setHeightOfWorksBlock = worksHeight();
-  const setRotateX = deviantCircle();
-  // const HandlebarsI18n = require("handlebars-i18n");
-
-  
+  const setRotateX = deviantCircle();  
 
   // initClock();
   checkTouchDevice();
   linkWrapper();
   initBurgerMenu();
   initVHSize();
-  // HandlebarsI18n.init();
 
   function scrollEvent() {
     changeColorOfHeader();

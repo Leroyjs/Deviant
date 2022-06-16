@@ -1,3 +1,3 @@
 export default function (str) {
-    return process.env.LANG === str;
+  return process.env.LANG === str;
 }

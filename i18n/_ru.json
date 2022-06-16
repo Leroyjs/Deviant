@@ -1,34 +1,34 @@
 {
   "links-html": {
-    "main-link": "index",
-    "projects-link": "all-projects",
-    "about-us-link": "about-us",
-    "write-us-link": "write-us",
-    "agency-link": "about-us",
-    "all-projects-link": "all-projects",
-    "footer-write-us": "write-us"
+    "main-link": "/index.html",
+    "projects-link": "/all-projects.html",
+    "about-us-link": "/about-us.html",
+    "write-us-link": "/write-us.html",
+    "agency-link": "/about-us.html",
+    "all-projects-link": "/all-projects.html",
+    "footer-write-us": "/write-us.html"
   },
 
   "links-switch-lng-html": {
-    "main-link-switch": "index-eng",
-    "projects-link-switch": "all-projects-eng",
-    "about-us-link-switch": "about-us-eng",
-    "write-us-link-switch": "write-us-eng",
-    "agency-link-switch": "about-us-eng",
-    "all-projects-link-switch": "all-projects-eng",
-    "footer-write-us-switch": "write-us-eng"
+    "main-link-switch": "/index-eng.html",
+    "projects-link-switch": "/all-projects-eng.html",
+    "about-us-link-switch": "/about-us-eng.html",
+    "write-us-link-switch": "/write-us-eng.html",
+    "agency-link-switch": "/about-us-eng.html",
+    "all-projects-link-switch": "/all-projects-eng.html",
+    "footer-write-us-switch": "/write-us-eng.html"
   },
 
   "links-text": {
-    "language-switch": "EN",
+    "language-switch-text": "EN",
     "projects-link-text": "работы",
     "about-us-link-text": "о нас",
-    "write-us-link-text": "написать нам",
+    "write-us-link-text": "написать нам 👋",
     "agency-link-text": "Агенство",
     "all-projects-link-text": "Все работы",
     "footer-write-us-text": "Пишите нам"
   },
-
+  "links-text-lol":"lol",
   "intro-main": {
     "intro-main-header-1": "Мы разрабатываем",
     "intro-main-header-2": "сайты",
@@ -60,12 +60,9 @@
     "projects-mini-subtitle-multipage-website": "Многостраничный сайт",
     "projects-mini-subtitle-mobile-app": "Мобильное приложение",
     "projects-sber-salary-project": "Сбербанк. Зарплатный проект",
-    "projects-horo": "Horo",
     "projects-sber-cash-terminal": "Сбербанк. Касса",
     "projects-immune-activator": "иммун активатор",
     "projects-sber-green-marathon": "Сбербанк. Зеленый марафон",
-    "projects-loftgroup": "LoftGroup",
-    "projects-duttbutt": "Dutt Butt",
     "projects-hunt-base-white": "База охоты Белое"
   },
 

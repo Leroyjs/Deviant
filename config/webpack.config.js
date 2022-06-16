@@ -11,6 +11,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const webpack = require("webpack");
 
 const environment = require("./environment");
 
@@ -111,6 +112,14 @@ module.exports = {
     ],
   },
   plugins: [
+    // fix "process is not defined" error:
+    // (do "npm install process" before running the build)
+    // new webpack.ProvidePlugin({
+    //   process: "process/browser",
+    // }),
+    new webpack.DefinePlugin({
+      "process.env.LANG": JSON.stringify(process.env.LANG),
+    }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),
