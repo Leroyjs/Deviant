@@ -1,0 +1,71 @@
+<section
+  class="first-section main-padding preloader-section"
+  data-header-color="black"
+>
+  <div class="first-section__title-wrapper">
+    <div class="first-section__title-wrapper-inner">
+      <button class="first-section__play-button play-button">
+        {{> play-button-border-svg}}
+        <div
+          class="play-button__text text text_type_desc
+                 text_color_gray preloader-opacity
+                 preloader-appearance-step-2-0"
+        >
+          Showreel
+        </div>
+        {{> play-button-inner-svg class-name="play-button__inner preloader-opacity preloader-appearance-step-2-0"}}
+      </button>
+      <h1
+        class="first-section__title text text_color_black text_type_h1 text_transform_uppercase"
+      >
+        {{#if (lng "ru")}}
+          {{> intro-main-mobile}}
+        {{/if}}
+        {{#if (lng "en")}}
+          {{> intro-main-mobile-eng}}
+        {{/if}}
+        {{#if (lng "ru")}}
+          {{> intro-main-desktop class-names="first-section__title-inner first-section_desktop"}}
+        {{/if}}
+        {{#if (lng "en")}}
+          {{> intro-main-desktop-eng class-names="first-section__title-inner first-section_desktop"}}
+        {{/if}}
+      </h1>
+    </div>
+  </div>
+  <div class="first-section__advantages advantages text_transform_uppercase">
+    {{> advantage-item
+    class-names="advantages__item text text_color_black
+                 text_type_common preloader-opacity
+                 preloader-appearance-step-2-0"
+    text-1=(i18n "intro-main.features-1")
+    text-2=(i18n "intro-main.features-1-2")}}
+    {{> advantage-line-desktop-svg}}
+    {{> advantage-item
+    class-names="advantages__item text text_color_black
+                 text_type_common preloader-opacity
+                 preloader-appearance-step-2-1"
+    text-1=(i18n "intro-main.features-2")
+    text-2=(i18n "intro-main.features-2-2")}}
+    {{> advantage-line-desktop-svg}}
+    {{> advantage-item
+    class-names="advantages__item text text_color_black
+                 text_type_common preloader-opacity
+                 preloader-appearance-step-2-2"
+    text-1=(i18n "intro-main.features-3")
+    text-2=(i18n "intro-main.features-3-2")}}
+    {{> advantage-line-desktop-svg}}
+    {{> advantage-item
+    class-names="advantages__item text text_color_black
+                 text_type_common preloader-opacity
+                 preloader-appearance-step-2-3"
+    text-1=(i18n "intro-main.features-4")
+    text-2=(i18n "intro-main.features-4-2")}}
+    {{> advantage-line-mobile-svg 
+    class-names="advantages__line advantages__line_mobile advantages__line_horizontal"
+    viewBox="0 0 296 2"}}
+    {{> advantage-line-mobile-svg 
+    class-names="advantages__line advantages__line_mobile advantages__line_vertical"
+    viewBox="0 0 2 132"}}
+  </div>
+</section>
