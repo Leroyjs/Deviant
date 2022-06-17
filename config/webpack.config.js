@@ -30,6 +30,7 @@ const getHtmlTemplate = () =>
           template: template.path,
           chunks: [template.name.toString()],
           filename: `${template.name}.html`,
+          defer: template.name,
         })
     );
 
@@ -155,6 +156,14 @@ module.exports = {
         {
           from: path.resolve(environment.paths.source, "images", "content"),
           to: path.resolve(environment.paths.output, "images", "content"),
+          toType: "dir",
+          globOptions: {
+            ignore: ["*.DS_Store", "Thumbs.db"],
+          },
+        },
+        {
+          from: path.resolve(environment.paths.source, "images", "favicons"),
+          to: path.resolve(environment.paths.output, "images", "favicons"),
           toType: "dir",
           globOptions: {
             ignore: ["*.DS_Store", "Thumbs.db"],

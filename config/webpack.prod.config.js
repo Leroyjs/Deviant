@@ -29,5 +29,5 @@ module.exports = merge(webpackConfiguration, {
   },
 
   /* Additional plugins config */
-  plugins: [new BaseHrefWebpackPlugin({ baseHref: '/landing/' })],
+  plugins: [],
 });
