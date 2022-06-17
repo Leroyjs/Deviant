@@ -10,13 +10,13 @@
   },
 
   "links-switch-lng-html": {
-    "main-link-switch": "/index-eng.html",
-    "projects-link-switch": "/all-projects-eng.html",
-    "about-us-link-switch": "/about-us-eng.html",
-    "write-us-link-switch": "/write-us-eng.html",
-    "agency-link-switch": "/about-us-eng.html",
-    "all-projects-link-switch": "/all-projects-eng.html",
-    "footer-write-us-switch": "/write-us-eng.html"
+    "main-link-switch": "../dist/en/index.html",
+    "projects-link-switch": "../dist/en/all-projects.html",
+    "about-us-link-switch": "../dist/en/about-us.html",
+    "write-us-link-switch": "../dist/en/write-us.html",
+    "agency-link-switch": "../dist/en/about-us.html",
+    "all-projects-link-switch": "../dist/en/all-projects.html",
+    "footer-write-us-switch": "../dist/en/write-us.html"
   },
 
   "links-text": {
@@ -28,7 +28,7 @@
     "all-projects-link-text": "Все работы",
     "footer-write-us-text": "Пишите нам"
   },
-  "links-text-lol":"lol",
+
   "intro-main": {
     "intro-main-header-1": "Мы разрабатываем",
     "intro-main-header-2": "сайты",
@@ -36,13 +36,13 @@
     "intro-main-header-4": "мобильные",
     "intro-main-header-5": "приложения",
     "features-1": "БОЛЕЕ 70 КОММЕРЧЕСКИХ",
-    "features-1.2": "ПРОЕКТОВ",
+    "features-1-2": "ПРОЕКТОВ",
     "features-2": "20 МЕЖДУНАРОДНЫХ",
-    "features-2.2": "НАГРАД",
+    "features-2-2": "НАГРАД",
     "features-3": "4 ГОДА",
-    "features-3.2": "ЭКСПЕРТИЗЫ",
+    "features-3-2": "ЭКСПЕРТИЗЫ",
     "features-4": "БОЛЕЕ 12 ЯЗЫКОВ",
-    "features-4.2": "ПРОГРАММИРОВАНИЯ"
+    "features-4-2": "ПРОГРАММИРОВАНИЯ"
   },
 
   "intro-main-mobile": {
@@ -53,15 +53,16 @@
   },
 
   "projects": {
-    "projects-about-us-title-sber": "сбер",
+    "projects-about-us-title-sber": "СБЕР",
     "projects-main-subtitle": "СНАЧАЛА ПОСМОТРИТЕ",
-    "projects-hover": "смотреть",
+    "projects-hover-1": "смотреть",
+    "projects-hover-2": "",
     "projects-mini-subtitle-landing": "Одностраничный сайт",
     "projects-mini-subtitle-multipage-website": "Многостраничный сайт",
     "projects-mini-subtitle-mobile-app": "Мобильное приложение",
     "projects-sber-salary-project": "Сбербанк. Зарплатный проект",
     "projects-sber-cash-terminal": "Сбербанк. Касса",
-    "projects-immune-activator": "иммун активатор",
+    "projects-immune-activator": "Иммун активатор",
     "projects-sber-green-marathon": "Сбербанк. Зеленый марафон",
     "projects-hunt-base-white": "База охоты Белое"
   },

@@ -1,22 +1,22 @@
 {
   "links-html": {
-    "main-link": "/index-eng.html",
-    "projects-link": "/all-projects-eng.html",
-    "about-us-link": "/about-us-eng.html",
-    "write-us-link": "/write-us-eng.html",
-    "agency-link": "/about-us-eng.html",
-    "all-projects-link": "/all-projects-eng.html",
-    "footer-write-us": "/write-us-eng.html"
+    "main-link": "/index.html",
+    "projects-link": "/all-projects.html",
+    "about-us-link": "/about-us.html",
+    "write-us-link": "/write-us.html",
+    "agency-link": "/about-us.html",
+    "all-projects-link": "/all-projects.html",
+    "footer-write-us": "/write-us.html"
   },
 
   "links-switch-lng-html": {
-    "main-link-switch": "/index.html",
-    "projects-link-switch": "/all-projects.html",
-    "about-us-link-switch": "/about-us.html",
-    "write-us-link-switch": "/write-us.html",
-    "agency-link-switch": "/about-us.html",
-    "all-projects-link-switch": "/all-projects.html",
-    "footer-write-us-switch": "/write-us.html"
+    "main-link-switch": "../dist/ru/index.html",
+    "projects-link-switch": "../dist/ru/all-projects.html",
+    "about-us-link-switch": "../dist/ru/about-us.html",
+    "write-us-link-switch": "../dist/ru/write-us.html",
+    "agency-link-switch": "../dist/ru/about-us.html",
+    "all-projects-link-switch": "../dist/ru/all-projects.html",
+    "footer-write-us-switch": "../dist/ru/write-us.html"
   },
 
   "links-text": {
@@ -36,13 +36,13 @@
     "intro-main-header-4": "",
     "intro-main-header-5": "mobile apps",
     "features-1": "more than",
-    "features-1.2": "70 commercial projects",
+    "features-1-2": "70 commercial projects",
     "features-2": "4 years",
-    "features-2.2": "of exprtise",
+    "features-2-2": "of exprtise",
     "features-3": "20 internatioanl",
-    "features-3.3": "rewards",
+    "features-3-2": "rewards",
     "features-4": "more than 12 programming",
-    "features-4.4": "languages"
+    "features-4-2": "languages"
   },
 
   "intro-main-mobile": {
@@ -53,9 +53,10 @@
   },
 
   "projects": {
-    "about-us-projects-title-sber": "sber",
-    "projects-intro-main-subtitle": "Firstly look at",
-    "projects-hover": "see&nbspmore",
+    "about-us-projects-title-sber": "SBER",
+    "projects-main-subtitle": "Firstly look at",
+    "projects-hover-1": "see",
+    "projects-hover-2": "more",
     "projects-mini-subtitle-landing": "Landing",
     "projects-mini-subtitle-multipage-website": "Multipage website",
     "projects-mini-subtitle-mobile-app": "Mobile app",
