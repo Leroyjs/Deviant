@@ -6,6 +6,7 @@
   &__contacts {
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
   }
 
   &__buttons-wrapper {

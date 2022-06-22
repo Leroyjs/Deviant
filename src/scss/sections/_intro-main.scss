@@ -87,70 +87,17 @@
   }
 
   &__play-button {
+    pointer-events: none;
     position: absolute;
-    width: 159px;
-    height: 158px;
     right: 78px;
     top: -108px;
   }
 }
 
-.play-button {
-  width: 159px;
-  height: 158px;
-  border: 0;
-  background-color: transparent;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
-
-  path {
-    transition: fill 0.3s, stroke 0.3s;
-  }
-
-  &__border {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-  &__text {
-    position: absolute;
-    left: calc(100% + 20px);
-    top: 0;
-  }
-}
-
 .ready {
-  .play-button {
-    &:hover {
-      background-color: $red;
-      border-color: $red;
-
-      .play-button {
-        &__border {
-          path {
-            stroke: $red;
-          }
-        }
-
-        &__inner {
-          path {
-            fill: $white;
-          }
-        }
-      }
-
-      .text {
-        color: $red;
-      }
-    }
+  .circle-button {
+    pointer-events: auto;
   }
-
   .first-section {
     &__text-button-text {
       transition: color 0.3s;
@@ -187,14 +134,8 @@
     min-height: 630px;
 
     &__play-button {
-      width: 146px;
-      height: 146px;
       right: 68px;
       top: -96px;
-
-      path {
-        stroke-width: 1.1004784689px;
-      }
     }
 
     &__text-wrapper {
@@ -230,7 +171,7 @@
           stroke-width: 1.1004784689px;
         }
       }
-  
+
       &_2-eng {
         width: 720px;
         height: 160px;
@@ -248,14 +189,8 @@
 @media screen and (max-width: $desktop-sm-width) {
   .first-section {
     &__play-button {
-      width: 122px;
-      height: 122px;
       right: 62px;
       top: -86px;
-
-      path {
-        stroke-width: 1.3142857142px;
-      }
     }
 
     &__text-wrapper {
@@ -291,7 +226,7 @@
           stroke-width: 1.3142857142px;
         }
       }
-  
+
       &_2-eng {
         width: 600px;
         height: 146px;
@@ -354,7 +289,7 @@
           stroke-width: 1.8540080607px;
         }
       }
-  
+
       &_2-eng {
         width: 530px;
         height: 110px;
@@ -418,7 +353,7 @@
           stroke-width: 1.8540080607px;
         }
       }
-  
+
       &_2-eng {
         width: 420px;
         height: 100px;
@@ -432,7 +367,7 @@
     }
   }
 
-  .play-button {
+  .circle-button {
     &__inner {
       height: 13px;
       width: 13px;
@@ -489,7 +424,7 @@
           stroke-width: 1.8540080607px;
         }
       }
-  
+
       &_2-eng {
         width: 310px;
         height: 65px;
@@ -581,7 +516,7 @@
           stroke-width: 1px;
         }
       }
-  
+
       &_2-eng {
         width: 159px;
         height: 58px;
@@ -595,7 +530,7 @@
     }
   }
 
-  .play-button {
+  .circle-button {
     right: 50px;
     top: -50px;
 
@@ -603,11 +538,5 @@
       height: 10px;
       width: 10px;
     }
-
-    &__text {
-      left: calc(100% + 4px);
-    }
   }
-
-  
 }

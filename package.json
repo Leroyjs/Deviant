@@ -8,6 +8,7 @@
     "> 5%"
   ],
   "dependencies": {
+    "axios": "^0.27.2",
     "is-touch-device": "^1.0.1",
     "process": "^0.11.10",
     "smooth-scrollbar": "^8.7.4",

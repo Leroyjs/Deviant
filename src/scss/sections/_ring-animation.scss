@@ -8,6 +8,7 @@
   justify-content: center;
   transform-origin: center;
   overflow: hidden;
+  pointer-events: none;
 
   &__main-wrapper {
     transform: rotateX(10deg);

@@ -54,7 +54,7 @@
 
   "projects": {
     "projects-about-us-title-sber": "СБЕР",
-    "projects-main-subtitle": "СНАЧАЛА ПОСМОТРИТЕ",
+    "projects-main-subtitle": "Сначала посмотрите",
     "projects-hover-1": "смотреть",
     "projects-hover-2": "",
     "projects-mini-subtitle-landing": "Одностраничный сайт",
@@ -113,16 +113,5 @@
     "write-us-form-attach-doc-str-1": "Прикрепить",
     "write-us-form-attach-doc-str-2": "документ",
     "write-us-form-send": "отправить"
-  },
-
-  "links123": {
-    "some": "fewfw"
-  },
-  "links321": {
-    "some": "fewfw"
-  },
-
-  "links213": {
-    "some": "fewfw"
   }
 }

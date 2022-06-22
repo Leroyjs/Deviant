@@ -5,7 +5,7 @@ html {
   font-family: $fontMain;
 }
 
-main {
+.main {
   overflow-x: hidden;
   height: 100vh;
 }
@@ -14,12 +14,6 @@ main {
   overflow: hidden;
 }
 
-.main-padding {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-// added from .general 
 body {
   font-family: $fontMain;
   position: relative;
@@ -61,7 +55,7 @@ textarea {
   }
 
   &::before {
-    content: '';
+    content: "";
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -143,7 +137,7 @@ textarea {
         }
       }
     }
-}
+  }
 
   &_transition {
     &_xs {
