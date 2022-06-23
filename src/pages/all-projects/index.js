@@ -8,6 +8,7 @@ import { worksFilter } from "../../js/components/works-filter";
 import { linkWrapper } from "../../js/utils/link-wrapper";
 import { initBurgerMenu } from "../../js/components/burger-menu";
 import { checkTouchDevice } from "../../js/utils/adaptive";
+import { initClock } from '../../js/utils/clock';
 import { initScrollbar } from "../../js/components/scrollbars";
 import { initVHSize } from "../../js/components/vh-size";
 
@@ -19,6 +20,7 @@ window.addEventListener("load", () => {
   checkTouchDevice();
   initBurgerMenu();
   linkWrapper();
+  initClock();
   initVHSize();
   worksFilter(setHeightOfWorksBlock);
 
