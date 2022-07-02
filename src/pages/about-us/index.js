@@ -11,7 +11,7 @@ import { themeController } from "../../js/components/theme-controller";
 import { ourProfiles } from "../../js/utils/our-profiles";
 import { initBurgerMenu } from "../../js/components/burger-menu";
 import { checkTouchDevice } from "../../js/utils/adaptive";
-// import { initClock } from '../../js/utils/clock';
+import { initClock } from '../../js/utils/clock';
 import { initScrollbar } from "../../js/components/scrollbars";
 import { initVHSize } from "../../js/components/vh-size";
 
@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
 
   checkTouchDevice();
   linkWrapper();
-  // initClock();
+  initClock();
   ourProfiles();
   initBurgerMenu();
   initVHSize();

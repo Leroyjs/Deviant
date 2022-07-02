@@ -14,7 +14,7 @@ import { initBurgerMenu } from "../../js/components/burger-menu";
 import { checkTouchDevice } from "../../js/utils/adaptive";
 import { initScrollbar } from "../../js/components/scrollbars";
 import { initVHSize } from "../../js/components/vh-size";
-// import { initClock } from '../../js/utils/clock';
+import { initClock } from '../../js/utils/clock';
 
 preloader();
 
@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
   const setHeightOfWorksBlock = worksHeight();
   const setRotateX = deviantCircle();
 
-  // initClock();
+  initClock();
   checkTouchDevice();
   linkWrapper();
   initBurgerMenu();
