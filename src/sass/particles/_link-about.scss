@@ -1,0 +1,58 @@
+.link-about {
+  width: 50%;
+  height: 50vw;
+  max-height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &__seal {
+    position: absolute;
+    bottom: $offsetXLg;
+    left: $offsetXLg;
+  }
+
+  &_type {
+    &_about {
+      background-color: $red;
+    }
+
+    &_works {
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+}
+
+@media screen and (max-width: $desktopMdWidth) {
+  .link-about {
+    &__seal {
+      bottom: $offsetLg;
+      left: $offsetLg;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletSmWidth) {
+  .link-about {
+    &__seal {
+      bottom: $offsetMd;
+      left: $offsetMd;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .link-about {
+    width: 100%;
+    height: 100vw;
+    max-height: 100vw;
+
+    &__seal {
+      bottom: $offsetSm;
+      left: $offsetSm;
+    }
+  }
+}

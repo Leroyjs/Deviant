@@ -1,0 +1,43 @@
+@import './common';
+@import './particles/header';
+@import './particles/first-section';
+@import './particles/work-item';
+@import './particles/link-about';
+@import './particles/seal';
+@import './particles/advantages';
+@import './particles/footer';
+@import './particles/deviant-circle';
+@import './particles/ticker';
+@import './particles/link-wrapper';
+@import './particles/preloader';
+
+.works {
+  min-height: 49vw * 3;
+}
+
+.work-item:nth-child(1) {
+  .work-item__img {
+    background-image: url('../media/works/lg/nk.svg');
+  }
+}
+
+.work-item:nth-child(2) {
+  .work-item__img {
+    background-image: url('../media/works/md/sber-salary-project.jpg');
+  }
+}
+
+//TODO: После того как доделаем детальную страницу, нужно будет поменять на Хоро
+.work-item:nth-child(3) {
+  .work-item__img {
+    background-image: url('../media/works/md/horo.svg');
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .work-item:nth-child(1) {
+    .work-item__img {
+      background-image: url('../media/works/sm/nk.svg');
+    }
+  }
+}
