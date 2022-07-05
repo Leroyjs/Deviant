@@ -1,0 +1,117 @@
+{
+  "links-html": {
+    "main-link": "/index.html",
+    "projects-link": "/all-projects.html",
+    "about-us-link": "/about-us.html",
+    "write-us-link": "/write-us.html",
+    "agency-link": "/about-us.html",
+    "all-projects-link": "/all-projects.html",
+    "footer-write-us": "/write-us.html"
+  },
+
+  "links-switch-lng-html": {
+    "main-link-switch": "../dist/ru/index.html",
+    "projects-link-switch": "../dist/ru/all-projects.html",
+    "about-us-link-switch": "../dist/ru/about-us.html",
+    "write-us-link-switch": "../dist/ru/write-us.html",
+    "agency-link-switch": "../dist/ru/about-us.html",
+    "all-projects-link-switch": "../dist/ru/all-projects.html",
+    "footer-write-us-switch": "../dist/ru/write-us.html"
+  },
+
+  "links-text": {
+    "language-switch-text": "RU",
+    "projects-link-text": "projects",
+    "about-us-link-text": "about us",
+    "write-us-link-text": "write us 👋",
+    "agency-link-text": "Agency",
+    "all-projects-link-text": "All projects",
+    "footer-write-us-text": "write us"
+  },
+
+  "intro-main": {
+    "intro-main-header-1": "We develop",
+    "intro-main-header-2": "websites",
+    "intro-main-header-3": "and",
+    "intro-main-header-4": "",
+    "intro-main-header-5": "mobile apps",
+    "features-1": "more than",
+    "features-1-2": "70 commercial projects",
+    "features-2": "4 years",
+    "features-2-2": "of exprtise",
+    "features-3": "20 internatioanl",
+    "features-3-2": "rewards",
+    "features-4": "more than 12 programming",
+    "features-4-2": "languages"
+  },
+
+  "intro-main-mobile": {
+    "intro-main-header-mobile-1": "Develop",
+    "intro-main-header-mobile-2": "websites",
+    "intro-main-header-mobile-3": "mobile",
+    "intro-main-header-mobile-4": "apps"
+  },
+
+  "projects": {
+    "about-us-projects-title-sber": "SBER",
+    "projects-main-subtitle": "Firstly look at",
+    "projects-hover-1": "see",
+    "projects-hover-2": "more",
+    "projects-mini-subtitle-landing": "Landing",
+    "projects-mini-subtitle-multipage-website": "Multipage website",
+    "projects-mini-subtitle-mobile-app": "Mobile app",
+    "projects-sber-salary-project": "Sberbank. Salary project",
+    "projects-sber-cash-terminal": "Sberbank. Cash terminal",
+    "projects-immune-activator": "Immune activator",
+    "projects-sber-green-marathon": "Sberbank. Green marathon",
+    "projects-hunt-base-white": "Hunt Base White"
+  },
+
+  "footer": {
+    "footer-city": "Yekaterinburg",
+    "footer-solutions": "Complex digital—solutions",
+    "footer-privacy-policy-1": "privacy policy",
+    "footer-privacy-policy-2": ""
+  },
+
+  "intro-all-projects": {
+    "intro-projects-header-str-1": "projects made by us",
+    "intro-projects-header-str-2": "",
+    "intro-projects-switch-all": "All",
+    "intro-projects-switch-sites": "Sites",
+    "intro-projects-switch-apps": "Apps",
+    "intro-projects-switch-branding": "Branding",
+    "intro-projects-switch-advertising": "Advertising"
+  },
+  "about-us": {
+    "about-us-intro-subtitle": "Who we are?",
+    "about-us-intro-title-str-1": "We create simple and efficient digital solutions for business<br>",
+    "about-us-intro-title-str-2": "we fulfill work in programming, analytics, design and branding",
+    "about-us-approach-title": "Approach to work",
+    "about-us-approach-subtitle-1": "Briefing",
+    "about-us-approach-subtitle-2": "Estimate and deadlines",
+    "about-us-approach-subtitle-3": "Finished product",
+    "about-us-offer-title": "OUR PROFILES",
+    "about-us-offer-str-1": "WEB—DESIGN",
+    "about-us-offer-str-2": "FRONTEND",
+    "about-us-offer-str-3": "BACKEND",
+    "about-us-offer-str-4": "UX UI ANALYTICS",
+    "about-us-offer-str-5": "ART—DIRECTION",
+    "about-us-offer-str-6": "BRANDING",
+    "about-us-offer-str-7": "SUPPORT"
+  },
+
+  "write-us": {
+    "write-us-brief-str-1": "Tell us briefly",
+    "write-us-brief-str-2": "about your project",
+    "write-us-connect-str-1": "",
+    "write-us-connect-str-2": "",
+    "write-us-form-name": "your name",
+    "write-us-form-wishs": "what are you intrested in",
+    "write-us-form-phone-number": "your phone number",
+    "write-us-form-description": "about the projects",
+    "write-us-form-attach-doc-str-1": "Attach",
+    "write-us-form-attach-doc-str-2": "document",
+    "write-us-form-send": "send"
+  }
+}

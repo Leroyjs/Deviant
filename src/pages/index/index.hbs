@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> head}}
+<body>
+  {{> preloader}}
+  {{> header 
+      color-1="black"
+      color-2="white"
+      main-link=(i18n "links-switch-lng-html.main-link-switch")
+      height-1="height:100%"
+  }}
+  {{> burger-menu
+      main-link=(i18n "links-switch-lng-html.main-link-switch")}}
+  <main class="main">
+    {{> intro-main}}
+    {{> projects-main}}
+    {{> ring-animation data-header-color="black" color="black"}}
+    {{> footer-black
+        button-color="main"
+        line-color="black"
+        main-color="black"
+        hover-color="red"}} 
+  </main>
+</body>
+</html>

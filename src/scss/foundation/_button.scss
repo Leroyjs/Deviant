@@ -1,0 +1,193 @@
+@use "../global" as *;
+
+.button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  &_type {
+    &_main {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: calc(0.6em + 24px);
+      padding: 24px 34px;
+    }
+
+    &_sub {
+      border-style: solid;
+      border-width: 1px;
+      border-radius: calc(0.6em + 12px);
+      padding: 12px 16px;
+    }
+  }
+
+  &_color {
+    &_main {
+      border-color: #242424;
+
+      &:hover {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+      }
+    }
+
+    &_gray {
+      border: 1px solid rgba(36, 36, 36, 0.4);
+    }
+
+    &_white {
+      border-color: $white;
+
+      &.button_active {
+        background-color: $white;
+        border-color: $white;
+        color: $red;
+      }
+
+      &:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $red;
+      }
+    }
+  }
+}
+
+.circle-button {
+  position: relative;
+  width: 159px;
+  height: 158px;
+  border: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+
+  path {
+    transition: fill 0.3s, stroke 0.3s;
+  }
+
+  &__border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    left: calc(100% + 20px);
+    top: 0;
+    transition: color 0.3s;
+    text-align: left;
+  }
+
+  &:hover {
+    background-color: $red;
+    border-color: $red;
+
+    .circle-button {
+      &__border {
+        path {
+          stroke: $red;
+        }
+      }
+
+      &__inner {
+        path {
+          fill: $white;
+          stroke: $white;
+        }
+      }
+    }
+
+    .text {
+      color: $red;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-md-width) {
+  .circle-button {
+    width: 146px;
+    height: 146px;
+
+    path {
+      stroke-width: 1.1004784689px;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-sm-width) {
+  .circle-button {
+    width: 122px;
+    height: 122px;
+
+    path {
+      stroke-width: 1.3142857142px;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-sm-width-2) {
+  .circle-button {
+    width: 108px;
+    height: 108px;
+
+    path {
+      stroke-width: 1.4935064934px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-lg-width) {
+  .circle-button {
+    width: 108px * 0.8055555556;
+    height: 108px * 0.8055555556;
+
+    &__text {
+      left: calc(100% + 12px);
+    }
+
+    path {
+      stroke-width: 1.8540080607px;
+    }
+  }
+
+  .button {
+    &_type {
+      &_main {
+        border-radius: calc(0.6em + 18px);
+        padding: 18px 34px;
+      }
+
+      &_sub {
+        border-radius: calc(0.6em + 6px);
+        padding: 6px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-sm-width) {
+  .circle-button {
+    width: 108px * 0.8055555556 * 0.724137931;
+    height: 108px * 0.8055555556 * 0.724137931;
+
+    path {
+      stroke-width: 2.5602968458px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-width) {
+  .circle-button {
+    &__text {
+      left: calc(100% + 4px);
+    }
+  }
+}
