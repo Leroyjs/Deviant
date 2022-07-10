@@ -113,5 +113,12 @@
     "write-us-form-attach-doc-str-1": "Attach",
     "write-us-form-attach-doc-str-2": "document",
     "write-us-form-send": "send"
+  },
+
+  "popup": {
+    "popup-str-1": "Thanks for the application!",
+    "popup-str-2": "We will contact you",
+    "popup-str-3": "shortly",
+    "": ""
   }
 }

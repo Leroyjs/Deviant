@@ -113,5 +113,13 @@
     "write-us-form-attach-doc-str-1": "Прикрепить",
     "write-us-form-attach-doc-str-2": "документ",
     "write-us-form-send": "отправить"
+  },
+
+  "popup": {
+    "popup-str-1": "Спасибо за заявку!",
+    "popup-str-2": "Мы скоро с вами",
+    "popup-str-3": "свяжемся",
+    "": ""
   }
+
 }

@@ -1,0 +1,103 @@
+@use "../global" as *;
+@use "../foundation" as *;
+
+body.lock {
+  overflow: hidden;
+}
+.scroll-content {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+	 font-size: 60px;
+  }
+  &__content {
+    background: $white;
+    padding: 16px;
+  }
+
+  &__text {
+    text-decoration: underline;
+	 text-color: $black;
+  }
+  &__text.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__text:hover {
+    text-decoration: none;
+  }
+}
+.popup.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 500;
+  transition: all 0.8s ease 0s;
+
+}
+.popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+  opacity: 1;
+}
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup:target {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: #333 solid 1px;
+  background: #e8e8e8;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  top: 3.5px;
+  left: 12.4px;
+  content: " ";
+  height: 1em;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
