@@ -9,7 +9,7 @@ const maxZlength = 11000;
 const frontOffset = 1500;
 const backOffset = 1000;
 const step = (maxZlength - frontOffset - backOffset) / countsOfImgs;
-const positionOfVisibilityBorder = 1500;
+const positionOfVisibilityBorder = 2000;
 const borderBlurCoef = 5;
 
 const getPercent = () => {
