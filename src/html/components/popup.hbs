@@ -1,14 +1,15 @@
 <div id="popup" class="popup">
-   <div class="popup__body">
-      <div class="popup__content ">
-         <div class="popup__text text_transform_uppercase">
-				<h2 class="text">
-               {{i18n "popup.popup-str-1"}}<br>
-					{{i18n "popup.popup-str-2"}}<br>
-					{{i18n "popup.popup-str-3"}}
-            </h2>
-			</div>
-         <button class="close-popup text text_transform_uppercase">ХОРОШО</button>
+   <div class="popup-body main-padding">
+      <div class="popup-text text_transform_uppercase text_type_h1">
+			<h2 class="text gratitude main-padding">
+            {{i18n "popup.popup-str-1"}}<br>
+				{{i18n "popup.popup-str-2"}}<br class="non-mobile">
+				{{i18n "popup.popup-str-3"}}
+         </h2>
+         <div class="popup-background">
+            <img class="popup-img" src="../../images/content/popup-desktop.png">
+         </div>
+         <button class="close-popup button text text_transform_uppercase text_color_white text_type_h1">{{i18n "popup.popup-button"}}</button>
 		</div>
 	</div>
 </div>

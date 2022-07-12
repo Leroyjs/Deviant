@@ -83,4 +83,4 @@ function checkValidate() {
 IMask(document.querySelector(`input[name="phone"`), {
   mask: "+{7}(000)000-00-00",
 });
-IMask()
+// IMask()

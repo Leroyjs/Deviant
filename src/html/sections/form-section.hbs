@@ -39,6 +39,7 @@ ormData.get("phone")<section class="form-section main-padding">
         placeholder="{{i18n 'write-us.write-us-form-phone-number'}}"
         class="form-section__input text text_type_h2 text_transform_uppercase"
       />
+      <div class="error-warning">{{> error-warning-svg}}</div>
     </div>
     <div class="form-section__line"></div>
     <div class="form-section__input-row">
@@ -48,6 +49,7 @@ ormData.get("phone")<section class="form-section main-padding">
         placeholder="E—mail"
         class="form-section__input text text_type_h2 text_transform_uppercase"
       />
+      <div class="error-warning">{{> error-warning-svg}}</div>
     </div>
     <div class="form-section__line"></div>
     <div class="form-section__input-row">
@@ -60,6 +62,20 @@ ormData.get("phone")<section class="form-section main-padding">
       ></textarea>
     </div>
     <div class="form-section__line"></div>
+    <div class="error-form text text_color_white text_transform_uppercase text_type_h2">
+      <div class="error-text-form">
+        {{i18n 'write-us.write-us-error-form-1'}}<br>
+        {{i18n 'write-us.write-us-error-form-2'}}
+      </div>
+      <img class="error-form__error-bg-top error-bg-top" src="../../images/content/error-top.png">
+    </div>
+    <div class="error-backend text text_color_white text_transform_uppercase text_type_h2">
+      <div class="error-text-backend">
+        {{i18n 'write-us.write-us-error-backend-1'}}<br>
+        {{i18n 'write-us.write-us-error-backend-2'}}
+      </div>
+      <img class="error-backend__error-bg-bottom error-bg-bottom" src="../../images/content/error-bottom.png">
+    </div>
     <div class="form-section__buttons-row">
       <label class="form-section__plus">
         <input type="file" />

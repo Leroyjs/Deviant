@@ -110,6 +110,10 @@
     "write-us-form-wishs": "что вас интересует",
     "write-us-form-phone-number": "номер",
     "write-us-form-description": "Коротко о проекте",
+    "write-us-error-form-1": "ФОРМА ЗАПОЛНЕНА НЕВЕРНО!",
+    "write-us-error-form-2": "Попробуйте ещё раз!",
+    "write-us-error-backend-1": "Что-то пошло не так.",
+    "write-us-error-backend-2": "Давайте попробуем ещё раз!",
     "write-us-form-attach-doc-str-1": "Прикрепить",
     "write-us-form-attach-doc-str-2": "документ",
     "write-us-form-send": "отправить"
@@ -119,7 +123,7 @@
     "popup-str-1": "Спасибо за заявку!",
     "popup-str-2": "Мы скоро с вами",
     "popup-str-3": "свяжемся",
-    "": ""
+    "popup-button": "хорошо!"
   }
 
 }
