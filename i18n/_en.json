@@ -110,6 +110,10 @@
     "write-us-form-wishs": "what are you intrested in",
     "write-us-form-phone-number": "your phone number",
     "write-us-form-description": "about the projects",
+    "write-us-error-form-1": "THE FORM IS INCORRECTLY FILLED",
+    "write-us-error-form-2": "Let's try again!",
+    "write-us-error-backend-1": "Let's try again!",
+    "write-us-error-backend-2": "Something gone wrong.",
     "write-us-form-attach-doc-str-1": "Attach",
     "write-us-form-attach-doc-str-2": "document",
     "write-us-form-send": "send"
@@ -119,6 +123,6 @@
     "popup-str-1": "Thanks for the application!",
     "popup-str-2": "We will contact you",
     "popup-str-3": "shortly",
-    "": ""
+    "popup-button": "OK!"
   }
 }
