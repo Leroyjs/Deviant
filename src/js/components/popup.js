@@ -15,7 +15,7 @@ const Popup = () => {
   //   const popupName = popupLink.getAttribute("href").replace("#", "");
   const currentPopup = document.getElementById("popup");
   popupOpen(currentPopup);
-  //   e.preventDefault();
+    // e.preventDefault();
   //       });
   //     }
   //   }
@@ -25,14 +25,14 @@ const Popup = () => {
     for (let i = 0; i < popupCloseIcon.length; i++) {
       const el = popupCloseIcon[i];
       el.addEventListener("click", function (e) {
-			popupClose(el.closest(".popup"));
+			popupClose(el.closest(".popup.open"));
 
         e.preventDefault();
       });
     }
   }
 
-  function popupOpen(currentPopup, formActive) {
+  function popupOpen(currentPopup) {
     if (currentPopup && unlock) {
       const popupActive = document.querySelector(".popup.open");
 
