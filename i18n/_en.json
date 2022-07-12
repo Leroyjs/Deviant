@@ -116,7 +116,8 @@
     "write-us-error-backend-2": "Something gone wrong.",
     "write-us-form-attach-doc-str-1": "Attach",
     "write-us-form-attach-doc-str-2": "document",
-    "write-us-form-send": "send"
+    "write-us-form-send": "send",
+    "write-us-phone-number": "+{} (000) 000-00-00"
   },
 
   "popup": {

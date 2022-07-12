@@ -32,26 +32,30 @@
       />
     </div>
     <div class="form-section__line"></div>
-    <div class="form-section__input-row">
-      <input
-        type="text"
-        name="phone"
-        placeholder="{{i18n 'write-us.write-us-form-phone-number'}}"
-        class="form-section__input text text_type_h2 text_transform_uppercase"
-      />
-      <div class="error-warning">{{> error-warning-svg}}</div>
+    <div class="form-section__form-wrapper form-wrapper">
+      <div class="form-wrapper__input-row">
+          <input
+            type="text"
+            name="phone"
+            placeholder="{{i18n 'write-us.write-us-form-phone-number'}}"
+            class="form-wrapper__input text text_type_h2 text_transform_uppercase"
+            />
+          {{> error-warning-svg}}
+      </div>
+      <div class="form-wrapper__line"></div>
     </div>
-    <div class="form-section__line"></div>
-    <div class="form-section__input-row">
-      <input
-        type="text"
-        name="email"
-        placeholder="E—mail"
-        class="form-section__input text text_type_h2 text_transform_uppercase"
-      />
-      <div class="error-warning">{{> error-warning-svg}}</div>
+    <div class="form-section__form-wrapper form-wrapper">
+      <div class="form-wrapper__input-row">
+        <input
+          type="text"
+          name="email"
+          placeholder="E—mail"
+          class="form-wrapper__input text text_type_h2 text_transform_uppercase"
+          />
+        {{> error-warning-svg}}
+      </div>
+      <div class="form-wrapper__line"></div>
     </div>
-    <div class="form-section__line"></div>
     <div class="form-section__input-row">
       <textarea
         type="text"

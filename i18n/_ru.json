@@ -116,7 +116,8 @@
     "write-us-error-backend-2": "Давайте попробуем ещё раз!",
     "write-us-form-attach-doc-str-1": "Прикрепить",
     "write-us-form-attach-doc-str-2": "документ",
-    "write-us-form-send": "отправить"
+    "write-us-form-send": "отправить",
+    "write-us-phone-number": "+{7} (000) 000-00-00"
   },
 
   "popup": {
