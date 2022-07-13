@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> head}}
+<body>
+  {{> header
+      detail-project="true"
+      detail-project-color-1=""
+      detail-project-color-2=""
+      detail-project-color-3=""
+      color-1="black"
+      color-2="white"
+      about-us-link=(i18n "links-switch-lng-html.about-us-link-switch")
+      height-1="height:100%"}}
+  {{> burger-menu
+      theme-controller="ignore-theme"
+      about-us-link=(i18n "links-switch-lng-html.about-us-link-switch")}}
+  <main>
+    <div class="main">
+      <div class="content">
+        {{> detail-imgs work-name="dutt-butt"}}
+        <div class="case-start-screen is-show">
+          <div class="case-start-screen__description-wrapper main-padding">
+            <span class="case-start-screen__year text_type_common text_color_gray">2022</span>
+            <div class="case-start-screen__description text_type_common text_color_black">
+              Концепт на примере <br>
+              главной страницы сайта
+            </div>
+          </div>
+          <div class="case-start-screen__title-box">
+            <h2 class="text_type_common case-start-screen__sub-title">
+              Сервис для обмена <br>
+              криптовалют
+            </h2>
+            <h1 class="text_type_h1 text_transform_uppercase case-start-screen__title">
+              <div class="case-start-screen__title-inner">
+                zeeves
+              </div>  
+            </h1>
+            <div class="case-start-screen__tags-wrapper">
+              <button class="button button_type_sub button_color_gray text_type_common text_color_black hover_transition_xs">
+                Сайты
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="case-final-screen">
+          <div class="case-final-screen__inner case-final-screen__inner_desktop text_transform_uppercase text_type_h1 text_color_black">
+            <a href="" class="case-final-screen__link text_color_black">
+              <svg class="case-final-screen__svg" width="928" height="272" viewBox="0 0 928 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M113 113H80C36.3695 113 1 148.369 1 192C1 235.63 36.3695 271 80 271H291C335.183 271 371 235.183 371 191V168C371 163.029 375.029 159 380 159H848C891.63 159 927 123.63 927 79.9998C927 36.3694 891.63 0.999865 848 0.999859L202 0.999767C157.817 0.999761 122 36.817 122 80.9998V104C122 108.97 117.971 113 113 113Z" stroke="#242424"/>
+              </svg>
+              Следующий <br> 
+              кейс 
+            </a>
+            Koltashov
+          </div>
+          <div class="case-final-screen__inner case-final-screen__inner_mobile text_transform_uppercase text_type_h1 text_color_black">
+            Дальше <br>
+            <a href="" class="case-final-screen__link text_color_black text_type_common">
+              <svg class="case-final-screen__svg" width="136" height="58" viewBox="0 0 136 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 29C1 13.536 13.536 1 29 1H107C122.464 1 135 13.536 135 29V29C135 44.464 122.464 57 107 57H29C13.536 57 1 44.464 1 29V29Z" stroke="#242424"/>
+              </svg>
+              Koltashov
+            </a>
+          </div>
+        </div>
+        <div class="case-controls row main-padding">
+          <div class="half">
+            <button class="circle-button">
+              {{> circle-button-border-svg}}
+              <div
+                class="circle-button__text text text_type_desc
+                      text_color_gray preloader-opacity
+                      preloader-appearance-step-2-0"
+              >
+                Вернуться <br>
+                назад
+              </div>
+              {{> arrow-left-svg}}
+            </button>
+          </div>
+          <div class="half row case-controls__links-row">
+            <div class="half case-controls__link-to-projects">
+              <a href="/all-projects.html" class="case-controls__link link link_color_black text text_color_black text_type_common text_transform_uppercase">
+                <div class="link-wrapper">
+                  <span class="text">Перейти на сайт</span>
+                  <br>
+                  <span class="text">Перейти на сайт</span>
+                </div>
+              </a>
+              {{!-- <a href="/all-projects.html" class="case-controls__link link link_color_black text text_color_black text_type_h2 text_transform_uppercase">
+                <div class="link-wrapper">
+                  <span class="text">Appstore</span>
+                  <br>
+                  <span class="text">Appstore</span>
+                </div>
+              </a>
+              <a href="/all-projects.html" class="case-controls__link link link_color_black text text_color_black text_type_h2 text_transform_uppercase">
+                <div class="link-wrapper">
+                  <span class="text">Playmartket</span>
+                  <br>
+                  <span class="text">Playmartket</span>
+                </div>
+              </a> --}}
+              <a href="/all-projects.html" class="case-controls__link link link_color_black text text_color_black text_type_common text_transform_uppercase">
+                <div class="link-wrapper">
+                  <span class="text">Кейс Behance</span>
+                  <br>
+                  <span class="text">Кейс Behance</span>
+                </div>
+              </a>
+            </div>
+            <div class="half case-controls__link-to-order">
+              <a href="/all-projects.html" class="case-controls__link link link_color_black text text_color_black text_type_common text_transform_uppercase">
+                <div class="link-wrapper">
+                  <span class="text">Хочу сайт</span>
+                  <br>
+                  <span class="text">Хочу сайт</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapper">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
