@@ -6,7 +6,19 @@
     "write-us-link": "/write-us.html",
     "agency-link": "/about-us.html",
     "all-projects-link": "/all-projects.html",
-    "footer-write-us": "/write-us.html"
+    "footer-write-us": "/write-us.html",
+    "detail-base-white-link": "/detail-base-white-site.html",
+    "detail-dacia-link": "/detail-dacia-site.html",
+    "detail-green-marathon-link": "/detail-green-marathon-site.html",
+    "detail-horo-link": "/detail-horo-app.html",
+    "detail-immune-link": "/detail-immune-site.html",
+    "detail-koltashov-link": "/detail-koltashov-site.html",
+    "detail-logofolio-link": "/detail-logofolio-branding.html",
+    "detail-plastic-nft-link": "/detail-plastic-nft-site.html",
+    "detail-sber-cash-terminal-link": "/detail-sber-cash-terminal-app.html",
+    "detail-sber-salary-project-link": "/detail-sber-salary-project-site.html",
+    "detail-zeeves-indentity-link" :  "/detail-zeeves-indentity.html",
+    "detail-zeeves-site-link" :  "/detail-zeeves-site.html"
   },
 
   "links-switch-lng-html": {
