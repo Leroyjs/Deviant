@@ -57,15 +57,41 @@
 
 .case-final-screen__link {
   transition: color 0.3s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   &:hover {
     color: $white;
+
+    @media screen and (min-width: $phone-width) {
+      .case-final-screen__next-case-name {
+        color: $black;
+      }
+    }
 
     path {
       fill: $red;
       stroke: $red;
     }
   }
+}
+
+.case-final-screen__next-case-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+}
+
+.case-final-screen__next {
+  margin-left: 1.1em;
+}
+
+.case-final-screen__next-case {
+  display: block;
+  position: relative;
 }
 
 .case-final-screen__inner {
@@ -325,6 +351,39 @@
     transform: translateX(0px);
     opacity: 1;
     transition: opacity 0.4s 2.1s, transform 0.4s 2.1s;
+  }
+}
+
+.special {
+  &_green-marathon {
+    margin-right: 3em;
+  }
+  &_salary-project {
+    margin-left: 4.4em;
+  }
+  &_common-projects {
+    margin-right: 2.51em;
+  }
+}
+
+.special-2 {
+  &_green-marathon {
+    margin-right: 0.06em;
+  }
+  &_plastic-nft {
+    width: max-content;
+  }
+  &_cash-terminal {
+    width: max-content;
+  }
+  &_common-projects {
+    padding-left: 0.2em;
+  }
+  &_base-white {
+    width: max-content;
+  }
+  &_dutt-butt {
+    width: max-content;
   }
 }
 

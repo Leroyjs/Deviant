@@ -1,10 +1,12 @@
 <div class="imgs">
-  <div class="img-wrapper">
-    <img
-      src="../../images/content/works/{{work-name}}/detail-photos/07.jpg"
-      alt="{{work-name}}"
-    />
-  </div>
+  {{#if countEqualSix}}{{else}}
+    <div class="img-wrapper">
+      <img
+        src="../../images/content/works/{{work-name}}/detail-photos/07.jpg"
+        alt="{{work-name}}"
+      />
+    </div>
+  {{/if}}
   <div class="img-wrapper">
     <img
       src="../../images/content/works/{{work-name}}/detail-photos/06.jpg"
