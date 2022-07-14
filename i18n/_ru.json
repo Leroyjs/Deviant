@@ -25,13 +25,13 @@
   },
 
   "links-switch-lng-html": {
-    "main-link-switch": "../dist/en/index.html",
-    "projects-link-switch": "../dist/en/all-projects.html",
-    "about-us-link-switch": "../dist/en/about-us.html",
-    "write-us-link-switch": "../dist/en/write-us.html",
-    "agency-link-switch": "../dist/en/about-us.html",
-    "all-projects-link-switch": "../dist/en/all-projects.html",
-    "footer-write-us-switch": "../dist/en/write-us.html"
+    "main-link-switch": "https://eu.deviant-studio.com/index.html",
+    "projects-link-switch": "https://eu.deviant-studio.com/all-projects.html",
+    "about-us-link-switch": "https://eu.deviant-studio.com/about-us.html",
+    "write-us-link-switch": "https://eu.deviant-studio.com/write-us.html",
+    "agency-link-switch": "https://eu.deviant-studio.com/about-us.html",
+    "all-projects-link-switch": "https://eu.deviant-studio.com/all-projects.html",
+    "footer-write-us-switch": "https://eu.deviant-studio.com/write-us.html"
   },
 
   "links-text": {
@@ -141,5 +141,4 @@
     "popup-str-3": "свяжемся",
     "popup-button": "хорошо!"
   }
-
 }

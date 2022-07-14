@@ -25,13 +25,13 @@
   },
 
   "links-switch-lng-html": {
-    "main-link-switch": "../dist/ru/index.html",
-    "projects-link-switch": "../dist/ru/all-projects.html",
-    "about-us-link-switch": "../dist/ru/about-us.html",
-    "write-us-link-switch": "../dist/ru/write-us.html",
-    "agency-link-switch": "../dist/ru/about-us.html",
-    "all-projects-link-switch": "../dist/ru/all-projects.html",
-    "footer-write-us-switch": "../dist/ru/write-us.html"
+    "main-link-switch": "https://deviant-studio.com/index.html",
+    "projects-link-switch": "https://deviant-studio.com/all-projects.html",
+    "about-us-link-switch": "https://deviant-studio.com/about-us.html",
+    "write-us-link-switch": "https://deviant-studio.com/write-us.html",
+    "agency-link-switch": "https://deviant-studio.com/about-us.html",
+    "all-projects-link-switch": "https://deviant-studio.com/all-projects.html",
+    "footer-write-us-switch": "https://deviant-studio.com/write-us.html"
   },
 
   "links-text": {
@@ -43,7 +43,6 @@
     "all-projects-link-text": "All projects",
     "footer-write-us-text": "write us"
   },
-
 
   "intro-main": {
     "intro-main-header-1": "We develop",

@@ -18,6 +18,10 @@
   justify-content: center;
 }
 
+.link-wrapper {
+  padding-top: 0.1em;
+}
+
 .case-start-screen,
 .case-final-screen {
   opacity: 0;
@@ -102,7 +106,11 @@
     display: none;
   }
 }
-
+@media screen and (min-width: $phone-width) {
+  .case-final-screen__next-case-name {
+    color: $black;
+  }
+}
 .case-start-screen__title-box {
   flex: 1;
   display: flex;
@@ -121,10 +129,12 @@
   overflow: hidden;
   display: inline-block;
   height: 1em;
+  padding-top: 0.1em;
 }
 
 .case-start-screen__title-inner {
   transform: translateY(100%);
+  display: inline-block;
 }
 
 // animation
