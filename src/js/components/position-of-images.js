@@ -32,7 +32,7 @@ const setPositionOfImages = () => {
     const opacity =
       ((maxZlength + position + positionOfVisibilityBorder) / maxZlength) **
       borderBlurCoef;
-    console.log(position, opacity);
+
     item.style.transform = `translateX(-50%) translateY(-50%) translateZ(${position}px)`;
     item.style.opacity = opacity;
   });

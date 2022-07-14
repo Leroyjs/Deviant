@@ -10,6 +10,7 @@ import { initScrollbar } from "../../js/components/scrollbars";
 import { initVHSize } from "../../js/components/vh-size";
 import { positionOfImages } from "../../js/components/position-of-images";
 import { ScrollbarsDetailPlugin } from "../../js/components/scrollbars-detail-plugin";
+import { backButtonInit } from "../../js/components/back-button";
 
 window.addEventListener("load", () => {
   const changeColorOfHeader = header();
@@ -18,7 +19,8 @@ window.addEventListener("load", () => {
   linkWrapper();
   initBurgerMenu();
   initVHSize();
-
+  backButtonInit();
+  
   function scrollEvent() {
     changeColorOfHeader();
     setPositionOfImages();

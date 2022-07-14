@@ -9,16 +9,19 @@
     "footer-write-us": "/write-us.html",
     "detail-base-white-link": "/detail-base-white-site.html",
     "detail-dacia-link": "/detail-dacia-site.html",
+    "detail-dutt-butt-link": "/detail-dutt-butt-site.html",
     "detail-green-marathon-link": "/detail-green-marathon-site.html",
     "detail-horo-link": "/detail-horo-app.html",
     "detail-immune-link": "/detail-immune-site.html",
     "detail-koltashov-link": "/detail-koltashov-site.html",
+    "detail-loftgroup-link": "/detail-loft-group-site.html",
     "detail-logofolio-link": "/detail-logofolio-branding.html",
     "detail-plastic-nft-link": "/detail-plastic-nft-site.html",
     "detail-sber-cash-terminal-link": "/detail-sber-cash-terminal-app.html",
     "detail-sber-salary-project-link": "/detail-sber-salary-project-site.html",
-    "detail-zeeves-indentity-link" :  "/detail-zeeves-indentity.html",
-    "detail-zeeves-site-link" :  "/detail-zeeves-site.html"
+    "detail-zeeves-identity-link": "/detail-zeeves-identity.html",
+    "detail-common-projects-link": "/detail-common-projects-site.html",
+    "detail-zeeves-site-link": "/detail-zeeves-site.html"
   },
 
   "links-switch-lng-html": {
@@ -72,10 +75,10 @@
     "projects-mini-subtitle-landing": "Одностраничный сайт",
     "projects-mini-subtitle-multipage-website": "Многостраничный сайт",
     "projects-mini-subtitle-mobile-app": "Мобильное приложение",
-    "projects-sber-salary-project": "Сбербанк. Зарплатный проект",
-    "projects-sber-cash-terminal": "Сбербанк. Касса",
+    "projects-sber-salary-project": "Сбер Зарплатный проект",
+    "projects-sber-cash-terminal": "Сбер Касса",
     "projects-immune-activator": "Иммун активатор",
-    "projects-sber-green-marathon": "Сбербанк. Зеленый марафон",
+    "projects-sber-green-marathon": "Сбер Зеленый марафон",
     "projects-hunt-base-white": "База охоты Белое"
   },
 
