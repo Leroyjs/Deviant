@@ -78,7 +78,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "cross-env LANG=ru webpack serve --config config/webpack.dev.config.js --mode=development",
+    "start": "cross-env LANG=en webpack serve --config config/webpack.dev.config.js --mode=development",
     "build:dev:ru": "cross-env LANG=ru webpack --config config/webpack.dev.config.js --mode=development",
     "build:prod:ru": "cross-env LANG=ru webpack --config config/webpack.prod.config.js --mode=production",
     "build:dev:en": "cross-env LANG=en webpack --config config/webpack.dev.config.js --mode=development",
