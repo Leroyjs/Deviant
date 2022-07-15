@@ -20,6 +20,7 @@ body.lock {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 101;
 }
 
 .popup-body {
@@ -137,8 +138,14 @@ body.lock {
 
 @media screen and (max-width: $desktop-md-width) {
   .popup-img {
+    &_ru {
   width: 1150px;
   height: auto;
+    }
+    &_eng {
+      width: 950px;
+      height: 340px;
+    }
   }
   .close-popup {
   width: 560px;
@@ -154,8 +161,14 @@ body.lock {
     padding-left: 34px;
   }
   .popup-img {
+    &_ru {
   width: 980px;
   height: auto;
+    }
+    &_eng {
+      width: 820px;
+      height: 296px;
+    }
   }
   .close-popup {
   width: 470px;
@@ -171,8 +184,14 @@ body.lock {
     padding-left: 28px;
   }
   .popup-img {
-  width: 850px;
-  height: auto;
+    &_ru {
+      width: 850px;
+      height: auto;
+    }
+    &_eng {
+      width: 720px;
+      height: 256px
+    }
   }
 
   .close-popup {
@@ -191,8 +210,14 @@ body.lock {
     padding-left: 40px;
   }
   .popup-img {
+    &_ru {
     width: 700px;
     height: auto;
+    }
+    &_eng {
+      width: 580px;
+      height: 210px;
+    }
   }
   .close-popup {
     width: 360px;
@@ -214,8 +239,14 @@ body.lock {
     line-height: 100%;
   }
   .popup-img {
+    &_ru {
     width: 520px;
     height: auto;
+    }
+    &_eng {
+      width: 430px;
+      height: 156px;
+    }
   }
   .popup-background {
     top: 88px;

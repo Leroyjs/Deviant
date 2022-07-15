@@ -6,10 +6,13 @@
 				{{i18n "popup.popup-str-2"}}<br class="non-mobile">
 				{{i18n "popup.popup-str-3"}}
          </h2>
-         <div class="popup-background">
-            <img class="popup-img" src="../../images/content/popup-desktop.png">
-         </div>
-         <button class="close-popup button text text_transform_uppercase text_color_white text_type_h1">{{i18n "popup.popup-button"}}</button>
+         {{#if (lng "ru")}}
+            {{> popup-background}}
+         {{/if}}
+         {{#if (lng "en")}}
+            {{> popup-background-eng}}
+         {{/if}}
 		</div>
 	</div>
 </div>
+

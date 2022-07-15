@@ -74,12 +74,18 @@
     "projects-hover-2": "more",
     "projects-mini-subtitle-landing": "Landing",
     "projects-mini-subtitle-multipage-website": "Multipage website",
+    "projects-mini-subtitle-branding": "branding",
     "projects-mini-subtitle-mobile-app": "Mobile app",
-    "projects-sber-salary-project": "Sberbank. Salary project",
-    "projects-sber-cash-terminal": "Sberbank. Cash terminal",
+    "projects-sber-salary-project": "Sber Salary project",
+    "projects-sber-cash-terminal": "Sber Cash terminal",
     "projects-immune-activator": "Immune activator",
-    "projects-sber-green-marathon": "Sberbank. Green marathon",
-    "projects-hunt-base-white": "Hunt Base White"
+    "projects-sber-green-marathon": "Sber Green marathon",
+    "projects-dacia-multipage-website": "Dacia",
+    "projects-logofolio-branding": "logofolio",
+    "projects-zevees-logo-branding": "zevees",
+    "projects-zevees-site-multipage-website": "zevees",
+    "projects-common-projects-multipage-website": "common projects",
+    "projects-plastic-nft-landing": "plastic nft"
   },
 
   "footer": {
@@ -100,7 +106,7 @@
   },
   "about-us": {
     "about-us-intro-subtitle": "Who we are?",
-    "about-us-intro-title-str-1": "We create simple and efficient digital solutions for business<br>",
+    "about-us-intro-title-str-1": "We create simple and efficient digital solutions for business",
     "about-us-intro-title-str-2": "we fulfill work in programming, analytics, design and branding",
     "about-us-approach-title": "Approach to work",
     "about-us-approach-subtitle-1": "Briefing",
@@ -136,9 +142,9 @@
   },
 
   "popup": {
-    "popup-str-1": "Thanks for the application!",
-    "popup-str-2": "We will contact you",
-    "popup-str-3": "shortly",
+    "popup-str-1": "Thanks! We will",
+    "popup-str-2": "Contact you",
+    "popup-str-3": "Shortly",
     "popup-button": "OK!"
   }
 }
