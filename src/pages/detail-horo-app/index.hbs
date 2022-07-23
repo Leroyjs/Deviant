@@ -22,18 +22,18 @@
           <div class="case-start-screen__description-wrapper main-padding">
             <span class="case-start-screen__year text_type_common text_color_gray">2021</span>
             <div class="case-start-screen__description text_type_common text_color_black">
-              Мобильное приложение<br>
-              для iOS и Android
+              {{i18n "detail-pages.detail-description-mobile-app-1-2"}}<br>
+              {{i18n "detail-pages.detail-description-mobile-app-2-2"}}
             </div>
           </div>
           <div class="case-start-screen__title-box">
             <h2 class="text_type_common case-start-screen__sub-title">
-              Социальная сеть <br>
-              по гороскопам
+              {{i18n "detail-pages.detail-subtitle-horo-1"}} <br>
+              {{i18n "detail-pages.detail-subtitle-horo-2"}}
             </h2>
             <h1 class="text_type_h1 text_transform_uppercase case-start-screen__title">
               <div class="case-start-screen__title-inner">
-                Horo
+                {{i18n "detail-pages.detail-title-horo"}}
               </div>  
             </h1>
             <div class="case-start-screen__tags-wrapper">
@@ -45,22 +45,26 @@
         </div>
         <div class="case-final-screen">
           <div class="case-final-screen__inner case-final-screen__inner_desktop text_transform_uppercase text_type_h1 text_color_black">
-            <a href="{{i18n "links-html.detail-immune-link"}}" class="case-final-screen__link text_color_black">
-              <svg class="case-final-screen__svg" width="928" height="272" viewBox="0 0 928 272" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M113 113H80C36.3695 113 1 148.369 1 192C1 235.63 36.3695 271 80 271H291C335.183 271 371 235.183 371 191V168C371 163.029 375.029 159 380 159H848C891.63 159 927 123.63 927 79.9998C927 36.3694 891.63 0.999865 848 0.999859L202 0.999767C157.817 0.999761 122 36.817 122 80.9998V104C122 108.97 117.971 113 113 113Z" stroke="#242424"/>
-              </svg>
-              <span class="case-final-screen__next"> Следующий </span> 
-              <span class="case-final-screen__next-case">кейс&nbsp;<span class="case-final-screen__next-case-name">Immune </span></span>
+            <a href="{{i18n "links-html.detail-immune-link"}}" class="case-final-screen__link text_color_black {{i18n "additionaly-classes.detail-en-3-em"}}">
+              {{#if (lng "ru")}}
+                {{> detail-page-desktop-svg}}
+              {{/if}}
+              {{#if (lng "en")}}
+                {{> detail-page-desktop-svg-eng}}
+              {{/if}}
+              <span class="case-final-screen__next"> {{i18n "detail-pages.detail-next-project-1"}} </span> 
+              <span class="case-final-screen__next-case">{{i18n "detail-pages.detail-next-project-2"}}&nbsp;<span class="case-final-screen__next-case-name">{{i18n "detail-pages.detail-title-immune"}} </span></span>
             </a>
             
           </div>
           <div class="case-final-screen__inner case-final-screen__inner_mobile text_transform_uppercase text_type_h1 text_color_black">
-            Дальше <br>
+            
+            {{i18n "detail-pages.detail-next-project-3"}} <br>
             <a href="{{i18n "links-html.detail-immune-link"}}" class="case-final-screen__link text_color_black text_type_common">
               <svg class="case-final-screen__svg" width="136" height="58" viewBox="0 0 136 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 29C1 13.536 13.536 1 29 1H107C122.464 1 135 13.536 135 29V29C135 44.464 122.464 57 107 57H29C13.536 57 1 44.464 1 29V29Z" stroke="#242424"/>
               </svg>
-              Immune
+              {{i18n "detail-pages.detail-title-immune"}}
             </a>
           </div>
         </div>
@@ -73,8 +77,8 @@
                       text_color_gray preloader-opacity
                       preloader-appearance-step-2-0"
               >
-                Вернуться <br>
-                назад
+                {{i18n "detail-pages.detail-back-button-1"}}  <br>
+                {{i18n "detail-pages.detail-back-button-2"}} 
               </div>
               {{> arrow-left-svg}}
             </button>

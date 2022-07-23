@@ -57,3 +57,45 @@ body {
     background-image: url("../../images/content/works/hunt-base-white/white.jpg");
   }
 }
+
+.work-item:nth-child(10) {
+  .work-item__img {
+    background-image: url("../../images/content/works/dacia/02.jpg");
+    background-size: cover;
+  }
+}
+
+.work-item:nth-child(11) {
+  .work-item__img {
+    background-image: url("../../images/content/works/zeeves-logo/01.jpg");
+    background-size: cover;
+  }
+}
+
+.work-item:nth-child(12) {
+  .work-item__img {
+    background-image: url("../../images/content/works/logofolio/01.jpg");
+    background-size: cover;
+  }
+}
+
+.work-item:nth-child(13) {
+  .work-item__img {
+    background-image: url("../../images/content/works/plastic–nft/01.jpg");
+    background-size: cover;
+  }
+}
+
+.work-item:nth-child(14) {
+  .work-item__img {
+    background-image: url("../../images/content/works/zeeves-site/01.jpg");
+    background-size: cover;
+  }
+}
+
+.work-item:nth-child(15) {
+  .work-item__img {
+    background-image: url("../../images/content/works/common-projects/01.jpg");
+    background-size: cover;
+  }
+}
