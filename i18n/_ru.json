@@ -31,7 +31,21 @@
     "write-us-link-switch": "https://eu.deviant-studio.com/write-us.html",
     "agency-link-switch": "https://eu.deviant-studio.com/about-us.html",
     "all-projects-link-switch": "https://eu.deviant-studio.com/all-projects.html",
-    "footer-write-us-switch": "https://eu.deviant-studio.com/write-us.html"
+    "footer-write-us-switch": "https://eu.deviant-studio.com/write-us.html",
+    "detail-base-white-switch": "https://eu.deviant-studio.com/detail-base-white-site.html",
+    "detail-dacia-switch": "https://eu.deviant-studio.com/detail-dacia-site.html",
+    "detail-dutt-butt-switch": "https://eu.deviant-studio.com/detail-dutt-butt-site.html",
+    "detail-green-marathon-switch": "https://eu.deviant-studio.com/detail-green-marathon-site.html",
+    "detail-horo-switch": "https://eu.deviant-studio.com/detail-horo-app.html",
+    "detail-immune-switch": "https://eu.deviant-studio.com/detail-immune-site.html",
+    "detail-koltashov-switch": "https://eu.deviant-studio.com/detail-koltashov-site.html",
+    "detail-loftgroup-switch": "https://eu.deviant-studio.com/detail-loft-group-site.html",
+    "detail-logofolio-switch": "https://eu.deviant-studio.com/detail-logofolio-branding.html",
+    "detail-plastic-nft-switch": "https://eu.deviant-studio.com/detail-plastic-nft-site.html",
+    "detail-sber-cash-terminal-switch": "https://eu.deviant-studio.com/detail-sber-cash-terminal-app.html",
+    "detail-zeeves-identity-switch": "https://eu.deviant-studio.com/detail-zeeves-identity.html",
+    "detail-common-projects-switch": "https://eu.deviant-studio.com/detail-common-projects-site.html",
+    "detail-zeeves-site-switch": "https://eu.deviant-studio.com/detail-zeeves-site.html"
   },
 
   "links-text": {
@@ -113,7 +127,7 @@
     "about-us-approach-subtitle-1": "Брифинг",
     "about-us-approach-subtitle-2": "Смета и сроки",
     "about-us-approach-subtitle-3": "Готовый продукт",
-    "about-us-offer-title": "мы создаём",
+    "about-us-offer-title": "мы создаем",
     "about-us-offer-str-1": "WEB—DESIGN",
     "about-us-offer-str-2": "FRONTEND—РАЗРАБОТКА",
     "about-us-offer-str-3": "BACKEND—РАЗРАБОТКА",
@@ -141,7 +155,12 @@
     "write-us-form-send": "отправить",
     "write-us-phone-number": "+{7} (000) 000-00-00"
   },
-
+  "additionaly-classes": {
+    "detail-en": "",
+    "detail-en-2-em": "",
+    "detail-en-3-em": "",
+    "detail-en-1-em": ""
+  },
   "popup": {
     "popup-str-1": "Спасибо за заявку!",
     "popup-str-2": "Мы скоро с вами",
@@ -175,9 +194,9 @@
     "detail-title-dutt-butt": "DUTT BUTT",
     "detail-title-common-projects": "COMMON PROJECTS",
     "detail-title-common-projects-2": "COMMON",
-    "detail-title-common-projects-3": "PROJECTS",
-    "detail-title-green-marathon-1": "Зеленый",
-    "detail-title-green-marathon-2": "марафон",
+    "detail-title-common-projects-3": "",
+    "detail-title-green-marathon-1": "СБЕР",
+    "detail-title-green-marathon-2": "",
     "detail-title-green-marathon-3": "Зеленый марафон",
     "detail-title-horo": "Horo",
     "detail-title-immune": "Immune",
@@ -186,8 +205,8 @@
     "detail-title-logofolio": "logofolio",
     "detail-title-plastic-nft": "Plastic NFT",
     "detail-title-sber-cash-terminal": "Сбер Касса",
-    "detail-title-sber-salary-project-1": "Зарплатный",
-    "detail-title-sber-salary-project-2": "проект",
+    "detail-title-sber-salary-project-1": "СБЕР",
+    "detail-title-sber-salary-project-2": "",
     "detail-title-sber-salary-project-3": "Зарплатный проект",
     "detail-subtitle-sber-salary-project-1": "Сайт для рекламной",
     "detail-subtitle-sber-salary-project-2": "компании Сбера",

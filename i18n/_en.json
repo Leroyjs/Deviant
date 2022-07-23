@@ -23,7 +23,12 @@
     "detail-common-projects-link": "/detail-common-projects-site.html",
     "detail-zeeves-site-link": "/detail-zeeves-site.html"
   },
-
+  "additionaly-classes": {
+    "detail-en": "detail-en",
+    "detail-en-2-em": "detail-en-2-em",
+    "detail-en-3-em": "detail-en-3-em",
+    "detail-en-1-em": "detail-en-1-em"
+  },
   "links-switch-lng-html": {
     "main-link-switch": "https://deviant-studio.com/index.html",
     "projects-link-switch": "https://deviant-studio.com/all-projects.html",
@@ -31,7 +36,21 @@
     "write-us-link-switch": "https://deviant-studio.com/write-us.html",
     "agency-link-switch": "https://deviant-studio.com/about-us.html",
     "all-projects-link-switch": "https://deviant-studio.com/all-projects.html",
-    "footer-write-us-switch": "https://deviant-studio.com/write-us.html"
+    "footer-write-us-switch": "https://deviant-studio.com/write-us.html",
+    "detail-base-white-switch": "https://deviant-studio.com/detail-base-white-site.html",
+    "detail-dacia-switch": "https://deviant-studio.com/detail-dacia-site.html",
+    "detail-dutt-butt-switch": "https://deviant-studio.com/detail-dutt-butt-site.html",
+    "detail-green-marathon-switch": "https://deviant-studio.com/detail-green-marathon-site.html",
+    "detail-horo-switch": "https://deviant-studio.com/detail-horo-app.html",
+    "detail-immune-switch": "https://deviant-studio.com/detail-immune-site.html",
+    "detail-koltashov-switch": "https://deviant-studio.com/detail-koltashov-site.html",
+    "detail-loftgroup-switch": "https://deviant-studio.com/detail-loft-group-site.html",
+    "detail-logofolio-switch": "https://deviant-studio.com/detail-logofolio-branding.html",
+    "detail-plastic-nft-switch": "https://deviant-studio.com/detail-plastic-nft-site.html",
+    "detail-sber-cash-terminal-switch": "https://deviant-studio.com/detail-sber-cash-terminal-app.html",
+    "detail-zeeves-identity-switch": "https://deviant-studio.com/detail-zeeves-identity.html",
+    "detail-common-projects-switch": "https://deviant-studio.com/detail-common-projects-site.html",
+    "detail-zeeves-site-switch": "https://deviant-studio.com/detail-zeeves-site.html"
   },
 
   "links-text": {
@@ -85,7 +104,8 @@
     "projects-zevees-logo-branding": "ZEEVES",
     "projects-zevees-site-multipage-website": "ZEEVES",
     "projects-common-projects-multipage-website": "СOMMON PROJECTS",
-    "projects-plastic-nft-landing": "Plastic NFT"
+    "projects-plastic-nft-landing": "Plastic NFT",
+    "projects-hunt-base-white": "Hunt base white"
   },
 
   "footer": {
@@ -174,9 +194,9 @@
     "detail-title-dutt-butt": "DUTT BUTT",
     "detail-title-common-projects": "COMMON PROJECTS",
     "detail-title-common-projects-2": "COMMON",
-    "detail-title-common-projects-3": "PROJECTS",
-    "detail-title-green-marathon-1": "Green",
-    "detail-title-green-marathon-2": "marathon",
+    "detail-title-common-projects-3": "",
+    "detail-title-green-marathon-1": "SBER",
+    "detail-title-green-marathon-2": "",
     "detail-title-green-marathon-3": "Green marathon",
     "detail-title-horo": "Horo",
     "detail-title-immune": "Immune",
@@ -184,17 +204,17 @@
     "detail-title-loftgroup": "loftgroup",
     "detail-title-logofolio": "logofolio",
     "detail-title-plastic-nft": "Plastic NFT",
-    "detail-title-sber-cash-terminal": "Sber Cash Terminal",
-    "detail-title-sber-salary-project-1": "Salary",
-    "detail-title-sber-salary-project-2": "project",
+    "detail-title-sber-cash-terminal": "SBER",
+    "detail-title-sber-salary-project-1": "SBER",
+    "detail-title-sber-salary-project-2": "",
     "detail-title-sber-salary-project-3": "Salary project",
     "detail-subtitle-sber-salary-project-1": "Website for Sber",
     "detail-subtitle-sber-salary-project-2": "advertising company",
     "detail-subtitle-sber-cash-terminal-1": "Software for",
     "detail-subtitle-sber-cash-terminal-2": "cash terminals",
     "detail-subtitle-plastic-nft-1": "Bulyash Todaeva",
-    "detail-subtitle-plastic-nft-2": "Eco project", 
-    "detail-subtitle-logofolio": "Сборник логотипов",
+    "detail-subtitle-plastic-nft-2": "Eco project",
+    "detail-subtitle-logofolio": "Logos collection",
     "detail-subtitle-loftgroup-1": "Developer's",
     "detail-subtitle-loftgroup-2": "corporate website",
     "detail-subtitle-koltashov": "Portfolio site",
@@ -208,8 +228,8 @@
     "detail-subtitle-common-projects": "Clothing store",
     "detail-subtitle-green-marathon-1": "Sber anniversary",
     "detail-subtitle-green-marathon-2": "action",
-    "detail-next-project-1": "Next case",
-    "detail-next-project-2": "",
+    "detail-next-project-1": "Next",
+    "detail-next-project-2": "case",
     "detail-next-project-3": "Next",
     "detail-back-button-1": "Back",
     "detail-back-button-2": "",

@@ -45,12 +45,15 @@
         </div>
         <div class="case-final-screen">
           <div class="case-final-screen__inner case-final-screen__inner_desktop text_transform_uppercase text_type_h1 text_color_black">
-            <a href="{{i18n "links-html.detail-koltashov-link"}}" class="case-final-screen__link text_color_black">
-              <svg class="case-final-screen__svg" width="928" height="272" viewBox="0 0 928 272" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M113 113H80C36.3695 113 1 148.369 1 192C1 235.63 36.3695 271 80 271H291C335.183 271 371 235.183 371 191V168C371 163.029 375.029 159 380 159H848C891.63 159 927 123.63 927 79.9998C927 36.3694 891.63 0.999865 848 0.999859L202 0.999767C157.817 0.999761 122 36.817 122 80.9998V104C122 108.97 117.971 113 113 113Z" stroke="#242424"/>
-              </svg>
-              <span class="case-final-screen__next"> {{i18n "detail-pages.detail-next-project-3"}} </span> 
-              <span class="case-final-screen__next-case">{{i18n "detail-pages.detail-next-project-3"}}&nbsp;<span class="case-final-screen__next-case-name">{{i18n "detail-pages.detail-title-koltashov"}}</span></span>
+            <a href="{{i18n "links-html.detail-koltashov-link"}}" class="case-final-screen__link text_color_black {{i18n "additionaly-classes.detail-en"}}">
+              {{#if (lng "ru")}}
+                {{> detail-page-desktop-svg}}
+              {{/if}}
+              {{#if (lng "en")}}
+                {{> detail-page-desktop-svg-eng}}
+              {{/if}}
+              <span class="case-final-screen__next"> {{i18n "detail-pages.detail-next-project-1"}} </span> 
+              <span class="case-final-screen__next-case">{{i18n "detail-pages.detail-next-project-2"}}&nbsp;<span class="case-final-screen__next-case-name">{{i18n "detail-pages.detail-title-koltashov"}}</span></span>
             </a>
             
           </div>
