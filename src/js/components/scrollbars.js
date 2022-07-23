@@ -6,21 +6,15 @@ export function initScrollbar(callback = noop, plugin) {
     const scrollWrapperBlock = document.querySelector(".main");
     const isTouchable = isTouchDevice();
 
-    if (isTouchable) {
-        scrollWrapperBlock.addEventListener('scroll', () => {
-            callback();
-        })
-    } else {
-        if (plugin) Scrollbar.use(plugin);
+    if (plugin) Scrollbar.use(plugin);
 
-        const mainScrollbar = Scrollbar.init(scrollWrapperBlock, {
-            alwaysShowTracks: true,
-            damping: 0.1,
-        });
+    const mainScrollbar = Scrollbar.init(scrollWrapperBlock, {
+        alwaysShowTracks: true,
+        damping: isTouchable ? 1 : 0.1,
+    });
 
-        mainScrollbar.addListener(() => {
-            callback();
-            mainScrollbar.update();
-        });
-    }
+    mainScrollbar.addListener(() => {
+        callback();
+        mainScrollbar.update();
+    });
 }
