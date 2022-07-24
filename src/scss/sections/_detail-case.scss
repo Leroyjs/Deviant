@@ -59,6 +59,18 @@
   }
 }
 
+.case-final-screen__svg-eng {
+  position: absolute;
+  left: -40px;
+  top: -28px;
+  z-index: -1;
+
+  path {
+    fill: rgba(0, 0, 0, 0);
+    transition: fill 0.3s, stroke 0.3s;
+  }
+}
+
 .case-final-screen__link {
   transition: color 0.3s;
   text-align: left;
@@ -106,6 +118,23 @@
     display: none;
   }
 }
+
+.detail-en {
+  margin-right: 4em;
+}
+
+.detail-en-2-em {
+  margin-right: 2em;
+}
+
+.detail-en-3-em {
+  margin-right: 3em;
+}
+
+.detail-en-1-em {
+  margin-right: 1em;
+}
+
 @media screen and (min-width: $phone-width) {
   .case-final-screen__next-case-name {
     color: $black;
@@ -408,11 +437,33 @@
       stroke-width: 1px / 0.9074074074;
     }
   }
+
+  .case-final-screen__svg-eng {
+    width: 492px * 0.9074074074;
+    height: 272px * 0.9074074074;
+    left: -40px * 0.9074074074;
+    top: -28px * 0.9074074074;
+
+    path {
+      stroke-width: 1px / 0.9074074074;
+    }
+  }
 }
 
 @media screen and (max-width: $desktop-sm-width) {
   .case-final-screen__svg {
     width: 928px * 0.9074074074 * 0.8367346939;
+    height: 272px * 0.9074074074 * 0.8367346939;
+    left: -40px * 0.9074074074 * 0.8367346939;
+    top: -28px * 0.9074074074 * 0.8367346939;
+
+    path {
+      stroke-width: 1px / (0.9074074074 * 0.8367346939);
+    }
+  }
+
+  .case-final-screen__svg-eng {
+    width: 492px * 0.9074074074 * 0.8367346939;
     height: 272px * 0.9074074074 * 0.8367346939;
     left: -40px * 0.9074074074 * 0.8367346939;
     top: -28px * 0.9074074074 * 0.8367346939;
@@ -433,6 +484,17 @@
 @media screen and (max-width: $desktop-sm-width-2) {
   .case-final-screen__svg {
     width: 928px * 0.9074074074 * 0.8367346939 * 0.8780487805;
+    height: 272px * 0.9074074074 * 0.8367346939 * 0.8780487805;
+    left: -40px * 0.9074074074 * 0.8367346939 * 0.8780487805;
+    top: -28px * 0.9074074074 * 0.8367346939 * 0.8780487805;
+
+    path {
+      stroke-width: 1px / (0.9074074074 * 0.8367346939 * 0.8780487805);
+    }
+  }
+
+  .case-final-screen__svg-eng {
+    width: 492px * 0.9074074074 * 0.8367346939 * 0.8780487805;
     height: 272px * 0.9074074074 * 0.8367346939 * 0.8780487805;
     left: -40px * 0.9074074074 * 0.8367346939 * 0.8780487805;
     top: -28px * 0.9074074074 * 0.8367346939 * 0.8780487805;
@@ -481,6 +543,18 @@
     }
   }
 
+  .case-final-screen__svg-eng {
+    width: 492px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556;
+    height: 272px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556;
+    left: -40px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556;
+    top: -28px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556;
+
+    path {
+      stroke-width: 1px /
+        (0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556);
+    }
+  }
+
   .circle-button__arrow-left {
     width: 32px;
     height: 32px;
@@ -502,6 +576,25 @@
   }
   .case-final-screen__svg {
     width: 928px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
+      0.724137931;
+    height: 272px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
+      0.724137931;
+    left: -40px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
+      0.724137931;
+    top: -28px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
+      0.724137931;
+
+    path {
+      stroke-width: 1px /
+        (
+          0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
+            0.724137931
+        );
+    }
+  }
+
+  .case-final-screen__svg-eng {
+    width: 492px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
       0.724137931;
     height: 272px * 0.9074074074 * 0.8367346939 * 0.8780487805 * 0.8055555556 *
       0.724137931;
