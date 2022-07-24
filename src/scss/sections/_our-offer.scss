@@ -20,14 +20,32 @@
     padding: 24px 0;
     position: relative;
 
+    // &:hover {
+    //   .our-profiles {
+    //     &__item {
+    //       &-overlay {
+    //         transform: scaleY(1);
+    //       }
+    //       &-role {
+    //         color: $red !important;
+    //       }
+    //     }
+    //   }
+    // }
+
     &:hover {
       .our-profiles {
         &__item {
           &-overlay {
-            transform: scaleY(1);
+            @media (hover: hover) {
+              transform: scaleY(1);
+            }
           }
+
           &-role {
-            color: $red !important;
+            @media (hover: hover) {
+              color: $red !important;
+            }
           }
         }
       }
