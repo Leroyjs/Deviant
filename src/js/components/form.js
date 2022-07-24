@@ -2,27 +2,36 @@ import Popup from "./popup";
 import IMask from "imask";
 
 export const initForm = () => {
-  const form = document.querySelector(".form-section__main");
+  const formEl = document.querySelector(".write-us-form-js");
 
-  form.onsubmit = async (e) => {
+  formEl.onsubmit = async (e) => {
     e.preventDefault();
-    // if (checkValidate() == true) {
-    function onDone(result) {
-      console.log(result), Popup();
-    }
-    function onError(errores) {
-       const error = document.querySelector(".error-backend");
-       error.classList.remove("error-backend");
-       error.classList.add("error-backend_error");
-    }
-    const formdata = new FormData(form);
-    const validateErrorArray = getErrorsForm(formdata);
+    onError(false)
+    const formData = new FormData(formEl);
+
+    const validateErrorArray = getErrorsForm(formData);
     const hasValidateError = validateErrorArray.some((item) => Boolean(item));
     !hasValidateError
-      ? fetchData(formdata, onDone, onError)
+      ? fetchData(formData, onDone, onError)
       : setErrorsForm(validateErrorArray);
   };
+
+  function onDone(result) {
+    console.log(result), Popup();
+  }
+
+  function onError(isError = true) {
+    const error = document.querySelector(".error-backend-js");
+    if (isError) {
+      error.classList.remove("error-backend");
+      error.classList.add("error-backend_error");
+    } else {
+      error.classList.remove("error-backend_error");
+      error.classList.add("error-backend");
+    }
+  }
 };
+
 function fetchData(formdata, onDone, onError) {
   const requestOptions = {
     method: "POST",
@@ -36,19 +45,19 @@ function fetchData(formdata, onDone, onError) {
     .catch(onError);
 }
 
-// Обработка ошибок
-
 function setErrorsForm(form) {
   function classChange(node) {
     const parentNode = node.parentElement.parentElement;
     parentNode.classList.remove("form-wrapper");
     parentNode.classList.add("form-wrapper_error");
   }
+
   function displayError() {
     const error = document.querySelector(".error-form");
     error.classList.remove("error-form");
     error.classList.add("error-form_error");
   }
+
   if (!form[0]) {
     const node = document.querySelector('[name="phone"]');
     classChange(node);
@@ -65,46 +74,27 @@ function setErrorsForm(form) {
   // parentNode.classList.remove("form-wrapper");
   // parentNode.classList.add("form-wrapper_error");
 }
+
 function getErrorsForm(formData) {
-  const errors = [
+  return [
     emailValid(formData.get("email")),
     phoneValid(formData.get("phone")),
   ];
-
-  return errors;
 }
 
 function emailValid(value) {
   const EMAIL_REGEXP =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  function isEmailValid(value) {
-    return EMAIL_REGEXP.test(value);
-  }
-
-  if (isEmailValid(value)) {
-    return false;
-  } else {
-    return true;
-  }
+  return !EMAIL_REGEXP.test(value);
 }
 
 function phoneValid(value) {
   let regex =
     /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
-  if (regex.test(value)) {
-    return false;
-  } else {
-    return true;
-  }
-  // } if else
+  return !regex.test(value);
 }
 
-function checkValidate() {
-  emailValid();
-  phoneValid();
-}
-
-IMask(document.querySelector(`input[name="phone"`), {
+IMask(document.querySelector(`input[name="phone"]`), {
   mask: "+{7} (000) 000-00-00",
 });

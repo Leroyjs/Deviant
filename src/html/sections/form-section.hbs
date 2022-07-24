@@ -2,24 +2,24 @@
   <div class="form-section__title-row">
     <h1 class="half text text_type_desc text_color_gray form-section__title">
       {{i18n "write-us.write-us-brief-str-1"}}
-      <br />
+      <br/>
       {{i18n "write-us.write-us-brief-str-2"}}
     </h1>
     <div class="half form-section__sub-title">
       <div class="text text_type_desc">
         {{i18n "write-us.write-us-connect-str-1"}}
-        <br />
+        <br/>
         {{i18n "write-us.write-us-connect-str-2"}}
       </div>
     </div>
   </div>
-  <form class="form-section__main">
+  <form class="form-section__main write-us-form-js" novalidate>
     <div class="form-section__input-row">
       <input
         type="text"
         name="name"
         placeholder="{{i18n 'write-us.write-us-form-name'}}"
-        class="form-section__input text text_type_h2 text_transform_uppercase"
+        class="form-section__input text text_type_h2"
       />
     </div>
     <div class="form-section__line"></div>
@@ -28,41 +28,40 @@
         type="text"
         name="title"
         placeholder="{{i18n 'write-us.write-us-form-wishs'}}"
-        class="form-section__input text text_type_h2 text_transform_uppercase"
+        class="form-section__input text text_type_h2"
       />
     </div>
     <div class="form-section__line"></div>
     <div class="form-section__form-wrapper form-wrapper">
       <div class="form-wrapper__input-row">
-          <input
-            type="text"
-            name="phone"
-            placeholder="{{i18n 'write-us.write-us-form-phone-number'}}"
-            class="form-wrapper__input text text_type_h2 text_transform_uppercase"
-            />
-          {{> error-warning-svg}}
+        <input
+          type="tel"
+          name="phone"
+          placeholder="{{i18n 'write-us.write-us-form-phone-number'}}"
+          class="form-wrapper__input text text_type_h2"
+        />
+        {{> error-warning-svg}}
       </div>
       <div class="form-wrapper__line"></div>
     </div>
     <div class="form-section__form-wrapper form-wrapper">
       <div class="form-wrapper__input-row">
         <input
-          type="text"
+          type="email"
           name="email"
           placeholder="E—mail"
-          class="form-wrapper__input text text_type_h2 text_transform_uppercase"
-          />
+          class="form-wrapper__input text text_type_h2"
+        />
         {{> error-warning-svg}}
       </div>
       <div class="form-wrapper__line"></div>
     </div>
     <div class="form-section__input-row">
       <textarea
-        type="text"
         name="description"
         placeholder="{{i18n 'write-us.write-us-form-description'}}"
         rows="3"
-        class="form-section__input text text_type_h2 text_transform_uppercase"
+        class="form-section__input text text_type_h2"
       ></textarea>
     </div>
     <div class="form-section__line"></div>
@@ -71,14 +70,15 @@
         {{i18n 'write-us.write-us-error-form-1'}}<br>
         {{i18n 'write-us.write-us-error-form-2'}}
       </div>
-      <img class="error-form__error-bg-top error-bg-top" src="../../images/content/error-top.svg">
+      <img class="error-form__error-bg-top error-bg-top" src="../../images/content/error-top.svg" alt="error">
     </div>
-    <div class="error-backend text text_color_white text_transform_uppercase text_type_h2">
+    <div class="error-backend error-backend-js text text_color_white text_transform_uppercase text_type_h2">
       <div class="error-text-backend">
         {{i18n 'write-us.write-us-error-backend-1'}}<br>
         {{i18n 'write-us.write-us-error-backend-2'}}
       </div>
-      <img class="error-backend__error-bg-bottom error-bg-bottom" src="../../images/content/error-bottom.svg">
+      <img class="error-backend__error-bg-bottom error-bg-bottom" src="../../images/content/error-bottom.svg"
+           alt="error">
     </div>
     <div class="form-section__buttons-row">
       {{!-- кнопка находится в attach-document.hbs --}}
