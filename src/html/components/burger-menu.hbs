@@ -94,13 +94,13 @@
                   {{#if about-us-link}}
                     <a
                       href="{{about-us-link}}"
-                      class="text text_color_black text_type_common text_transform_uppercase"
+                      class="text text_color_black text_type_common text_transform_uppercase {{theme-controller}}"
                     >
                       {{i18n "links-text.language-switch-text"}}
                     </a>
                     <br /><a
                       href="{{about-us-link}}"
-                      class="text text_color_black text_type_common text_transform_uppercase"
+                      class="text text_color_black text_type_common text_transform_uppercase {{theme-controller}}"
                     >
                       {{i18n "links-text.language-switch-text"}}
                     </a>
@@ -252,9 +252,9 @@
               ></path>
             </svg>
             <span
-              class="footer__time-text text text_type_h2 text_transform_uppercase"
+              class="footer__time-text text text_type_h2 text_transform_uppercase {{theme-controller}}"
             >{{i18n "footer.footer-city"}}
-              <span class="text_color_gray clock">
+              <span class="text_color_gray clock {{theme-controller}}">
                 <span class="clock__hour">23</span>
                 <span class="clock__colon">:</span>
                 <span class="clock__minute">23</span>
@@ -263,46 +263,25 @@
               </span>
             </span>
           </div>
-          <a
-            href=""
-            class="footer__sub-links footer__sub-links_mobile
-                   half text_transform_uppercase hover_opacity_m
-                   hover_transition_xs"
-          >
-            <span class="text text_color_black text_type_h2">{{i18n "footer.footer-privacy-policy-1"}}</span>
-            <br />
-            <span class="text text_color_black text_type_h2">
-              {{i18n "footer.footer-privacy-policy-2"}}
-            </span>
-          </a>
+{{!-- политика конфиденциальности верхняя --}}
         </div>
         <div class="half footer__right-column">
           <div class="footer__contacts half text_transform_uppercase">
             <a
               href="mailto:hello@deviant-studio.com"
-              class="text text_color_black text_type_h2 hover_opacity_m hover_transition_xs"
+              class="text text_color_black text_type_h2 hover_opacity_m hover_transition_xs {{theme-controller}}"
             >
               hello@deviant-studio.com
             </a>
             <a
               href="tel:+79512700000"
-              class="text text_color_black text_type_h2 hover_opacity_m hover_transition_xs"
+              class="text text_color_black text_type_h2 hover_opacity_m hover_transition_xs {{theme-controller}}"
             >
               8 (951) 270 — 00 — 00
             </a>
           </div>
-          <a
-            href=""
-            class="footer__sub-links footer__sub-links_desktop
-                   half text_transform_uppercase hover_color_red
-                   hover_transition_xs"
-          >
-            <span class="text text_color_black text_type_h2">{{i18n "footer.footer-privacy-policy-1"}}</span>
-            <span class="text text_color_black text_type_h2">
-              {{i18n "footer-privacy-policy-2"}}
-            </span>
-          </a>
-          <div class="footer__cop text text_color_gray text_type_desc">
+{{!-- политика конфиденциальности нижняя --}}
+          <div class="footer__cop text text_color_gray text_type_desc {{theme-controller}}">
             ©2020 Deviant.
             <br />
             {{i18n "footer.footer-solutions"}}
