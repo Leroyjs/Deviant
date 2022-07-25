@@ -8,6 +8,10 @@ html {
 .main {
   overflow-x: hidden;
   height: 100vh;
+
+  &.is-touch {
+    height: auto;
+  }
 }
 
 .no-scroll {
@@ -79,6 +83,7 @@ textarea {
         background-color: $white;
       }
     }
+
     &_gray {
       &::before {
         background-color: $gray;
