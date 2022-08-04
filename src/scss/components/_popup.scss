@@ -78,7 +78,6 @@ body.lock {
   height: 160px;
   border: solid 1px white;
   border-radius: 80px;
-  transition: 0.5s;
   cursor: pointer;
   margin-bottom: 208px;
   &_eng {
@@ -90,6 +89,7 @@ body.lock {
 .close-popup:hover {
   background-color: white;
   color: black;
+  transition: 0.5s;
 }
 
 .popup.open .popup__content {

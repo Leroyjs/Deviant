@@ -110,6 +110,8 @@
 
   "footer": {
     "footer-city": "Yekaterinburg",
+    "footer-work-time-1": "We work",
+    "footer-work-time-2": "from 10:00 to 19:00",
     "footer-solutions": "Complex digital—solutions",
     "footer-privacy-policy-1": "privacy policy",
     "footer-privacy-policy-2": ""
@@ -128,6 +130,7 @@
     "about-us-intro-subtitle": "Who we are?",
     "about-us-intro-title-str-1": "We create simple and efficient digital solutions for business",
     "about-us-intro-title-str-2": "we fulfill work in programming, analytics, design and branding",
+    "about-us-intro-title-str-3": "we fulfill work in programming, analytics, design and branding",
     "about-us-approach-title": "Approach to work",
     "about-us-approach-subtitle-1": "Briefing",
     "about-us-approach-subtitle-2": "Estimate and deadlines",

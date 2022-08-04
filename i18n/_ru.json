@@ -105,6 +105,8 @@
 
   "footer": {
     "footer-city": "Екатеринбург",
+    "footer-work-time-1": "Работаем",
+    "footer-work-time-2": "с 10:00 до 19:00",
     "footer-solutions": "Комплексные digital—решения",
     "footer-privacy-policy-1": "политика",
     "footer-privacy-policy-2": "конфиденциальности"
@@ -122,7 +124,8 @@
   "about-us": {
     "about-us-intro-subtitle": "Кто мы такие?",
     "about-us-intro-title-str-1": "мы создаем простые и эффективные цифровые решения для бизнеса.",
-    "about-us-intro-title-str-2": "выполняем работы по программированию, аналитике, дизайну и брендингу",
+    "about-us-intro-title-str-2": "выполняем работы по",
+    "about-us-intro-title-str-3": "программированию, аналитике, дизайну и брендингу",
     "about-us-approach-title": "Наш подход",
     "about-us-approach-subtitle-1": "Брифинг",
     "about-us-approach-subtitle-2": "Смета и сроки",
